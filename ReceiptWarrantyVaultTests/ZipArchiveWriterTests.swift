@@ -1,5 +1,6 @@
 import UIKit
 import UniformTypeIdentifiers
+import PDFKit
 import XCTest
 @testable import ReceiptWarrantyVault
 
@@ -79,6 +80,88 @@ final class ZipArchiveWriterTests: XCTestCase {
         XCTAssertEqual(attachment.mimeType, "image/png")
         XCTAssertEqual(attachment.sourceURL.pathExtension, "png")
         XCTAssertEqual(try Data(contentsOf: attachment.sourceURL), photoData)
+    }
+
+    func testPurchasePDFExportContainsVisibleSummaryText() throws {
+        let calendar = Calendar(identifier: .gregorian)
+        let purchaseDate = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 20)))
+        let warrantyEndDate = try XCTUnwrap(calendar.date(from: DateComponents(year: 2028, month: 5, day: 20)))
+        let purchase = PurchaseItem(
+            name: "MacBook Pro",
+            storeName: "Apple Store",
+            purchaseDate: purchaseDate,
+            price: 2499,
+            currencyCode: "USD",
+            notes: "Keep the original receipt for support.",
+            serialNumber: "ABC123"
+        )
+        let warranty = WarrantyRecord(
+            purchaseItemID: purchase.id,
+            startDate: purchaseDate,
+            endDate: warrantyEndDate,
+            durationMonths: 24
+        )
+        warranty.purchaseItem = purchase
+        purchase.warranties.append(warranty)
+        let attachment = AttachmentRecord(
+            purchaseItemID: purchase.id,
+            type: .receiptImage,
+            localFileName: "scan.jpg",
+            originalFileName: "scan.jpg",
+            mimeType: "image/jpeg",
+            fileSize: 128
+        )
+        attachment.purchaseItem = purchase
+        purchase.attachments.append(attachment)
+
+        let pdfURL = try PDFExportService().exportPurchaseSummary(purchase, attachments: [attachment])
+        defer {
+            try? FileManager.default.removeItem(at: pdfURL)
+        }
+
+        let pdfData = try Data(contentsOf: pdfURL)
+        let pdfText = try XCTUnwrap(PDFDocument(url: pdfURL)?.string)
+        XCTAssertGreaterThan(pdfData.count, 1_000)
+        XCTAssertTrue(pdfText.contains("MacBook Pro"))
+        XCTAssertTrue(pdfText.contains("Apple Store"))
+        XCTAssertTrue(pdfText.contains("ABC123"))
+        XCTAssertTrue(pdfText.contains("scan.jpg"))
+    }
+
+    func testBackupExportIncludesExplicitAttachmentRecords() throws {
+        let directory = FileManager.default.temporaryDirectory.appending(path: UUID().uuidString, directoryHint: .isDirectory)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        defer {
+            try? FileManager.default.removeItem(at: directory)
+        }
+
+        let purchase = PurchaseItem(name: "Camera")
+        let sourceURL = directory.appending(path: "receipt.jpg")
+        let sourceData = Data("backup attachment payload".utf8)
+        try sourceData.write(to: sourceURL, options: [.atomic])
+
+        let storage = DocumentStorageService()
+        let attachment = try storage.storeFile(
+            at: sourceURL,
+            for: purchase.id,
+            type: .receiptImage,
+            originalFileName: "receipt.jpg",
+            mimeType: "image/jpeg"
+        )
+        defer {
+            try? storage.deleteAttachments(for: purchase.id)
+        }
+
+        let backupURL = try BackupExportService(storage: storage).exportArchive(purchases: [purchase], attachments: [attachment])
+        defer {
+            try? FileManager.default.removeItem(at: backupURL)
+        }
+
+        let backupData = try Data(contentsOf: backupURL)
+        XCTAssertTrue(backupData.contains(Data("metadata.json".utf8)))
+        XCTAssertTrue(backupData.contains(Data("attachments/\(purchase.id.uuidString)/\(attachment.localFileName)".utf8)))
+        XCTAssertTrue(backupData.contains(sourceData))
+        XCTAssertTrue(backupData.contains(Data("receipt.jpg".utf8)))
     }
 }
 

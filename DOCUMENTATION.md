@@ -39,3 +39,7 @@
 - [2026-05-20 15:00 Europe/Rome]: Photo Library Attachment Reliability Fix
   - *Details*: Fixed the gallery import path so photos selected with PhotosPicker are converted into stable pending purchase drafts before opening the purchase form. Gallery images now use detected image metadata instead of relying on the first suggested content type, and they are classified as receipt image documents for the vault flow.
   - *Tech Notes*: Replaced the scanner hub purchase form presentation with item-driven sheet state, added `PhotoAttachmentBuilder` with ImageIO-backed type detection, reset the selected PhotosPicker item after import, and added a regression test for PNG gallery imports.
+
+- [2026-05-20 15:06 Europe/Rome]: Export Actions and PDF Rendering Fix
+  - *Details*: Reworked export-related buttons so data and PDF exports execute immediately and open the native share sheet, with clearly active action rows and reusable sharing for the last generated export. Fixed blank PDF output by rendering on an explicit white page with black text and richer purchase details.
+  - *Tech Notes*: Added direct attachment querying for purchase PDF export and settings backup export, made `BackupExportService` accept explicit attachment records, added a UIKit share sheet bridge, and added regression tests for PDF text extraction and backup ZIP attachment inclusion.

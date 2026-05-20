@@ -1,9 +1,11 @@
 import SwiftData
 import SwiftUI
+import UIKit
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \PurchaseItem.purchaseDate, order: .reverse) private var purchases: [PurchaseItem]
+    @Query(sort: \AttachmentRecord.createdAt, order: .forward) private var attachments: [AttachmentRecord]
 
     @AppStorage(AppStorageKeys.defaultWarrantyMonths) private var defaultWarrantyMonths = 24
     @AppStorage(AppStorageKeys.defaultReturnDays) private var defaultReturnDays = 14
@@ -12,8 +14,10 @@ struct SettingsView: View {
     @AppStorage(AppStorageKeys.biometricLockEnabled) private var biometricLockEnabled = false
     @AppStorage(AppStorageKeys.includeDocumentsInDeviceBackup) private var includeDocumentsInDeviceBackup = true
 
-    @State private var exportURL: URL?
+    @State private var exportDocument: ExportDocument?
+    @State private var shareDocument: ExportDocument?
     @State private var errorMessage: String?
+    @State private var isExportingBackup = false
     @State private var isConfirmingDeleteAll = false
 
     var body: some View {
@@ -58,19 +62,31 @@ struct SettingsView: View {
                 Button {
                     exportBackup()
                 } label: {
-                    Label("settings.exportData", systemImage: "square.and.arrow.up")
+                    ActionRowLabel(
+                        title: "settings.exportData",
+                        systemImage: "square.and.arrow.up",
+                        tint: .accentColor,
+                        isLoading: isExportingBackup
+                    )
                 }
+                .disabled(isExportingBackup)
 
-                if let exportURL {
-                    ShareLink(item: exportURL) {
-                        Label("purchase.action.shareExport", systemImage: "square.and.arrow.up.on.square")
+                if let exportDocument {
+                    Button {
+                        shareDocument = exportDocument
+                    } label: {
+                        ActionRowLabel(
+                            title: "purchase.action.shareExport",
+                            systemImage: "square.and.arrow.up.on.square",
+                            tint: .accentColor
+                        )
                     }
                 }
 
                 Button(role: .destructive) {
                     isConfirmingDeleteAll = true
                 } label: {
-                    Label("settings.deleteAll", systemImage: "trash")
+                    ActionRowLabel(title: "settings.deleteAll", systemImage: "trash", tint: .red)
                 }
             }
 
@@ -97,6 +113,9 @@ struct SettingsView: View {
                 deleteAllData()
             }
             Button("common.cancel", role: .cancel) {}
+        }
+        .sheet(item: $shareDocument) { document in
+            ExportShareSheet(url: document.url)
         }
     }
 
@@ -142,8 +161,17 @@ struct SettingsView: View {
     }
 
     private func exportBackup() {
+        guard !isExportingBackup else { return }
+        isExportingBackup = true
+        defer {
+            isExportingBackup = false
+        }
+
         do {
-            exportURL = try BackupExportService().exportArchive(purchases: purchases)
+            let document = ExportDocument(url: try BackupExportService().exportArchive(purchases: purchases, attachments: attachments))
+            exportDocument = document
+            shareDocument = document
+            errorMessage = nil
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -157,9 +185,53 @@ struct SettingsView: View {
                 modelContext.delete(purchase)
             }
             try modelContext.save()
+            exportDocument = nil
+            shareDocument = nil
+            errorMessage = nil
         } catch {
             errorMessage = error.localizedDescription
         }
     }
 }
 
+struct ExportDocument: Identifiable, Equatable {
+    let url: URL
+
+    var id: String {
+        url.absoluteString
+    }
+}
+
+struct ExportShareSheet: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: [url], applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
+}
+
+struct ActionRowLabel: View {
+    let title: LocalizedStringKey
+    let systemImage: String
+    let tint: Color
+    var isLoading = false
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Label(title, systemImage: systemImage)
+                .font(.body.weight(.medium))
+            Spacer()
+            if isLoading {
+                ProgressView()
+            } else {
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.tertiary)
+            }
+        }
+        .foregroundStyle(tint)
+        .contentShape(Rectangle())
+    }
+}

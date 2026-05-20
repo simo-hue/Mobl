@@ -7,11 +7,25 @@ struct PurchaseDetailView: View {
     @Environment(\.modelContext) private var modelContext
 
     let purchase: PurchaseItem
+    @Query private var attachments: [AttachmentRecord]
 
     @State private var isEditing = false
-    @State private var exportURL: URL?
+    @State private var exportDocument: ExportDocument?
+    @State private var shareDocument: ExportDocument?
     @State private var errorMessage: String?
     @State private var isConfirmingDelete = false
+
+    init(purchase: PurchaseItem) {
+        self.purchase = purchase
+        let purchaseID = purchase.id
+        _attachments = Query(
+            filter: #Predicate<AttachmentRecord> { attachment in
+                attachment.purchaseItemID == purchaseID
+            },
+            sort: \AttachmentRecord.createdAt,
+            order: .forward
+        )
+    }
 
     var body: some View {
         List {
@@ -76,18 +90,24 @@ struct PurchaseDetailView: View {
                 }
             }
 
-            PurchaseAttachmentsSection(purchaseID: purchase.id)
+            PurchaseAttachmentsSection(attachments: attachments)
 
             Section("detail.section.actions") {
                 Button {
                     exportPDF()
                 } label: {
-                    Label("purchase.action.exportPDF", systemImage: "square.and.arrow.up")
+                    ActionRowLabel(title: "purchase.action.exportPDF", systemImage: "square.and.arrow.up", tint: .accentColor)
                 }
 
-                if let exportURL {
-                    ShareLink(item: exportURL) {
-                        Label("purchase.action.shareExport", systemImage: "square.and.arrow.up.on.square")
+                if let exportDocument {
+                    Button {
+                        shareDocument = exportDocument
+                    } label: {
+                        ActionRowLabel(
+                            title: "purchase.action.shareExport",
+                            systemImage: "square.and.arrow.up.on.square",
+                            tint: .accentColor
+                        )
                     }
                 }
 
@@ -96,13 +116,17 @@ struct PurchaseDetailView: View {
                     purchase.updatedAt = .now
                     try? modelContext.save()
                 } label: {
-                    Label(purchase.isArchived ? "purchase.action.unarchive" : "purchase.action.archive", systemImage: "archivebox")
+                    ActionRowLabel(
+                        title: LocalizedStringKey(purchase.isArchived ? "purchase.action.unarchive" : "purchase.action.archive"),
+                        systemImage: "archivebox",
+                        tint: .accentColor
+                    )
                 }
 
                 Button(role: .destructive) {
                     isConfirmingDelete = true
                 } label: {
-                    Label("purchase.action.delete", systemImage: "trash")
+                    ActionRowLabel(title: "purchase.action.delete", systemImage: "trash", tint: .red)
                 }
             }
 
@@ -127,6 +151,9 @@ struct PurchaseDetailView: View {
                 PurchaseFormView(purchaseToEdit: purchase)
             }
         }
+        .sheet(item: $shareDocument) { document in
+            ExportShareSheet(url: document.url)
+        }
         .confirmationDialog("delete.purchase.title", isPresented: $isConfirmingDelete, titleVisibility: .visible) {
             Button("delete.purchase.confirm", role: .destructive) {
                 deletePurchase()
@@ -137,7 +164,10 @@ struct PurchaseDetailView: View {
 
     private func exportPDF() {
         do {
-            exportURL = try PDFExportService().exportPurchaseSummary(purchase)
+            let document = ExportDocument(url: try PDFExportService().exportPurchaseSummary(purchase, attachments: attachments))
+            exportDocument = document
+            shareDocument = document
+            errorMessage = nil
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -157,19 +187,9 @@ struct PurchaseDetailView: View {
 }
 
 private struct PurchaseAttachmentsSection: View {
-    @Query private var attachments: [AttachmentRecord]
+    let attachments: [AttachmentRecord]
     @State private var previewDocument: PreviewDocument?
     @State private var errorMessage: String?
-
-    init(purchaseID: UUID) {
-        _attachments = Query(
-            filter: #Predicate<AttachmentRecord> { attachment in
-                attachment.purchaseItemID == purchaseID
-            },
-            sort: \AttachmentRecord.createdAt,
-            order: .forward
-        )
-    }
 
     var body: some View {
         Section("detail.section.attachments") {

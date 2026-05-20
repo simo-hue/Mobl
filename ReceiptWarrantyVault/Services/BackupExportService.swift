@@ -9,14 +9,17 @@ struct BackupExportService {
         self.zipWriter = zipWriter
     }
 
-    func exportArchive(purchases: [PurchaseItem]) throws -> URL {
+    func exportArchive(purchases: [PurchaseItem], attachments: [AttachmentRecord]? = nil) throws -> URL {
         try storage.prepareDirectories()
 
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
 
-        let export = purchases.map(PurchaseExport.init)
+        let attachmentsByPurchaseID = Dictionary(grouping: attachments ?? purchases.flatMap(\.attachments), by: \.purchaseItemID)
+        let export = purchases.map { purchase in
+            PurchaseExport(purchase, attachments: attachmentsByPurchaseID[purchase.id] ?? [])
+        }
         let metadata = try encoder.encode(export)
         let readme = Data(backupReadme.utf8)
 
@@ -26,7 +29,7 @@ struct BackupExportService {
         ]
 
         for purchase in purchases {
-            for attachment in purchase.attachments {
+            for attachment in attachmentsByPurchaseID[purchase.id] ?? [] {
                 if let sourceURL = try? storage.storedURL(for: attachment),
                    let data = try? Data(contentsOf: sourceURL) {
                     entries.append(.init(path: "attachments/\(purchase.id.uuidString)/\(attachment.localFileName)", data: data))
@@ -74,7 +77,7 @@ private struct PurchaseExport: Encodable {
     let returnWindows: [ReturnWindowExport]
     let attachments: [AttachmentExport]
 
-    init(_ item: PurchaseItem) {
+    init(_ item: PurchaseItem, attachments attachmentRecords: [AttachmentRecord]) {
         id = item.id
         name = item.name
         categoryId = item.categoryId
@@ -89,7 +92,7 @@ private struct PurchaseExport: Encodable {
         isArchived = item.isArchived
         warranties = item.warranties.map(WarrantyExport.init)
         returnWindows = item.returnWindows.map(ReturnWindowExport.init)
-        attachments = item.attachments.map(AttachmentExport.init)
+        attachments = attachmentRecords.map(AttachmentExport.init)
     }
 }
 
@@ -152,4 +155,3 @@ private struct AttachmentExport: Encodable {
         createdAt = record.createdAt
     }
 }
-
