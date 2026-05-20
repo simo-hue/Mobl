@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct ReceiptWarrantyVaultApp: App {
@@ -6,6 +7,7 @@ struct ReceiptWarrantyVaultApp: App {
         WindowGroup {
             AppRootView()
         }
+        .modelContainer(for: AppModelContainer.models)
     }
 }
 
