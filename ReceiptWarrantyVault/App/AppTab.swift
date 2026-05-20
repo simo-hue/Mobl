@@ -12,11 +12,11 @@ enum AppTab: String, CaseIterable, Identifiable {
     var content: some View {
         switch self {
         case .deadlines:
-            PlaceholderScreen(titleKey: "tab.deadlines", systemImage: "calendar.badge.clock")
+            DeadlinesView()
         case .archive:
-            PlaceholderScreen(titleKey: "tab.archive", systemImage: "tray.full")
+            ArchiveView()
         case .scan:
-            PlaceholderScreen(titleKey: "tab.scan", systemImage: "doc.viewfinder")
+            ScanView()
         case .settings:
             PlaceholderScreen(titleKey: "tab.settings", systemImage: "gearshape")
         }
@@ -36,4 +36,3 @@ enum AppTab: String, CaseIterable, Identifiable {
         }
     }
 }
-

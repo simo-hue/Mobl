@@ -7,14 +7,19 @@ enum DateFormatService {
 
     static func relativeDays(_ days: Int) -> String {
         if days < 0 {
-            return String(localized: "date.daysOverdue \(abs(days))", comment: "Number of days after a deadline")
+            return String.localizedStringWithFormat(
+                NSLocalizedString("date.daysOverdue.format", comment: "Number of days after a deadline"),
+                abs(days)
+            )
         }
 
         if days == 0 {
             return String(localized: "date.dueToday", comment: "Deadline is today")
         }
 
-        return String(localized: "date.daysRemaining \(days)", comment: "Number of days until a deadline")
+        return String.localizedStringWithFormat(
+            NSLocalizedString("date.daysRemaining.format", comment: "Number of days until a deadline"),
+            days
+        )
     }
 }
-

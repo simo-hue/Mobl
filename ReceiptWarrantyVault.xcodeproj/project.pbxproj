@@ -7,203 +7,215 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012631732A7F96FF89F293A3 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */; };
-		06D6086CC58CD87C730A7556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA631DF6065DE4371DE509 /* Foundation.framework */; };
-		0E8D575C4DB092542DC5126F /* WarrantyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */; };
-		102F3AACDCBC904AC6EE9843 /* PurchaseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */; };
-		155773589181BA506C207BC6 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8577682C799A826E09EEFE /* AppTab.swift */; };
-		157C4801FE484E346A623CC7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404A7BACF5660667D924618 /* NotificationScheduler.swift */; };
-		228C2CA51FB9ACDB4178ADF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA631DF6065DE4371DE509 /* Foundation.framework */; };
-		23874E0569CF836E08E80B5F /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */; };
-		2D4B91D989526181EA68C030 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */; };
-		33FC6B1E07F0CB0541BA3961 /* ZipArchiveWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */; };
-		45FE7ECB272E7764913135AE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */; };
-		5E1D2429E49155A78B5EC7E8 /* DocumentStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C20A048F50B3327516DD2 /* DocumentStorageService.swift */; };
-		5EF3B893AC38A88FF301E1AF /* BackupExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED612C7B60F54AE972CE2769 /* BackupExportService.swift */; };
-		63A89684EF0783C9B0283F85 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4570701895A73C13623DE5B /* PDFExportService.swift */; };
-		69C23E1E1880D0B1368BE6AA /* ReceiptWarrantyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */; };
-		6C51C0DF47FA07A3E30FDAAF /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B223C2A5907756960F42 /* CurrencyService.swift */; };
-		7C14AED57BF8D81ECA649A24 /* CurrencyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */; };
-		7EC6BD0B533AC8976D29E4B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */; };
-		829395EF25D8020D597E1F97 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */; };
-		86DB35D79A1BC5A138C0C260 /* AppModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */; };
-		8D66F3D50600EB8B138A4030 /* WarrantyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F155ADE69798339557BCF /* WarrantyCalculator.swift */; };
-		923EC3BB816BC915F7267439 /* ZipArchiveWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */; };
-		9725BFFD0F328D0A97170FF3 /* PurchaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */; };
-		9BA4091851CAE5D621521255 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C226CC3803F941301BFE629 /* AuthenticationService.swift */; };
-		A1727839278D893B4D15A1A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7BAE5897C8147185D0722 /* Assets.xcassets */; };
-		C9AAB9CA8E6B18645BFBA9E7 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */; };
-		DB64C1A6D9F0035931D0CBDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */; };
-		F7D2D8CC50F6B10D65A89A8E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */; };
+		0A696CC0586BF1139BD52C31 /* PurchaseSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C980FDBAEA187562E3FE51 /* PurchaseSorting.swift */; };
+		0C38BF1B87E92CEFA74189E3 /* DeadlinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1200B31CE132E0BF082F3AC /* DeadlinesView.swift */; };
+		0C552FAA9204F0DA1B96F292 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1A55200F13B129A4E785D /* OnboardingView.swift */; };
+		10DF49DEE1CE16AD4BCD4115 /* ZipArchiveWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048D787B9B97D446397798D /* ZipArchiveWriter.swift */; };
+		149EF7011BF09BAB2E66EC3B /* WarrantyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915D81AAB522BC1ADC70C432 /* WarrantyCalculatorTests.swift */; };
+		176504A43353C3C3AA4325E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4521C62B49055594F3806AD6 /* Assets.xcassets */; };
+		1FC9E515FAF7333E406E74C1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C10B93AB391F245A41604838 /* PrivacyInfo.xcprivacy */; };
+		2079DC97E6086C2EB56FCB3E /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162081F96C41FFFCE3D97B42 /* ArchiveView.swift */; };
+		27A8D27C40EF6CEBB2E68237 /* CurrencyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7B31EE0FF87B83B8D28B9 /* CurrencyServiceTests.swift */; };
+		2D804FB336617B7699B4D69A /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787497F5F84A00B545625CF2 /* PDFExportService.swift */; };
+		324A71AB21DEAB192433C6B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A15BBCAB16C335357BE7A369 /* InfoPlist.strings */; };
+		3A03A02D4760DF561B709358 /* BackupExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E013E55823A067C9211F85D /* BackupExportService.swift */; };
+		3C33C55D3549B2F326956433 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0B489E0C5C21DF8E33876 /* AppStorageKeys.swift */; };
+		3F4118E57A927BC0205564C0 /* ScannerHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45B613D1115FC8400386F4 /* ScannerHubView.swift */; };
+		409ACC6E6B5D04E432817FF6 /* ReceiptWarrantyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CDDF92A1D2BDEED785533 /* ReceiptWarrantyVaultApp.swift */; };
+		53B3DEDF0762A46B3C96F2AB /* DocumentStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39B992D5BF243B8936CB98 /* DocumentStorageService.swift */; };
+		5B7B859B39BC77C121A518EB /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F540F8792B1C89B002C8A9 /* DateFormatService.swift */; };
+		5BF5CFAD0B7535CD182645B1 /* PurchaseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA456A0B4886A6230E0822B /* PurchaseCategory.swift */; };
+		62F251FA771E336635CB5BE8 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACE8B357B5624AA728E666C /* NotificationScheduler.swift */; };
+		68D639142E8E688C488DD776 /* AppModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1ADF8C5A89D342596C2DE /* AppModelContainer.swift */; };
+		6D66F0E506C3BF0761ED6AFB /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9880E72874A592E70B89E6 /* AppTab.swift */; };
+		714C7FC2FE37B39E27D566C6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70646D9CD94B36D98E92FD /* AuthenticationService.swift */; };
+		71B0201FCBA9083A3D05554D /* PurchaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E086953C4D0917BEDBFE93 /* PurchaseModels.swift */; };
+		78F22E19673CCCE7063970A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B589B133F4EDBF0300C1DEC1 /* InfoPlist.strings */; };
+		800B2CD3B87E8FB09BF8C8E8 /* PurchaseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23A1C87133404C7340D716 /* PurchaseFormView.swift */; };
+		8A47E97828CE3017DD7B57CD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B1EE1E62DCD5CE319C83245F /* Localizable.xcstrings */; };
+		90103138CE237DAF284D3933 /* DeadlineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F876F6CDADCC72E5B8ED /* DeadlineCard.swift */; };
+		9740FEFAA47DCDCC9F02E2EA /* WarrantyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E39D4B80F1EED365B107D0D /* WarrantyCalculator.swift */; };
+		974EB432475BF513F4107105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E8F5CC67A76EBB5AA00679 /* Foundation.framework */; };
+		A0F7FDA491945E83556A16D9 /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3C926FF026BD6A5D8FCEFA /* PlaceholderScreen.swift */; };
+		B7E51B7B69A206BF619FB43F /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BA3F964E184D427B8364E /* CurrencyService.swift */; };
+		BBC4050A7406A8B92D0E9D92 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81C559E89CDE0B6276FC49 /* ScanView.swift */; };
+		BC5D47342460A0814344E66A /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC28E618A1F752F6FFAF4E /* StatusBadge.swift */; };
+		C54D309285E53D4D1BDA9E5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E8F5CC67A76EBB5AA00679 /* Foundation.framework */; };
+		CB136CA1D0452B15C269A9AE /* PurchaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBADA7E830CD3966AB3D8A6F /* PurchaseRow.swift */; };
+		DC157D8CD3AF7C176AE17E06 /* PurchaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76924987680CB72C00234CFC /* PurchaseDetailView.swift */; };
+		E32A032CE96096F714526FAF /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565021391506B1247E8D4F90 /* AppRootView.swift */; };
+		EE28D6D5459EF4396C4C2079 /* ZipArchiveWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD72322827D86B729BB51E02 /* ZipArchiveWriterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB0D04E27760CC1F1B108E3E /* PBXContainerItemProxy */ = {
+		9705141085826A2821797248 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E241A4E66E2AC9D9628C153 /* Project object */;
+			containerPortal = 9D217ED054AE9D24A0632A04 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B7B2EED71E756B86792168D;
+			remoteGlobalIDString = 12A49A8B09AD15417C5BB159;
 			remoteInfo = ReceiptWarrantyVault;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2404A7BACF5660667D924618 /* NotificationScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationScheduler.swift; path = Services/NotificationScheduler.swift; sourceTree = "<group>"; };
-		255C20A048F50B3327516DD2 /* DocumentStorageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentStorageService.swift; path = Services/DocumentStorageService.swift; sourceTree = "<group>"; };
-		27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptWarrantyVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptWarrantyVaultApp.swift; path = App/ReceiptWarrantyVaultApp.swift; sourceTree = "<group>"; };
-		35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
-		40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptWarrantyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchiveWriter.swift; path = Services/ZipArchiveWriter.swift; sourceTree = "<group>"; };
-		56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseCategory.swift; path = Models/PurchaseCategory.swift; sourceTree = "<group>"; };
-		5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppModelContainer.swift; path = Models/AppModelContainer.swift; sourceTree = "<group>"; };
-		7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTests.swift; sourceTree = "<group>"; };
-		7C226CC3803F941301BFE629 /* AuthenticationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = Services/AuthenticationService.swift; sourceTree = "<group>"; };
-		8965B223C2A5907756960F42 /* CurrencyService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyService.swift; path = Services/CurrencyService.swift; sourceTree = "<group>"; };
-		8FCA631DF6065DE4371DE509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZipArchiveWriterTests.swift; sourceTree = "<group>"; };
-		934F155ADE69798339557BCF /* WarrantyCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarrantyCalculator.swift; path = Services/WarrantyCalculator.swift; sourceTree = "<group>"; };
-		9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStorageKeys.swift; path = Services/AppStorageKeys.swift; sourceTree = "<group>"; };
-		A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseModels.swift; path = Models/PurchaseModels.swift; sourceTree = "<group>"; };
-		C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
-		CB8577682C799A826E09EEFE /* AppTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTab.swift; path = App/AppTab.swift; sourceTree = "<group>"; };
-		D4570701895A73C13623DE5B /* PDFExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFExportService.swift; path = Services/PDFExportService.swift; sourceTree = "<group>"; };
-		DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
-		E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WarrantyCalculatorTests.swift; sourceTree = "<group>"; };
-		EBE7BAE5897C8147185D0722 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
-		EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ED612C7B60F54AE972CE2769 /* BackupExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackupExportService.swift; path = Services/BackupExportService.swift; sourceTree = "<group>"; };
-		F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderScreen.swift; path = Views/Components/PlaceholderScreen.swift; sourceTree = "<group>"; };
-		F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatService.swift; path = Services/DateFormatService.swift; sourceTree = "<group>"; };
+		0AA491F0AF8B8220631A2143 /* ReceiptWarrantyVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptWarrantyVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B82F876F6CDADCC72E5B8ED /* DeadlineCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeadlineCard.swift; path = Views/Components/DeadlineCard.swift; sourceTree = "<group>"; };
+		162081F96C41FFFCE3D97B42 /* ArchiveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArchiveView.swift; path = Views/Archive/ArchiveView.swift; sourceTree = "<group>"; };
+		1A3C926FF026BD6A5D8FCEFA /* PlaceholderScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderScreen.swift; path = Views/Components/PlaceholderScreen.swift; sourceTree = "<group>"; };
+		3ACE8B357B5624AA728E666C /* NotificationScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationScheduler.swift; path = Services/NotificationScheduler.swift; sourceTree = "<group>"; };
+		4521C62B49055594F3806AD6 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		4866A55E555E3513ACA79EB1 /* ReceiptWarrantyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptWarrantyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E39D4B80F1EED365B107D0D /* WarrantyCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarrantyCalculator.swift; path = Services/WarrantyCalculator.swift; sourceTree = "<group>"; };
+		53A1ADF8C5A89D342596C2DE /* AppModelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppModelContainer.swift; path = Models/AppModelContainer.swift; sourceTree = "<group>"; };
+		565021391506B1247E8D4F90 /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
+		5DA456A0B4886A6230E0822B /* PurchaseCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseCategory.swift; path = Models/PurchaseCategory.swift; sourceTree = "<group>"; };
+		61D1A55200F13B129A4E785D /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		6B9CDDF92A1D2BDEED785533 /* ReceiptWarrantyVaultApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptWarrantyVaultApp.swift; path = App/ReceiptWarrantyVaultApp.swift; sourceTree = "<group>"; };
+		6E013E55823A067C9211F85D /* BackupExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackupExportService.swift; path = Services/BackupExportService.swift; sourceTree = "<group>"; };
+		71E8F5CC67A76EBB5AA00679 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		72E086953C4D0917BEDBFE93 /* PurchaseModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseModels.swift; path = Models/PurchaseModels.swift; sourceTree = "<group>"; };
+		76924987680CB72C00234CFC /* PurchaseDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseDetailView.swift; path = Views/PurchaseDetail/PurchaseDetailView.swift; sourceTree = "<group>"; };
+		787497F5F84A00B545625CF2 /* PDFExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFExportService.swift; path = Services/PDFExportService.swift; sourceTree = "<group>"; };
+		8C23A1C87133404C7340D716 /* PurchaseFormView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseFormView.swift; path = Views/PurchaseForm/PurchaseFormView.swift; sourceTree = "<group>"; };
+		915D81AAB522BC1ADC70C432 /* WarrantyCalculatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WarrantyCalculatorTests.swift; sourceTree = "<group>"; };
+		9A81C559E89CDE0B6276FC49 /* ScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanView.swift; path = Views/Scanner/ScanView.swift; sourceTree = "<group>"; };
+		9DEC28E618A1F752F6FFAF4E /* StatusBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBadge.swift; path = Views/Components/StatusBadge.swift; sourceTree = "<group>"; };
+		A15BBCAB16C335357BE7A369 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1F540F8792B1C89B002C8A9 /* DateFormatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatService.swift; path = Services/DateFormatService.swift; sourceTree = "<group>"; };
+		A2C980FDBAEA187562E3FE51 /* PurchaseSorting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseSorting.swift; path = Models/PurchaseSorting.swift; sourceTree = "<group>"; };
+		AA70646D9CD94B36D98E92FD /* AuthenticationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = Services/AuthenticationService.swift; sourceTree = "<group>"; };
+		AD9880E72874A592E70B89E6 /* AppTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTab.swift; path = App/AppTab.swift; sourceTree = "<group>"; };
+		B1EE1E62DCD5CE319C83245F /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		B589B133F4EDBF0300C1DEC1 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C10B93AB391F245A41604838 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CDF0B489E0C5C21DF8E33876 /* AppStorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStorageKeys.swift; path = Services/AppStorageKeys.swift; sourceTree = "<group>"; };
+		CE45B613D1115FC8400386F4 /* ScannerHubView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScannerHubView.swift; path = Views/Scanner/ScannerHubView.swift; sourceTree = "<group>"; };
+		D048D787B9B97D446397798D /* ZipArchiveWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchiveWriter.swift; path = Services/ZipArchiveWriter.swift; sourceTree = "<group>"; };
+		E1200B31CE132E0BF082F3AC /* DeadlinesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeadlinesView.swift; path = Views/Dashboard/DeadlinesView.swift; sourceTree = "<group>"; };
+		E2D7B31EE0FF87B83B8D28B9 /* CurrencyServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTests.swift; sourceTree = "<group>"; };
+		F53BA3F964E184D427B8364E /* CurrencyService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyService.swift; path = Services/CurrencyService.swift; sourceTree = "<group>"; };
+		FBADA7E830CD3966AB3D8A6F /* PurchaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseRow.swift; path = Views/Components/PurchaseRow.swift; sourceTree = "<group>"; };
+		FD39B992D5BF243B8936CB98 /* DocumentStorageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentStorageService.swift; path = Services/DocumentStorageService.swift; sourceTree = "<group>"; };
+		FD72322827D86B729BB51E02 /* ZipArchiveWriterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZipArchiveWriterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		70C38748C9ADDC29D63E0D12 /* Frameworks */ = {
+		41C43CA91E715B04E70F2A89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228C2CA51FB9ACDB4178ADF1 /* Foundation.framework in Frameworks */,
+				C54D309285E53D4D1BDA9E5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E89A26CD146A33718F1FA6B2 /* Frameworks */ = {
+		DA502A8F805BDF11DFEA010D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06D6086CC58CD87C730A7556 /* Foundation.framework in Frameworks */,
+				974EB432475BF513F4107105 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2959A4E062DF8B639F8D32A2 = {
+		0AACD8027FEF751331B46EDD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B06B8B849FF44D78C5D7A83C /* Products */,
-				B2D599120E260E846F2F5745 /* Frameworks */,
-				70EB349106D62AE8D259F5B9 /* ReceiptWarrantyVault */,
-				9985D7C75FE2741286B601EF /* ReceiptWarrantyVaultTests */,
+				71E8F5CC67A76EBB5AA00679 /* Foundation.framework */,
 			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		70EB349106D62AE8D259F5B9 /* ReceiptWarrantyVault */ = {
+		18D7946B848854D45B40312B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */,
-				CB8577682C799A826E09EEFE /* AppTab.swift */,
-				30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */,
-				5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */,
-				56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */,
-				A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */,
-				9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */,
-				7C226CC3803F941301BFE629 /* AuthenticationService.swift */,
-				ED612C7B60F54AE972CE2769 /* BackupExportService.swift */,
-				8965B223C2A5907756960F42 /* CurrencyService.swift */,
-				F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */,
-				255C20A048F50B3327516DD2 /* DocumentStorageService.swift */,
-				2404A7BACF5660667D924618 /* NotificationScheduler.swift */,
-				D4570701895A73C13623DE5B /* PDFExportService.swift */,
-				934F155ADE69798339557BCF /* WarrantyCalculator.swift */,
-				4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */,
-				F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */,
-				DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */,
-				EBE7BAE5897C8147185D0722 /* Assets.xcassets */,
-				C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */,
-				C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */,
-				35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */,
-				EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */,
+				4866A55E555E3513ACA79EB1 /* ReceiptWarrantyVault.app */,
+				0AA491F0AF8B8220631A2143 /* ReceiptWarrantyVaultTests.xctest */,
 			);
-			name = ReceiptWarrantyVault;
-			path = ReceiptWarrantyVault;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		9985D7C75FE2741286B601EF /* ReceiptWarrantyVaultTests */ = {
+		95E7121AB57133CE11944D84 /* ReceiptWarrantyVaultTests */ = {
 			isa = PBXGroup;
 			children = (
-				7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */,
-				E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */,
-				919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */,
+				E2D7B31EE0FF87B83B8D28B9 /* CurrencyServiceTests.swift */,
+				915D81AAB522BC1ADC70C432 /* WarrantyCalculatorTests.swift */,
+				FD72322827D86B729BB51E02 /* ZipArchiveWriterTests.swift */,
 			);
 			name = ReceiptWarrantyVaultTests;
 			path = ReceiptWarrantyVaultTests;
 			sourceTree = "<group>";
 		};
-		B06B8B849FF44D78C5D7A83C /* Products */ = {
+		C664C1F9CA5B2F5FB0CAAF19 /* ReceiptWarrantyVault */ = {
 			isa = PBXGroup;
 			children = (
-				40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */,
-				27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */,
+				565021391506B1247E8D4F90 /* AppRootView.swift */,
+				AD9880E72874A592E70B89E6 /* AppTab.swift */,
+				6B9CDDF92A1D2BDEED785533 /* ReceiptWarrantyVaultApp.swift */,
+				53A1ADF8C5A89D342596C2DE /* AppModelContainer.swift */,
+				5DA456A0B4886A6230E0822B /* PurchaseCategory.swift */,
+				72E086953C4D0917BEDBFE93 /* PurchaseModels.swift */,
+				A2C980FDBAEA187562E3FE51 /* PurchaseSorting.swift */,
+				CDF0B489E0C5C21DF8E33876 /* AppStorageKeys.swift */,
+				AA70646D9CD94B36D98E92FD /* AuthenticationService.swift */,
+				6E013E55823A067C9211F85D /* BackupExportService.swift */,
+				F53BA3F964E184D427B8364E /* CurrencyService.swift */,
+				A1F540F8792B1C89B002C8A9 /* DateFormatService.swift */,
+				FD39B992D5BF243B8936CB98 /* DocumentStorageService.swift */,
+				3ACE8B357B5624AA728E666C /* NotificationScheduler.swift */,
+				787497F5F84A00B545625CF2 /* PDFExportService.swift */,
+				4E39D4B80F1EED365B107D0D /* WarrantyCalculator.swift */,
+				D048D787B9B97D446397798D /* ZipArchiveWriter.swift */,
+				162081F96C41FFFCE3D97B42 /* ArchiveView.swift */,
+				0B82F876F6CDADCC72E5B8ED /* DeadlineCard.swift */,
+				1A3C926FF026BD6A5D8FCEFA /* PlaceholderScreen.swift */,
+				FBADA7E830CD3966AB3D8A6F /* PurchaseRow.swift */,
+				9DEC28E618A1F752F6FFAF4E /* StatusBadge.swift */,
+				E1200B31CE132E0BF082F3AC /* DeadlinesView.swift */,
+				61D1A55200F13B129A4E785D /* OnboardingView.swift */,
+				76924987680CB72C00234CFC /* PurchaseDetailView.swift */,
+				8C23A1C87133404C7340D716 /* PurchaseFormView.swift */,
+				9A81C559E89CDE0B6276FC49 /* ScanView.swift */,
+				CE45B613D1115FC8400386F4 /* ScannerHubView.swift */,
+				4521C62B49055594F3806AD6 /* Assets.xcassets */,
+				B1EE1E62DCD5CE319C83245F /* Localizable.xcstrings */,
+				C10B93AB391F245A41604838 /* PrivacyInfo.xcprivacy */,
+				A15BBCAB16C335357BE7A369 /* InfoPlist.strings */,
+				B589B133F4EDBF0300C1DEC1 /* InfoPlist.strings */,
 			);
-			name = Products;
+			name = ReceiptWarrantyVault;
+			path = ReceiptWarrantyVault;
 			sourceTree = "<group>";
 		};
-		B2D599120E260E846F2F5745 /* Frameworks */ = {
+		D25177931CC894B62B654252 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8C519ADF0C6B2BF68CDB26B /* iOS */,
+				0AACD8027FEF751331B46EDD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8C519ADF0C6B2BF68CDB26B /* iOS */ = {
+		D2C23831B70581ED15BBDEF2 = {
 			isa = PBXGroup;
 			children = (
-				8FCA631DF6065DE4371DE509 /* Foundation.framework */,
+				18D7946B848854D45B40312B /* Products */,
+				D25177931CC894B62B654252 /* Frameworks */,
+				C664C1F9CA5B2F5FB0CAAF19 /* ReceiptWarrantyVault */,
+				95E7121AB57133CE11944D84 /* ReceiptWarrantyVaultTests */,
 			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		89E9FB88D3752FE185D1EFA1 /* ReceiptWarrantyVaultTests */ = {
+		12A49A8B09AD15417C5BB159 /* ReceiptWarrantyVault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8CC89D7E2F0F34D8761E8AD /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */;
+			buildConfigurationList = 0211FBC7E1002D76B3656E6E /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */;
 			buildPhases = (
-				5C3D235C449B7CF3345026BA /* Sources */,
-				70C38748C9ADDC29D63E0D12 /* Frameworks */,
-				2D0EC2332352006CA2EF1FF8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				517861F1527C4D00BE45E295 /* PBXTargetDependency */,
-			);
-			name = ReceiptWarrantyVaultTests;
-			productName = ReceiptWarrantyVaultTests;
-			productReference = 27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3281B2EACD6A7F5632495D1C /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */;
-			buildPhases = (
-				82DE2C6734E57BD72C5C6A0C /* Sources */,
-				E89A26CD146A33718F1FA6B2 /* Frameworks */,
-				E432F0B6FE0A0E61C537B563 /* Resources */,
+				ADAD11FBADA6FDCAE81CB8DC /* Sources */,
+				DA502A8F805BDF11DFEA010D /* Frameworks */,
+				699D1CA146F0A7E7323F7448 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -211,20 +223,38 @@
 			);
 			name = ReceiptWarrantyVault;
 			productName = ReceiptWarrantyVault;
-			productReference = 40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */;
+			productReference = 4866A55E555E3513ACA79EB1 /* ReceiptWarrantyVault.app */;
 			productType = "com.apple.product-type.application";
+		};
+		570AF064F744E985296A6DDF /* ReceiptWarrantyVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB161AE579FD54295BDDCFE /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */;
+			buildPhases = (
+				A7C3669507EF56E349A23160 /* Sources */,
+				41C43CA91E715B04E70F2A89 /* Frameworks */,
+				41ECA6D5AB5A50EE91CD0A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07CA8A1CEB5B33E72DB19F2D /* PBXTargetDependency */,
+			);
+			name = ReceiptWarrantyVaultTests;
+			productName = ReceiptWarrantyVaultTests;
+			productReference = 0AA491F0AF8B8220631A2143 /* ReceiptWarrantyVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0E241A4E66E2AC9D9628C153 /* Project object */ = {
+		9D217ED054AE9D24A0632A04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 2650;
 			};
-			buildConfigurationList = E641FB2AFC7B4EC3EB5F962A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */;
+			buildConfigurationList = A9DF31C638DADC4C1AF199DE /* Build configuration list for PBXProject "ReceiptWarrantyVault" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,90 +263,100 @@
 				it,
 				Base,
 			);
-			mainGroup = 2959A4E062DF8B639F8D32A2;
+			mainGroup = D2C23831B70581ED15BBDEF2;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B06B8B849FF44D78C5D7A83C /* Products */;
+			productRefGroup = 18D7946B848854D45B40312B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */,
-				89E9FB88D3752FE185D1EFA1 /* ReceiptWarrantyVaultTests */,
+				12A49A8B09AD15417C5BB159 /* ReceiptWarrantyVault */,
+				570AF064F744E985296A6DDF /* ReceiptWarrantyVaultTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D0EC2332352006CA2EF1FF8 /* Resources */ = {
+		41ECA6D5AB5A50EE91CD0A25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E432F0B6FE0A0E61C537B563 /* Resources */ = {
+		699D1CA146F0A7E7323F7448 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1727839278D893B4D15A1A7 /* Assets.xcassets in Resources */,
-				45FE7ECB272E7764913135AE /* Localizable.xcstrings in Resources */,
-				2D4B91D989526181EA68C030 /* PrivacyInfo.xcprivacy in Resources */,
-				7EC6BD0B533AC8976D29E4B2 /* InfoPlist.strings in Resources */,
-				DB64C1A6D9F0035931D0CBDF /* InfoPlist.strings in Resources */,
+				176504A43353C3C3AA4325E0 /* Assets.xcassets in Resources */,
+				8A47E97828CE3017DD7B57CD /* Localizable.xcstrings in Resources */,
+				1FC9E515FAF7333E406E74C1 /* PrivacyInfo.xcprivacy in Resources */,
+				324A71AB21DEAB192433C6B9 /* InfoPlist.strings in Resources */,
+				78F22E19673CCCE7063970A9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C3D235C449B7CF3345026BA /* Sources */ = {
+		A7C3669507EF56E349A23160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C14AED57BF8D81ECA649A24 /* CurrencyServiceTests.swift in Sources */,
-				0E8D575C4DB092542DC5126F /* WarrantyCalculatorTests.swift in Sources */,
-				923EC3BB816BC915F7267439 /* ZipArchiveWriterTests.swift in Sources */,
+				27A8D27C40EF6CEBB2E68237 /* CurrencyServiceTests.swift in Sources */,
+				149EF7011BF09BAB2E66EC3B /* WarrantyCalculatorTests.swift in Sources */,
+				EE28D6D5459EF4396C4C2079 /* ZipArchiveWriterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82DE2C6734E57BD72C5C6A0C /* Sources */ = {
+		ADAD11FBADA6FDCAE81CB8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829395EF25D8020D597E1F97 /* AppRootView.swift in Sources */,
-				155773589181BA506C207BC6 /* AppTab.swift in Sources */,
-				69C23E1E1880D0B1368BE6AA /* ReceiptWarrantyVaultApp.swift in Sources */,
-				86DB35D79A1BC5A138C0C260 /* AppModelContainer.swift in Sources */,
-				102F3AACDCBC904AC6EE9843 /* PurchaseCategory.swift in Sources */,
-				9725BFFD0F328D0A97170FF3 /* PurchaseModels.swift in Sources */,
-				012631732A7F96FF89F293A3 /* AppStorageKeys.swift in Sources */,
-				9BA4091851CAE5D621521255 /* AuthenticationService.swift in Sources */,
-				5EF3B893AC38A88FF301E1AF /* BackupExportService.swift in Sources */,
-				6C51C0DF47FA07A3E30FDAAF /* CurrencyService.swift in Sources */,
-				C9AAB9CA8E6B18645BFBA9E7 /* DateFormatService.swift in Sources */,
-				5E1D2429E49155A78B5EC7E8 /* DocumentStorageService.swift in Sources */,
-				157C4801FE484E346A623CC7 /* NotificationScheduler.swift in Sources */,
-				63A89684EF0783C9B0283F85 /* PDFExportService.swift in Sources */,
-				8D66F3D50600EB8B138A4030 /* WarrantyCalculator.swift in Sources */,
-				33FC6B1E07F0CB0541BA3961 /* ZipArchiveWriter.swift in Sources */,
-				23874E0569CF836E08E80B5F /* PlaceholderScreen.swift in Sources */,
-				F7D2D8CC50F6B10D65A89A8E /* OnboardingView.swift in Sources */,
+				E32A032CE96096F714526FAF /* AppRootView.swift in Sources */,
+				6D66F0E506C3BF0761ED6AFB /* AppTab.swift in Sources */,
+				409ACC6E6B5D04E432817FF6 /* ReceiptWarrantyVaultApp.swift in Sources */,
+				68D639142E8E688C488DD776 /* AppModelContainer.swift in Sources */,
+				5BF5CFAD0B7535CD182645B1 /* PurchaseCategory.swift in Sources */,
+				71B0201FCBA9083A3D05554D /* PurchaseModels.swift in Sources */,
+				0A696CC0586BF1139BD52C31 /* PurchaseSorting.swift in Sources */,
+				3C33C55D3549B2F326956433 /* AppStorageKeys.swift in Sources */,
+				714C7FC2FE37B39E27D566C6 /* AuthenticationService.swift in Sources */,
+				3A03A02D4760DF561B709358 /* BackupExportService.swift in Sources */,
+				B7E51B7B69A206BF619FB43F /* CurrencyService.swift in Sources */,
+				5B7B859B39BC77C121A518EB /* DateFormatService.swift in Sources */,
+				53B3DEDF0762A46B3C96F2AB /* DocumentStorageService.swift in Sources */,
+				62F251FA771E336635CB5BE8 /* NotificationScheduler.swift in Sources */,
+				2D804FB336617B7699B4D69A /* PDFExportService.swift in Sources */,
+				9740FEFAA47DCDCC9F02E2EA /* WarrantyCalculator.swift in Sources */,
+				10DF49DEE1CE16AD4BCD4115 /* ZipArchiveWriter.swift in Sources */,
+				2079DC97E6086C2EB56FCB3E /* ArchiveView.swift in Sources */,
+				90103138CE237DAF284D3933 /* DeadlineCard.swift in Sources */,
+				A0F7FDA491945E83556A16D9 /* PlaceholderScreen.swift in Sources */,
+				CB136CA1D0452B15C269A9AE /* PurchaseRow.swift in Sources */,
+				BC5D47342460A0814344E66A /* StatusBadge.swift in Sources */,
+				0C38BF1B87E92CEFA74189E3 /* DeadlinesView.swift in Sources */,
+				0C552FAA9204F0DA1B96F292 /* OnboardingView.swift in Sources */,
+				DC157D8CD3AF7C176AE17E06 /* PurchaseDetailView.swift in Sources */,
+				800B2CD3B87E8FB09BF8C8E8 /* PurchaseFormView.swift in Sources */,
+				BBC4050A7406A8B92D0E9D92 /* ScanView.swift in Sources */,
+				3F4118E57A927BC0205564C0 /* ScannerHubView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		517861F1527C4D00BE45E295 /* PBXTargetDependency */ = {
+		07CA8A1CEB5B33E72DB19F2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ReceiptWarrantyVault;
-			target = 9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */;
-			targetProxy = AB0D04E27760CC1F1B108E3E /* PBXContainerItemProxy */;
+			target = 12A49A8B09AD15417C5BB159 /* ReceiptWarrantyVault */;
+			targetProxy = 9705141085826A2821797248 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		075AE90239412C051BECBADB /* Release */ = {
+		317F9B678F8805C1E6992DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -341,7 +381,66 @@
 			};
 			name = Release;
 		};
-		54E669D8A0BED93C3007DFF4 /* Debug */ = {
+		3553090FA0E9231CFE406558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		54481B9EFB3753AA519F8F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -359,7 +458,7 @@
 			};
 			name = Debug;
 		};
-		9C2C09663497828758B7CA0D /* Release */ = {
+		968C26E1935F6DE300FD980D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,7 +477,7 @@
 			};
 			name = Release;
 		};
-		B411C309A24C19BAA3AF6EAD /* Debug */ = {
+		B9992B062FA6844A1CAD2491 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -444,7 +543,7 @@
 			};
 			name = Debug;
 		};
-		F8277B7495912C020206CCB7 /* Debug */ = {
+		D0B82237E85D11C9744F0307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -468,96 +567,37 @@
 			};
 			name = Debug;
 		};
-		FCE96129923EB3E75EA56AC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3281B2EACD6A7F5632495D1C /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */ = {
+		0211FBC7E1002D76B3656E6E /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				075AE90239412C051BECBADB /* Release */,
-				F8277B7495912C020206CCB7 /* Debug */,
+				317F9B678F8805C1E6992DD7 /* Release */,
+				D0B82237E85D11C9744F0307 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E641FB2AFC7B4EC3EB5F962A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */ = {
+		7EB161AE579FD54295BDDCFE /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B411C309A24C19BAA3AF6EAD /* Debug */,
-				FCE96129923EB3E75EA56AC2 /* Release */,
+				968C26E1935F6DE300FD980D /* Release */,
+				54481B9EFB3753AA519F8F89 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8CC89D7E2F0F34D8761E8AD /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */ = {
+		A9DF31C638DADC4C1AF199DE /* Build configuration list for PBXProject "ReceiptWarrantyVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C2C09663497828758B7CA0D /* Release */,
-				54E669D8A0BED93C3007DFF4 /* Debug */,
+				B9992B062FA6844A1CAD2491 /* Debug */,
+				3553090FA0E9231CFE406558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0E241A4E66E2AC9D9628C153 /* Project object */;
+	rootObject = 9D217ED054AE9D24A0632A04 /* Project object */;
 }

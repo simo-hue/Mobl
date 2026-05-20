@@ -11,3 +11,7 @@
 - [2026-05-20 00:00 Europe/Rome]: Offline Services Layer
   - *Details*: Added local document storage, notification scheduling, biometric authentication, single-purchase PDF export, and JSON/ZIP backup export services.
   - *Tech Notes*: Attachments are stored under Application Support instead of SwiftData blobs. File protection uses `completeUntilFirstUserAuthentication`. ZIP backup is implemented in-app without third-party dependencies or network calls.
+
+- [2026-05-20 00:00 Europe/Rome]: Core Purchase Flows
+  - *Details*: Replaced placeholder tabs with Deadlines, Archive, Scan entry, purchase form, and purchase detail screens. Added search, category/status filters, sorting, deadline cards, manual purchase creation/editing, archive/delete actions, and PDF sharing entry points.
+  - *Tech Notes*: UI uses SwiftUI with SwiftData `@Query`; deadlines are derived from local model data using `WarrantyCalculator`. Visible text is keyed for localization through the string catalog.
