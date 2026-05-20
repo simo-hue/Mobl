@@ -72,7 +72,6 @@ app_target.build_configurations.each do |config|
   settings["PRODUCT_NAME"] = "$(TARGET_NAME)"
   settings["SUPPORTED_PLATFORMS"] = "iphoneos iphonesimulator"
   settings["SWIFT_APPROACHABLE_CONCURRENCY"] = "YES"
-  settings["SWIFT_DEFAULT_ACTOR_ISOLATION"] = "MainActor"
   settings["SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY"] = "YES"
   settings["TARGETED_DEVICE_FAMILY"] = "1"
 end

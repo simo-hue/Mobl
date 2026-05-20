@@ -7,3 +7,7 @@
 - [2026-05-20 00:00 Europe/Rome]: Local Data Foundation
   - *Details*: Added SwiftData models for purchases, warranties, return windows, attachments, and local notification rules. Added stable category identifiers and pure services for warranty date calculations, localized currency parsing/formatting, and date display helpers.
   - *Tech Notes*: Purchase price uses `Decimal`, each purchase stores an ISO currency code, and category display names are keyed for localization instead of storing translated labels.
+
+- [2026-05-20 00:00 Europe/Rome]: Offline Services Layer
+  - *Details*: Added local document storage, notification scheduling, biometric authentication, single-purchase PDF export, and JSON/ZIP backup export services.
+  - *Tech Notes*: Attachments are stored under Application Support instead of SwiftData blobs. File protection uses `completeUntilFirstUserAuthentication`. ZIP backup is implemented in-app without third-party dependencies or network calls.

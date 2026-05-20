@@ -7,161 +7,203 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106C858202499095F0F4B794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9BEF1CB4CCF8E2D2256E31 /* Foundation.framework */; };
-		23F155F3503BD7ABDC2E5CFF /* PurchaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5995649EFF7AA11AF810FA /* PurchaseModels.swift */; };
-		2C4666D5B78F5D9DFEE6C1CF /* ReceiptWarrantyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66361AE83A6D4B66B436246 /* ReceiptWarrantyVaultApp.swift */; };
-		3097547A507FE8836A549FB6 /* WarrantyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B477B6CB2E9FCB4C98FEF /* WarrantyCalculator.swift */; };
-		3BEB34D7F35B52A350CDDAB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3A04ECA4F3FA7592B4CC589 /* InfoPlist.strings */; };
-		3C974D777952903BE977EC70 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BCD0857AC06AFFC8CD5E7 /* OnboardingView.swift */; };
-		69CFF19BA1FFD9DBC0B52D1A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1E51A6996EF00745A8ED0B9F /* Localizable.xcstrings */; };
-		6D162C853BDB8C7A2F4EB891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9BEF1CB4CCF8E2D2256E31 /* Foundation.framework */; };
-		710B5775D0ABEBCBCBF5C005 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E202AEA4BF35E192C0D53 /* CurrencyService.swift */; };
-		74EFD7DF7B3E034339663460 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71E560FF382475F50133B2 /* AppTab.swift */; };
-		820BD063517356E05FFA2AD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B62D801FBEEFA31887C60806 /* InfoPlist.strings */; };
-		96E54145B8BF713CC817B0BF /* PurchaseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FCD3B270BF736D0EE75205 /* PurchaseCategory.swift */; };
-		9E8346268508BF4B4F5EEA77 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1C4524652982A12E25D7B /* DateFormatService.swift */; };
-		9F16DA8C45EB2572B2757CCA /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D80EEE9288CDBC51D0BE8 /* AppRootView.swift */; };
-		B2225FAB2603F044DEFA78D6 /* AppModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09808661669B20D398F085 /* AppModelContainer.swift */; };
-		B99994551965984725CD14A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 78A04C50657F65927E90AA73 /* PrivacyInfo.xcprivacy */; };
-		D477C20B4F6FFC33C805BC09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC4DCDF7544778293FFB76F /* Assets.xcassets */; };
-		DE0762E1F3C824D9F4708FAA /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E9B8B91D89F499816E699 /* PlaceholderScreen.swift */; };
-		EA2BBFE88C6A624806E17F71 /* WarrantyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0FC42057B3112815F425C4 /* WarrantyCalculatorTests.swift */; };
-		F2F886A57CF8019D1D8A10B4 /* CurrencyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B984E718516E4DF1D203E1 /* CurrencyServiceTests.swift */; };
+		012631732A7F96FF89F293A3 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */; };
+		06D6086CC58CD87C730A7556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA631DF6065DE4371DE509 /* Foundation.framework */; };
+		0E8D575C4DB092542DC5126F /* WarrantyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */; };
+		102F3AACDCBC904AC6EE9843 /* PurchaseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */; };
+		155773589181BA506C207BC6 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8577682C799A826E09EEFE /* AppTab.swift */; };
+		157C4801FE484E346A623CC7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404A7BACF5660667D924618 /* NotificationScheduler.swift */; };
+		228C2CA51FB9ACDB4178ADF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA631DF6065DE4371DE509 /* Foundation.framework */; };
+		23874E0569CF836E08E80B5F /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */; };
+		2D4B91D989526181EA68C030 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */; };
+		33FC6B1E07F0CB0541BA3961 /* ZipArchiveWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */; };
+		45FE7ECB272E7764913135AE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */; };
+		5E1D2429E49155A78B5EC7E8 /* DocumentStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C20A048F50B3327516DD2 /* DocumentStorageService.swift */; };
+		5EF3B893AC38A88FF301E1AF /* BackupExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED612C7B60F54AE972CE2769 /* BackupExportService.swift */; };
+		63A89684EF0783C9B0283F85 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4570701895A73C13623DE5B /* PDFExportService.swift */; };
+		69C23E1E1880D0B1368BE6AA /* ReceiptWarrantyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */; };
+		6C51C0DF47FA07A3E30FDAAF /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B223C2A5907756960F42 /* CurrencyService.swift */; };
+		7C14AED57BF8D81ECA649A24 /* CurrencyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */; };
+		7EC6BD0B533AC8976D29E4B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */; };
+		829395EF25D8020D597E1F97 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */; };
+		86DB35D79A1BC5A138C0C260 /* AppModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */; };
+		8D66F3D50600EB8B138A4030 /* WarrantyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F155ADE69798339557BCF /* WarrantyCalculator.swift */; };
+		923EC3BB816BC915F7267439 /* ZipArchiveWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */; };
+		9725BFFD0F328D0A97170FF3 /* PurchaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */; };
+		9BA4091851CAE5D621521255 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C226CC3803F941301BFE629 /* AuthenticationService.swift */; };
+		A1727839278D893B4D15A1A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7BAE5897C8147185D0722 /* Assets.xcassets */; };
+		C9AAB9CA8E6B18645BFBA9E7 /* DateFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */; };
+		DB64C1A6D9F0035931D0CBDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */; };
+		F7D2D8CC50F6B10D65A89A8E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E49B7935BFB52F5A6A6383BC /* PBXContainerItemProxy */ = {
+		AB0D04E27760CC1F1B108E3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2080BBE0C66E097606211188 /* Project object */;
+			containerPortal = 0E241A4E66E2AC9D9628C153 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 42954FE6621A7F7E0E9D342F;
+			remoteGlobalIDString = 9B7B2EED71E756B86792168D;
 			remoteInfo = ReceiptWarrantyVault;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C09808661669B20D398F085 /* AppModelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppModelContainer.swift; path = Models/AppModelContainer.swift; sourceTree = "<group>"; };
-		0D71E560FF382475F50133B2 /* AppTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTab.swift; path = App/AppTab.swift; sourceTree = "<group>"; };
-		141E9B8B91D89F499816E699 /* PlaceholderScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderScreen.swift; path = Views/Components/PlaceholderScreen.swift; sourceTree = "<group>"; };
-		1C5995649EFF7AA11AF810FA /* PurchaseModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseModels.swift; path = Models/PurchaseModels.swift; sourceTree = "<group>"; };
-		1E51A6996EF00745A8ED0B9F /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
-		4E0FC42057B3112815F425C4 /* WarrantyCalculatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WarrantyCalculatorTests.swift; sourceTree = "<group>"; };
-		526E6F9D1C18D511A4D269CE /* ReceiptWarrantyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptWarrantyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		54B984E718516E4DF1D203E1 /* CurrencyServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTests.swift; sourceTree = "<group>"; };
-		636E202AEA4BF35E192C0D53 /* CurrencyService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyService.swift; path = Services/CurrencyService.swift; sourceTree = "<group>"; };
-		78A04C50657F65927E90AA73 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		9E9BEF1CB4CCF8E2D2256E31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A3A04ECA4F3FA7592B4CC589 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD9D80EEE9288CDBC51D0BE8 /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
-		AE9B477B6CB2E9FCB4C98FEF /* WarrantyCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarrantyCalculator.swift; path = Services/WarrantyCalculator.swift; sourceTree = "<group>"; };
-		AFD1C4524652982A12E25D7B /* DateFormatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatService.swift; path = Services/DateFormatService.swift; sourceTree = "<group>"; };
-		B62D801FBEEFA31887C60806 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6FCD3B270BF736D0EE75205 /* PurchaseCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseCategory.swift; path = Models/PurchaseCategory.swift; sourceTree = "<group>"; };
-		C66361AE83A6D4B66B436246 /* ReceiptWarrantyVaultApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptWarrantyVaultApp.swift; path = App/ReceiptWarrantyVaultApp.swift; sourceTree = "<group>"; };
-		D67B5A0BAB3A6E856ADF3BCA /* ReceiptWarrantyVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptWarrantyVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB2BCD0857AC06AFFC8CD5E7 /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
-		DBC4DCDF7544778293FFB76F /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		2404A7BACF5660667D924618 /* NotificationScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationScheduler.swift; path = Services/NotificationScheduler.swift; sourceTree = "<group>"; };
+		255C20A048F50B3327516DD2 /* DocumentStorageService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentStorageService.swift; path = Services/DocumentStorageService.swift; sourceTree = "<group>"; };
+		27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptWarrantyVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptWarrantyVaultApp.swift; path = App/ReceiptWarrantyVaultApp.swift; sourceTree = "<group>"; };
+		35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
+		40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptWarrantyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchiveWriter.swift; path = Services/ZipArchiveWriter.swift; sourceTree = "<group>"; };
+		56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseCategory.swift; path = Models/PurchaseCategory.swift; sourceTree = "<group>"; };
+		5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppModelContainer.swift; path = Models/AppModelContainer.swift; sourceTree = "<group>"; };
+		7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTests.swift; sourceTree = "<group>"; };
+		7C226CC3803F941301BFE629 /* AuthenticationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = Services/AuthenticationService.swift; sourceTree = "<group>"; };
+		8965B223C2A5907756960F42 /* CurrencyService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyService.swift; path = Services/CurrencyService.swift; sourceTree = "<group>"; };
+		8FCA631DF6065DE4371DE509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZipArchiveWriterTests.swift; sourceTree = "<group>"; };
+		934F155ADE69798339557BCF /* WarrantyCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarrantyCalculator.swift; path = Services/WarrantyCalculator.swift; sourceTree = "<group>"; };
+		9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStorageKeys.swift; path = Services/AppStorageKeys.swift; sourceTree = "<group>"; };
+		A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseModels.swift; path = Models/PurchaseModels.swift; sourceTree = "<group>"; };
+		C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		CB8577682C799A826E09EEFE /* AppTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTab.swift; path = App/AppTab.swift; sourceTree = "<group>"; };
+		D4570701895A73C13623DE5B /* PDFExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFExportService.swift; path = Services/PDFExportService.swift; sourceTree = "<group>"; };
+		DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WarrantyCalculatorTests.swift; sourceTree = "<group>"; };
+		EBE7BAE5897C8147185D0722 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED612C7B60F54AE972CE2769 /* BackupExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackupExportService.swift; path = Services/BackupExportService.swift; sourceTree = "<group>"; };
+		F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderScreen.swift; path = Views/Components/PlaceholderScreen.swift; sourceTree = "<group>"; };
+		F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatService.swift; path = Services/DateFormatService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14830C97AD84F408701909E6 /* Frameworks */ = {
+		70C38748C9ADDC29D63E0D12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D162C853BDB8C7A2F4EB891 /* Foundation.framework in Frameworks */,
+				228C2CA51FB9ACDB4178ADF1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		439BFC5859F6A42920C28874 /* Frameworks */ = {
+		E89A26CD146A33718F1FA6B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106C858202499095F0F4B794 /* Foundation.framework in Frameworks */,
+				06D6086CC58CD87C730A7556 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AF445EC092CDCD76560E4BC = {
+		2959A4E062DF8B639F8D32A2 = {
 			isa = PBXGroup;
 			children = (
-				B48BD21C53827676D5820F06 /* Products */,
-				BF6BB046164E43483BA03626 /* Frameworks */,
-				FCE205D3601E60C7EFE563DE /* ReceiptWarrantyVault */,
-				8E71499812ADD0F926EEEA43 /* ReceiptWarrantyVaultTests */,
+				B06B8B849FF44D78C5D7A83C /* Products */,
+				B2D599120E260E846F2F5745 /* Frameworks */,
+				70EB349106D62AE8D259F5B9 /* ReceiptWarrantyVault */,
+				9985D7C75FE2741286B601EF /* ReceiptWarrantyVaultTests */,
 			);
 			sourceTree = "<group>";
 		};
-		8E71499812ADD0F926EEEA43 /* ReceiptWarrantyVaultTests */ = {
+		70EB349106D62AE8D259F5B9 /* ReceiptWarrantyVault */ = {
 			isa = PBXGroup;
 			children = (
-				54B984E718516E4DF1D203E1 /* CurrencyServiceTests.swift */,
-				4E0FC42057B3112815F425C4 /* WarrantyCalculatorTests.swift */,
-			);
-			name = ReceiptWarrantyVaultTests;
-			path = ReceiptWarrantyVaultTests;
-			sourceTree = "<group>";
-		};
-		B48BD21C53827676D5820F06 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				526E6F9D1C18D511A4D269CE /* ReceiptWarrantyVault.app */,
-				D67B5A0BAB3A6E856ADF3BCA /* ReceiptWarrantyVaultTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BF6BB046164E43483BA03626 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D63896CBF59C0A532564C5A8 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D63896CBF59C0A532564C5A8 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9E9BEF1CB4CCF8E2D2256E31 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FCE205D3601E60C7EFE563DE /* ReceiptWarrantyVault */ = {
-			isa = PBXGroup;
-			children = (
-				AD9D80EEE9288CDBC51D0BE8 /* AppRootView.swift */,
-				0D71E560FF382475F50133B2 /* AppTab.swift */,
-				C66361AE83A6D4B66B436246 /* ReceiptWarrantyVaultApp.swift */,
-				0C09808661669B20D398F085 /* AppModelContainer.swift */,
-				B6FCD3B270BF736D0EE75205 /* PurchaseCategory.swift */,
-				1C5995649EFF7AA11AF810FA /* PurchaseModels.swift */,
-				636E202AEA4BF35E192C0D53 /* CurrencyService.swift */,
-				AFD1C4524652982A12E25D7B /* DateFormatService.swift */,
-				AE9B477B6CB2E9FCB4C98FEF /* WarrantyCalculator.swift */,
-				141E9B8B91D89F499816E699 /* PlaceholderScreen.swift */,
-				DB2BCD0857AC06AFFC8CD5E7 /* OnboardingView.swift */,
-				DBC4DCDF7544778293FFB76F /* Assets.xcassets */,
-				1E51A6996EF00745A8ED0B9F /* Localizable.xcstrings */,
-				78A04C50657F65927E90AA73 /* PrivacyInfo.xcprivacy */,
-				B62D801FBEEFA31887C60806 /* InfoPlist.strings */,
-				A3A04ECA4F3FA7592B4CC589 /* InfoPlist.strings */,
+				3BE4BF3A2C4C66C4642BF58D /* AppRootView.swift */,
+				CB8577682C799A826E09EEFE /* AppTab.swift */,
+				30963124BCE6F034B89C416D /* ReceiptWarrantyVaultApp.swift */,
+				5DA0462C7BA53C39E38B6FC2 /* AppModelContainer.swift */,
+				56C8C78965AFAAE70D93288A /* PurchaseCategory.swift */,
+				A9E5597E16C7E57CF25BB8A9 /* PurchaseModels.swift */,
+				9E7C3EBF44427C2E8A2085F9 /* AppStorageKeys.swift */,
+				7C226CC3803F941301BFE629 /* AuthenticationService.swift */,
+				ED612C7B60F54AE972CE2769 /* BackupExportService.swift */,
+				8965B223C2A5907756960F42 /* CurrencyService.swift */,
+				F6E18BCB55B1A47B3FDD3853 /* DateFormatService.swift */,
+				255C20A048F50B3327516DD2 /* DocumentStorageService.swift */,
+				2404A7BACF5660667D924618 /* NotificationScheduler.swift */,
+				D4570701895A73C13623DE5B /* PDFExportService.swift */,
+				934F155ADE69798339557BCF /* WarrantyCalculator.swift */,
+				4D3C57E357DDDCC7522A6684 /* ZipArchiveWriter.swift */,
+				F11912148AED8F9EFBFD46C6 /* PlaceholderScreen.swift */,
+				DE2AB35A91C92C92F85C4CD7 /* OnboardingView.swift */,
+				EBE7BAE5897C8147185D0722 /* Assets.xcassets */,
+				C6146F2BA807B4E19999C9BA /* Localizable.xcstrings */,
+				C44914EAFFB42AAC80D620A9 /* PrivacyInfo.xcprivacy */,
+				35A1BD0C4C214DD978F50A09 /* InfoPlist.strings */,
+				EC6ACB9BB3A3041ED85211C0 /* InfoPlist.strings */,
 			);
 			name = ReceiptWarrantyVault;
 			path = ReceiptWarrantyVault;
 			sourceTree = "<group>";
 		};
+		9985D7C75FE2741286B601EF /* ReceiptWarrantyVaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				7107E9B87FF1E18CD998DBE1 /* CurrencyServiceTests.swift */,
+				E1A5E5D4B8C9FBCBF553474D /* WarrantyCalculatorTests.swift */,
+				919437A2FB7CA48417ECEE94 /* ZipArchiveWriterTests.swift */,
+			);
+			name = ReceiptWarrantyVaultTests;
+			path = ReceiptWarrantyVaultTests;
+			sourceTree = "<group>";
+		};
+		B06B8B849FF44D78C5D7A83C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */,
+				27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D599120E260E846F2F5745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C519ADF0C6B2BF68CDB26B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C519ADF0C6B2BF68CDB26B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA631DF6065DE4371DE509 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42954FE6621A7F7E0E9D342F /* ReceiptWarrantyVault */ = {
+		89E9FB88D3752FE185D1EFA1 /* ReceiptWarrantyVaultTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60BD4CBE63A87F572D4556F9 /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */;
+			buildConfigurationList = E8CC89D7E2F0F34D8761E8AD /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */;
 			buildPhases = (
-				237B36B64D11EA9339264933 /* Sources */,
-				439BFC5859F6A42920C28874 /* Frameworks */,
-				2C5DDB80B74F44D4C85E8DEA /* Resources */,
+				5C3D235C449B7CF3345026BA /* Sources */,
+				70C38748C9ADDC29D63E0D12 /* Frameworks */,
+				2D0EC2332352006CA2EF1FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517861F1527C4D00BE45E295 /* PBXTargetDependency */,
+			);
+			name = ReceiptWarrantyVaultTests;
+			productName = ReceiptWarrantyVaultTests;
+			productReference = 27A9A6A70D5068F1F9EF4059 /* ReceiptWarrantyVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3281B2EACD6A7F5632495D1C /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */;
+			buildPhases = (
+				82DE2C6734E57BD72C5C6A0C /* Sources */,
+				E89A26CD146A33718F1FA6B2 /* Frameworks */,
+				E432F0B6FE0A0E61C537B563 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -169,38 +211,20 @@
 			);
 			name = ReceiptWarrantyVault;
 			productName = ReceiptWarrantyVault;
-			productReference = 526E6F9D1C18D511A4D269CE /* ReceiptWarrantyVault.app */;
+			productReference = 40AF4042495813CBA03CB7F7 /* ReceiptWarrantyVault.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F2715374F9907C85A8D297E8 /* ReceiptWarrantyVaultTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4813B930155631A85762BA48 /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */;
-			buildPhases = (
-				183ACE3A8B09098C24E27501 /* Sources */,
-				14830C97AD84F408701909E6 /* Frameworks */,
-				82588002052425B22181BEB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				295E8E79234C1392EAB94605 /* PBXTargetDependency */,
-			);
-			name = ReceiptWarrantyVaultTests;
-			productName = ReceiptWarrantyVaultTests;
-			productReference = D67B5A0BAB3A6E856ADF3BCA /* ReceiptWarrantyVaultTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2080BBE0C66E097606211188 /* Project object */ = {
+		0E241A4E66E2AC9D9628C153 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 2650;
 			};
-			buildConfigurationList = 122189DCBB0DFFDD868D357A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */;
+			buildConfigurationList = E641FB2AFC7B4EC3EB5F962A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -209,159 +233,90 @@
 				it,
 				Base,
 			);
-			mainGroup = 1AF445EC092CDCD76560E4BC;
+			mainGroup = 2959A4E062DF8B639F8D32A2;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B48BD21C53827676D5820F06 /* Products */;
+			productRefGroup = B06B8B849FF44D78C5D7A83C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42954FE6621A7F7E0E9D342F /* ReceiptWarrantyVault */,
-				F2715374F9907C85A8D297E8 /* ReceiptWarrantyVaultTests */,
+				9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */,
+				89E9FB88D3752FE185D1EFA1 /* ReceiptWarrantyVaultTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C5DDB80B74F44D4C85E8DEA /* Resources */ = {
+		2D0EC2332352006CA2EF1FF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D477C20B4F6FFC33C805BC09 /* Assets.xcassets in Resources */,
-				69CFF19BA1FFD9DBC0B52D1A /* Localizable.xcstrings in Resources */,
-				B99994551965984725CD14A3 /* PrivacyInfo.xcprivacy in Resources */,
-				820BD063517356E05FFA2AD3 /* InfoPlist.strings in Resources */,
-				3BEB34D7F35B52A350CDDAB2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82588002052425B22181BEB5 /* Resources */ = {
+		E432F0B6FE0A0E61C537B563 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1727839278D893B4D15A1A7 /* Assets.xcassets in Resources */,
+				45FE7ECB272E7764913135AE /* Localizable.xcstrings in Resources */,
+				2D4B91D989526181EA68C030 /* PrivacyInfo.xcprivacy in Resources */,
+				7EC6BD0B533AC8976D29E4B2 /* InfoPlist.strings in Resources */,
+				DB64C1A6D9F0035931D0CBDF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		183ACE3A8B09098C24E27501 /* Sources */ = {
+		5C3D235C449B7CF3345026BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F886A57CF8019D1D8A10B4 /* CurrencyServiceTests.swift in Sources */,
-				EA2BBFE88C6A624806E17F71 /* WarrantyCalculatorTests.swift in Sources */,
+				7C14AED57BF8D81ECA649A24 /* CurrencyServiceTests.swift in Sources */,
+				0E8D575C4DB092542DC5126F /* WarrantyCalculatorTests.swift in Sources */,
+				923EC3BB816BC915F7267439 /* ZipArchiveWriterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		237B36B64D11EA9339264933 /* Sources */ = {
+		82DE2C6734E57BD72C5C6A0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F16DA8C45EB2572B2757CCA /* AppRootView.swift in Sources */,
-				74EFD7DF7B3E034339663460 /* AppTab.swift in Sources */,
-				2C4666D5B78F5D9DFEE6C1CF /* ReceiptWarrantyVaultApp.swift in Sources */,
-				B2225FAB2603F044DEFA78D6 /* AppModelContainer.swift in Sources */,
-				96E54145B8BF713CC817B0BF /* PurchaseCategory.swift in Sources */,
-				23F155F3503BD7ABDC2E5CFF /* PurchaseModels.swift in Sources */,
-				710B5775D0ABEBCBCBF5C005 /* CurrencyService.swift in Sources */,
-				9E8346268508BF4B4F5EEA77 /* DateFormatService.swift in Sources */,
-				3097547A507FE8836A549FB6 /* WarrantyCalculator.swift in Sources */,
-				DE0762E1F3C824D9F4708FAA /* PlaceholderScreen.swift in Sources */,
-				3C974D777952903BE977EC70 /* OnboardingView.swift in Sources */,
+				829395EF25D8020D597E1F97 /* AppRootView.swift in Sources */,
+				155773589181BA506C207BC6 /* AppTab.swift in Sources */,
+				69C23E1E1880D0B1368BE6AA /* ReceiptWarrantyVaultApp.swift in Sources */,
+				86DB35D79A1BC5A138C0C260 /* AppModelContainer.swift in Sources */,
+				102F3AACDCBC904AC6EE9843 /* PurchaseCategory.swift in Sources */,
+				9725BFFD0F328D0A97170FF3 /* PurchaseModels.swift in Sources */,
+				012631732A7F96FF89F293A3 /* AppStorageKeys.swift in Sources */,
+				9BA4091851CAE5D621521255 /* AuthenticationService.swift in Sources */,
+				5EF3B893AC38A88FF301E1AF /* BackupExportService.swift in Sources */,
+				6C51C0DF47FA07A3E30FDAAF /* CurrencyService.swift in Sources */,
+				C9AAB9CA8E6B18645BFBA9E7 /* DateFormatService.swift in Sources */,
+				5E1D2429E49155A78B5EC7E8 /* DocumentStorageService.swift in Sources */,
+				157C4801FE484E346A623CC7 /* NotificationScheduler.swift in Sources */,
+				63A89684EF0783C9B0283F85 /* PDFExportService.swift in Sources */,
+				8D66F3D50600EB8B138A4030 /* WarrantyCalculator.swift in Sources */,
+				33FC6B1E07F0CB0541BA3961 /* ZipArchiveWriter.swift in Sources */,
+				23874E0569CF836E08E80B5F /* PlaceholderScreen.swift in Sources */,
+				F7D2D8CC50F6B10D65A89A8E /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		295E8E79234C1392EAB94605 /* PBXTargetDependency */ = {
+		517861F1527C4D00BE45E295 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ReceiptWarrantyVault;
-			target = 42954FE6621A7F7E0E9D342F /* ReceiptWarrantyVault */;
-			targetProxy = E49B7935BFB52F5A6A6383BC /* PBXContainerItemProxy */;
+			target = 9B7B2EED71E756B86792168D /* ReceiptWarrantyVault */;
+			targetProxy = AB0D04E27760CC1F1B108E3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		48B854B3E45831D7A55171A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simo.receiptwarrantyvault.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptWarrantyVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptWarrantyVault";
-			};
-			name = Debug;
-		};
-		60612C90B4D647110445B6E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		6BA16A9F10A50C5E10F7DA6A /* Release */ = {
+		075AE90239412C051BECBADB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -380,14 +335,50 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9DE56E7CE3B876ECF69527A4 /* Debug */ = {
+		54E669D8A0BED93C3007DFF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simo.receiptwarrantyvault.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptWarrantyVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptWarrantyVault";
+			};
+			name = Debug;
+		};
+		9C2C09663497828758B7CA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simo.receiptwarrantyvault.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptWarrantyVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptWarrantyVault";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B411C309A24C19BAA3AF6EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -453,26 +444,7 @@
 			};
 			name = Debug;
 		};
-		A67B0EC0D649E0C65ADFD462 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simo.receiptwarrantyvault.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptWarrantyVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptWarrantyVault";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C9926CE210C167F82ECA193C /* Debug */ = {
+		F8277B7495912C020206CCB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -491,43 +463,101 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
+		FCE96129923EB3E75EA56AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		122189DCBB0DFFDD868D357A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */ = {
+		3281B2EACD6A7F5632495D1C /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DE56E7CE3B876ECF69527A4 /* Debug */,
-				60612C90B4D647110445B6E5 /* Release */,
+				075AE90239412C051BECBADB /* Release */,
+				F8277B7495912C020206CCB7 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4813B930155631A85762BA48 /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */ = {
+		E641FB2AFC7B4EC3EB5F962A /* Build configuration list for PBXProject "ReceiptWarrantyVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A67B0EC0D649E0C65ADFD462 /* Release */,
-				48B854B3E45831D7A55171A4 /* Debug */,
+				B411C309A24C19BAA3AF6EAD /* Debug */,
+				FCE96129923EB3E75EA56AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60BD4CBE63A87F572D4556F9 /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVault" */ = {
+		E8CC89D7E2F0F34D8761E8AD /* Build configuration list for PBXNativeTarget "ReceiptWarrantyVaultTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BA16A9F10A50C5E10F7DA6A /* Release */,
-				C9926CE210C167F82ECA193C /* Debug */,
+				9C2C09663497828758B7CA0D /* Release */,
+				54E669D8A0BED93C3007DFF4 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2080BBE0C66E097606211188 /* Project object */;
+	rootObject = 0E241A4E66E2AC9D9628C153 /* Project object */;
 }
