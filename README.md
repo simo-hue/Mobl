@@ -70,33 +70,6 @@ The app features a zero-tracking architecture: there are no databases, no extern
 
 ---
 
-## 🚀 Getting Started for Developers
-
-### Prerequisites
-* **macOS:** macOS Sonoma 14.0 or newer.
-* **Xcode:** Xcode 15.0 or newer.
-* **Target:** iOS 17.0+ (SwiftData & standard SwiftUI APIs require this runtime minimum).
-
-### Installation & Build
-
-1. **Clone the repository:**
-   ```bash
-   git clone <repository_url>
-   cd "Salva Scontrini"
-   ```
-
-2. **Open the Project:**
-   Launch Xcode and open `ReceiptWarrantyVault.xcodeproj`.
-
-3. **Configure Development Team:**
-   Go to **Project Settings** > **Signing & Capabilities** and select your active Apple Developer Team to resolve provisioning profile settings.
-
-4. **Run the Application:**
-   Choose a Simulator (e.g., iPhone 15 Pro) or plug in a physical device and press **Cmd + R** to run.
-   > 📝 **Note:** Document scanning via VisionKit camera is only testable on a physical device.
-
----
-
 ## 🔒 Compliance & Guidelines Alignment
 
 * **App Store Guidelines:** Designed under strict compliance with Apple Review Section 5.1 (Privacy).

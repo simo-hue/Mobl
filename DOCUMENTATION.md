@@ -60,3 +60,7 @@
   - *Details*: Updated all website pages, native iOS app configurations, and localized metadata resources to rename the application from "Warranty Vault" to "Warranties Vault".
   - *Tech Notes*: Modified `index.html` (root & `/docs`), `style.css` (`/docs`), app `Info.plist`, `InfoPlist.strings`, translation dictionary in `Localizable.xcstrings`, `BackupExportService.swift` file export names, and App Store branding asset filenames/contents to reflect the final product name.
 
+- [2026-05-20 16:12 Europe/Rome]: Hero Mockup Removal and Centered Layout
+  - *Details*: Removed the device mockup from the hero section of the marketing website, centering the hero title, subtitle, and Call-to-Action to create a highly premium, modern, and beautifully balanced aesthetic.
+  - *Tech Notes*: Deleted the `hero-mockup-wrapper` container from `index.html` in both the root and `/docs` directories. Redefined `.hero-grid` in `style.css` (root and `/docs`) from a two-column grid to a centered flex column layout with limited text line width (`max-width: 800px`) for optimal readability.
+
