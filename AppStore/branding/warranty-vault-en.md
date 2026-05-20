@@ -2,7 +2,7 @@
 
 ## Product Name
 
-Warranty Vault
+Warranties Vault
 
 ## Positioning
 

@@ -112,7 +112,7 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("tab.settings")
-        .confirmationDialog("settings.deleteAll.title", isPresented: $isConfirmingDeleteAll, titleVisibility: .visible) {
+        .alert("settings.deleteAll.title", isPresented: $isConfirmingDeleteAll) {
             Button("settings.deleteAll.confirm", role: .destructive) {
                 deleteAllData()
             }
