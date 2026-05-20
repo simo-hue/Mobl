@@ -35,3 +35,7 @@
 - [2026-05-20 14:44 Europe/Rome]: Face ID Lock and Document Attachment Fixes
   - *Details*: Fixed biometric lock lifecycle so the vault locks when the app enters background, not every time the app becomes active during Face ID presentation. Improved scanned document persistence and display by inserting attachment records before linking them to purchases, querying purchase documents directly by `purchaseItemID`, adding an in-app Quick Look preview, and showing an attachment count indicator in purchase rows.
   - *Tech Notes*: Added an authentication re-entry guard in `AppRootView`, Quick Look preview support in `PurchaseDetailView`, safer attachment file-size extraction in `DocumentStorageService`, and a regression test covering scanned attachment file copy, metadata, and purchase linkage.
+
+- [2026-05-20 15:00 Europe/Rome]: Photo Library Attachment Reliability Fix
+  - *Details*: Fixed the gallery import path so photos selected with PhotosPicker are converted into stable pending purchase drafts before opening the purchase form. Gallery images now use detected image metadata instead of relying on the first suggested content type, and they are classified as receipt image documents for the vault flow.
+  - *Tech Notes*: Replaced the scanner hub purchase form presentation with item-driven sheet state, added `PhotoAttachmentBuilder` with ImageIO-backed type detection, reset the selected PhotosPicker item after import, and added a regression test for PNG gallery imports.

@@ -1,3 +1,4 @@
+import ImageIO
 import PhotosUI
 import SwiftUI
 import UniformTypeIdentifiers
@@ -7,8 +8,7 @@ struct ScannerHubView: View {
     @State private var isShowingScanner = false
     @State private var isShowingFileImporter = false
     @State private var selectedPhotoItem: PhotosPickerItem?
-    @State private var pendingAttachments: [PendingAttachment] = []
-    @State private var isShowingForm = false
+    @State private var pendingDraft: PendingPurchaseDraft?
     @State private var errorMessage: String?
 
     var body: some View {
@@ -32,8 +32,7 @@ struct ScannerHubView: View {
                 }
 
                 Button {
-                    pendingAttachments = []
-                    isShowingForm = true
+                    pendingDraft = PendingPurchaseDraft()
                 } label: {
                     Label("scan.addManual", systemImage: "square.and.pencil")
                 }
@@ -59,9 +58,9 @@ struct ScannerHubView: View {
                 isShowingScanner = false
             }
         }
-        .sheet(isPresented: $isShowingForm) {
+        .sheet(item: $pendingDraft) { draft in
             NavigationStack {
-                PurchaseFormView(pendingAttachments: pendingAttachments)
+                PurchaseFormView(pendingAttachments: draft.attachments)
             }
         }
         .fileImporter(
@@ -93,9 +92,8 @@ struct ScannerHubView: View {
                 )
             }
 
-            pendingAttachments = attachments
             isShowingScanner = false
-            isShowingForm = true
+            presentPurchaseForm(with: attachments)
         } catch {
             errorMessage = error.localizedDescription
             isShowingScanner = false
@@ -105,7 +103,7 @@ struct ScannerHubView: View {
     private func handleFileImport(_ result: Result<[URL], Error>) {
         do {
             let urls = try result.get()
-            pendingAttachments = try urls.map { sourceURL in
+            let attachments = try urls.map { sourceURL in
                 let didAccess = sourceURL.startAccessingSecurityScopedResource()
                 defer {
                     if didAccess {
@@ -122,28 +120,26 @@ struct ScannerHubView: View {
                     mimeType: type?.preferredMIMEType ?? "application/octet-stream"
                 )
             }
-            isShowingForm = true
+            presentPurchaseForm(with: attachments)
         } catch {
             errorMessage = error.localizedDescription
         }
     }
 
+    @MainActor
     private func handlePhotoImport(_ item: PhotosPickerItem) async {
+        defer {
+            selectedPhotoItem = nil
+        }
+
         do {
             guard let data = try await item.loadTransferable(type: Data.self) else { return }
-            let type = item.supportedContentTypes.first ?? .jpeg
-            let fileExtension = type.preferredFilenameExtension ?? "jpg"
-            let url = try temporaryURL(fileExtension: fileExtension)
-            try data.write(to: url, options: [.atomic])
-            pendingAttachments = [
-                PendingAttachment(
-                    sourceURL: url,
-                    type: .productPhoto,
-                    originalFileName: "photo.\(fileExtension)",
-                    mimeType: type.preferredMIMEType ?? "image/jpeg"
-                )
-            ]
-            isShowingForm = true
+            let attachment = try PhotoAttachmentBuilder().makePendingAttachment(
+                from: data,
+                suggestedTypes: item.supportedContentTypes,
+                temporaryURL: temporaryURL(fileExtension:)
+            )
+            presentPurchaseForm(with: [attachment])
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -172,6 +168,72 @@ struct ScannerHubView: View {
             return .receiptImage
         }
         return .other
+    }
+
+    private func presentPurchaseForm(with attachments: [PendingAttachment]) {
+        pendingDraft = nil
+        Task { @MainActor in
+            await Task.yield()
+            pendingDraft = PendingPurchaseDraft(attachments: attachments)
+        }
+    }
+}
+
+private struct PendingPurchaseDraft: Identifiable {
+    let id = UUID()
+    let attachments: [PendingAttachment]
+
+    init(attachments: [PendingAttachment] = []) {
+        self.attachments = attachments
+    }
+}
+
+struct PhotoAttachmentBuilder {
+    func makePendingAttachment(
+        from data: Data,
+        suggestedTypes: [UTType],
+        temporaryURL: (String) throws -> URL
+    ) throws -> PendingAttachment {
+        let type = imageType(from: data, suggestedTypes: suggestedTypes)
+        let fileExtension = type.preferredFilenameExtension ?? "jpg"
+        let url = try temporaryURL(fileExtension)
+        try data.write(to: url, options: [.atomic])
+
+        return PendingAttachment(
+            sourceURL: url,
+            type: .receiptImage,
+            originalFileName: "photo.\(fileExtension)",
+            mimeType: type.preferredMIMEType ?? "image/jpeg"
+        )
+    }
+
+    private func imageType(from data: Data, suggestedTypes: [UTType]) -> UTType {
+        if let detectedType = detectedImageType(from: data) {
+            return detectedType
+        }
+
+        if let suggestedType = suggestedTypes.first(where: isConcreteImageType) {
+            return suggestedType
+        }
+
+        return .jpeg
+    }
+
+    private func detectedImageType(from data: Data) -> UTType? {
+        guard
+            let imageSource = CGImageSourceCreateWithData(data as CFData, nil),
+            let typeIdentifier = CGImageSourceGetType(imageSource)
+        else {
+            return nil
+        }
+
+        return UTType(typeIdentifier as String)
+    }
+
+    private func isConcreteImageType(_ type: UTType) -> Bool {
+        type.conforms(to: .image)
+            && type.preferredFilenameExtension != nil
+            && type.preferredMIMEType != nil
     }
 }
 

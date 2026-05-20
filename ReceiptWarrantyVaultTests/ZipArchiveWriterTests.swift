@@ -1,3 +1,5 @@
+import UIKit
+import UniformTypeIdentifiers
 import XCTest
 @testable import ReceiptWarrantyVault
 
@@ -49,5 +51,42 @@ final class ZipArchiveWriterTests: XCTestCase {
         XCTAssertEqual(attachment.mimeType, "image/jpeg")
         XCTAssertEqual(try Data(contentsOf: storedURL), sourceData)
         XCTAssertEqual(attachment.fileSize, Int64(sourceData.count))
+    }
+
+    func testPhotoAttachmentBuilderCreatesReceiptImageFromGalleryData() throws {
+        let directory = FileManager.default.temporaryDirectory.appending(path: UUID().uuidString, directoryHint: .isDirectory)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        defer {
+            try? FileManager.default.removeItem(at: directory)
+        }
+
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 1, height: 1))
+        let image = renderer.image { context in
+            UIColor.red.setFill()
+            context.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        }
+        let photoData = try image.pngData().unwrap()
+
+        let attachment = try PhotoAttachmentBuilder().makePendingAttachment(
+            from: photoData,
+            suggestedTypes: [.image]
+        ) { fileExtension in
+            directory.appending(path: "gallery.\(fileExtension)")
+        }
+
+        XCTAssertEqual(attachment.type, .receiptImage)
+        XCTAssertEqual(attachment.originalFileName, "photo.png")
+        XCTAssertEqual(attachment.mimeType, "image/png")
+        XCTAssertEqual(attachment.sourceURL.pathExtension, "png")
+        XCTAssertEqual(try Data(contentsOf: attachment.sourceURL), photoData)
+    }
+}
+
+private extension Optional {
+    func unwrap() throws -> Wrapped {
+        guard let value = self else {
+            throw DocumentStorageError.cannotCreateImageData
+        }
+        return value
     }
 }
