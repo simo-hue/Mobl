@@ -1,14 +1,26 @@
-# Warranty Vault
+# Warranty Vault App Store Branding
 
-## Subtitle
+## Product Name
+
+Warranty Vault
+
+## Positioning
+
+Warranty Vault is a private, offline-first iPhone app for saving receipts, invoices, warranty documents, product photos, serial numbers, return windows, and warranty deadlines in one local archive.
+
+## App Store Subtitle
 
 Receipt & warranty tracker
+
+Character count: 26 / 30
 
 ## Promotional Text
 
 Scan receipts, track warranties and returns, and keep purchase documents organized privately on your iPhone. No account, no ads, no subscription.
 
-## Description
+Character count: 145 / 170
+
+## App Store Description
 
 Warranty Vault keeps receipts, invoices, warranty documents, and return deadlines organized in one private place on your iPhone.
 
@@ -53,6 +65,33 @@ Warranty and return rules may vary by country, seller, product type, and contrac
 
 receipt,warranty,scanner,invoice,returns,reminders,documents,organizer,offline,private,proof
 
+Character count: 92 / 100
+
+## Short Marketing Lines
+
+Private receipts. Local reminders.
+
+Never lose proof of purchase again.
+
+Track warranties before they expire.
+
+Your receipt archive, on your iPhone.
+
+No account. No ads. No tracking.
+
+## Screenshot Caption Ideas
+
+Scan receipts in seconds
+
+Track warranties and returns
+
+Find proof of purchase fast
+
+Protect documents with Face ID
+
+Export your records anytime
+
 ## App Review Notes
 
-The app has no account, backend, analytics, ads, or tracking. Documents are saved locally in the app sandbox. Notifications are local only and are requested when the user enables local reminders. Camera access is used only for the VisionKit document scanner.
+Warranty Vault does not use accounts, backend services, advertising SDKs, analytics SDKs, or tracking. User documents are stored locally in the app sandbox. Camera access is used only for document scanning. Photo Library and Files access are used only for user-selected imports. Notifications are local reminders scheduled on device.
+

@@ -23,3 +23,7 @@
 - [2026-05-20 00:00 Europe/Rome]: App Store Preparation
   - *Details*: Added English and Italian App Store metadata drafts, App Review notes, and a privacy policy draft aligned with the local-only/no-tracking implementation.
   - *Tech Notes*: The intended App Store privacy declaration for v1 is no tracking and no data collected by the developer, assuming no third-party SDKs or external services are added before submission.
+
+- [2026-05-20 14:00 Europe/Rome]: Warranty Vault English Branding
+  - *Details*: Added a dedicated English branding file for the Warranty Vault App Store listing and optimized the English subtitle, promotional text, description, keywords, marketing lines, screenshot captions, and review notes.
+  - *Tech Notes*: Subtitle and promotional text stay within App Store Connect limits. Keyword string is 92 characters, below the 100-character App Store keyword limit.
