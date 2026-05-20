@@ -98,7 +98,7 @@ struct DocumentStorageService {
         try applyProtection(to: destinationURL)
 
         let attributes = try? fileManager.attributesOfItem(atPath: destinationURL.path)
-        let fileSize = attributes?[.size] as? Int64
+        let fileSize = (attributes?[.size] as? NSNumber)?.int64Value
 
         return AttachmentRecord(
             id: attachmentID,

@@ -239,9 +239,11 @@ struct PurchaseFormView: View {
                 originalFileName: pendingAttachment.originalFileName,
                 mimeType: pendingAttachment.mimeType
             )
-            attachment.purchaseItem = purchase
-            purchase.attachments.append(attachment)
             modelContext.insert(attachment)
+            attachment.purchaseItem = purchase
+            if !purchase.attachments.contains(where: { $0.id == attachment.id }) {
+                purchase.attachments.append(attachment)
+            }
         }
     }
 

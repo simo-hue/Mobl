@@ -31,3 +31,7 @@
 - [2026-05-20 14:30 Europe/Rome]: Marketing and Compliance Website
   - *Details*: Created a premium, bilingual, and responsive static website in the root directory (`/`) to serve as the marketing and official compliance hub for the iOS application. This fixes default GitHub Pages loading issues by eliminating the `/docs` subdirectory path.
   - *Tech Notes*: Implemented native HTML5 structures, vanilla CSS with custom variables for dark/glassmorphic aesthetics, and dynamic vanilla JS translation engines supporting on-the-fly English/Italian switches. Built-in Privacy, Support (with FAQs and modern validated contact forms), and Terms of Service agreements to satisfy App Store Connect guidelines.
+
+- [2026-05-20 14:44 Europe/Rome]: Face ID Lock and Document Attachment Fixes
+  - *Details*: Fixed biometric lock lifecycle so the vault locks when the app enters background, not every time the app becomes active during Face ID presentation. Improved scanned document persistence and display by inserting attachment records before linking them to purchases, querying purchase documents directly by `purchaseItemID`, adding an in-app Quick Look preview, and showing an attachment count indicator in purchase rows.
+  - *Tech Notes*: Added an authentication re-entry guard in `AppRootView`, Quick Look preview support in `PurchaseDetailView`, safer attachment file-size extraction in `DocumentStorageService`, and a regression test covering scanned attachment file copy, metadata, and purchase linkage.

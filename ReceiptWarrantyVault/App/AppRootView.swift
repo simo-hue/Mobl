@@ -6,12 +6,15 @@ struct AppRootView: View {
     @AppStorage(AppStorageKeys.biometricLockEnabled) private var biometricLockEnabled = false
     @State private var selectedTab: AppTab = .deadlines
     @State private var isUnlocked = false
+    @State private var isAuthenticating = false
 
     var body: some View {
         Group {
             if biometricLockEnabled && !isUnlocked {
                 LockedView {
-                    unlock()
+                    Task {
+                        await unlockIfNeeded()
+                    }
                 }
             } else {
                 TabView(selection: $selectedTab) {
@@ -31,15 +34,27 @@ struct AppRootView: View {
                 selectedTab = .scan
             }
         }
-        .task {
+        .task(id: biometricLockEnabled) {
             if biometricLockEnabled {
-                unlock()
+                await unlockIfNeeded()
+            } else {
+                isUnlocked = true
             }
         }
         .onChange(of: scenePhase) { _, newPhase in
-            if newPhase == .active, biometricLockEnabled {
+            guard biometricLockEnabled else { return }
+
+            switch newPhase {
+            case .background:
                 isUnlocked = false
-                unlock()
+            case .active:
+                if !isUnlocked {
+                    Task {
+                        await unlockIfNeeded()
+                    }
+                }
+            default:
+                break
             }
         }
     }
@@ -55,9 +70,12 @@ struct AppRootView: View {
         )
     }
 
-    private func unlock() {
-        Task {
-            isUnlocked = await AuthenticationService().authenticate()
-        }
+    @MainActor
+    private func unlockIfNeeded() async {
+        guard biometricLockEnabled, !isUnlocked, !isAuthenticating else { return }
+
+        isAuthenticating = true
+        isUnlocked = await AuthenticationService().authenticate()
+        isAuthenticating = false
     }
 }

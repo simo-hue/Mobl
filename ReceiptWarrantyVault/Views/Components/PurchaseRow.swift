@@ -33,6 +33,13 @@ struct PurchaseRow: View {
             VStack(alignment: .trailing, spacing: 8) {
                 StatusBadge(status: purchase.deadlineStatus())
 
+                if !purchase.attachments.isEmpty {
+                    Label("\(purchase.attachments.count)", systemImage: "paperclip")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .labelStyle(.titleAndIcon)
+                }
+
                 if let endDate = purchase.primaryWarranty?.endDate {
                     Text(DateFormatService.relativeDays(WarrantyCalculator().daysRemaining(until: endDate)))
                         .font(.caption)
@@ -60,4 +67,3 @@ struct PurchaseRow: View {
         Text(purchase.name)
     }
 }
-

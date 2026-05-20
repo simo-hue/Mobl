@@ -1,3 +1,4 @@
+import QuickLook
 import SwiftData
 import SwiftUI
 
@@ -75,16 +76,7 @@ struct PurchaseDetailView: View {
                 }
             }
 
-            Section("detail.section.attachments") {
-                if purchase.attachments.isEmpty {
-                    Text("detail.attachments.empty")
-                        .foregroundStyle(.secondary)
-                } else {
-                    ForEach(purchase.attachments) { attachment in
-                        AttachmentRow(attachment: attachment)
-                    }
-                }
-            }
+            PurchaseAttachmentsSection(purchaseID: purchase.id)
 
             Section("detail.section.actions") {
                 Button {
@@ -164,27 +156,85 @@ struct PurchaseDetailView: View {
     }
 }
 
+private struct PurchaseAttachmentsSection: View {
+    @Query private var attachments: [AttachmentRecord]
+    @State private var previewDocument: PreviewDocument?
+    @State private var errorMessage: String?
+
+    init(purchaseID: UUID) {
+        _attachments = Query(
+            filter: #Predicate<AttachmentRecord> { attachment in
+                attachment.purchaseItemID == purchaseID
+            },
+            sort: \AttachmentRecord.createdAt,
+            order: .forward
+        )
+    }
+
+    var body: some View {
+        Section("detail.section.attachments") {
+            if attachments.isEmpty {
+                Text("detail.attachments.empty")
+                    .foregroundStyle(.secondary)
+            } else {
+                ForEach(attachments) { attachment in
+                    AttachmentRow(attachment: attachment) {
+                        open(attachment)
+                    }
+                }
+            }
+
+            if let errorMessage {
+                Text(errorMessage)
+                    .foregroundStyle(.red)
+            }
+        }
+        .sheet(item: $previewDocument) { document in
+            DocumentPreview(url: document.url)
+                .ignoresSafeArea()
+        }
+    }
+
+    private func open(_ attachment: AttachmentRecord) {
+        do {
+            previewDocument = PreviewDocument(url: try DocumentStorageService().storedURL(for: attachment))
+            errorMessage = nil
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+}
+
 private struct AttachmentRow: View {
     let attachment: AttachmentRecord
+    let onOpen: () -> Void
 
     var body: some View {
         HStack {
-            Image(systemName: iconName)
-                .foregroundStyle(.tint)
-                .frame(width: 28)
-            VStack(alignment: .leading) {
-                Text(attachment.originalFileName ?? attachment.localFileName)
-                    .lineLimit(1)
-                Text(LocalizedStringKey(attachment.type.localizationKey))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+            Button(action: onOpen) {
+                HStack {
+                    Image(systemName: iconName)
+                        .foregroundStyle(.tint)
+                        .frame(width: 28)
+                    VStack(alignment: .leading) {
+                        Text(attachment.originalFileName ?? attachment.localFileName)
+                            .lineLimit(1)
+                        Text(LocalizedStringKey(attachment.type.localizationKey))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                    if let fileSize = attachment.fileSize {
+                        Text(fileSize, format: .byteCount(style: .file))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    Image(systemName: "chevron.right")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.tertiary)
+                }
             }
-            Spacer()
-            if let fileSize = attachment.fileSize {
-                Text(fileSize, format: .byteCount(style: .file))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
+            .buttonStyle(.plain)
 
             if let url = try? DocumentStorageService().storedURL(for: attachment) {
                 ShareLink(item: url) {
@@ -204,6 +254,46 @@ private struct AttachmentRow: View {
             "doc.richtext"
         case .other:
             "paperclip"
+        }
+    }
+}
+
+private struct PreviewDocument: Identifiable {
+    let id = UUID()
+    let url: URL
+}
+
+private struct DocumentPreview: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(url: url)
+    }
+
+    func makeUIViewController(context: Context) -> QLPreviewController {
+        let controller = QLPreviewController()
+        controller.dataSource = context.coordinator
+        return controller
+    }
+
+    func updateUIViewController(_ controller: QLPreviewController, context: Context) {
+        context.coordinator.url = url
+        controller.reloadData()
+    }
+
+    final class Coordinator: NSObject, QLPreviewControllerDataSource {
+        var url: URL
+
+        init(url: URL) {
+            self.url = url
+        }
+
+        func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+            1
+        }
+
+        func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+            url as NSURL
         }
     }
 }
