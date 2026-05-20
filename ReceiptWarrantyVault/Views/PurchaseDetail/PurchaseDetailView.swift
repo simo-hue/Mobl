@@ -185,6 +185,13 @@ private struct AttachmentRow: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+
+            if let url = try? DocumentStorageService().storedURL(for: attachment) {
+                ShareLink(item: url) {
+                    Image(systemName: "square.and.arrow.up")
+                        .accessibilityLabel("purchase.action.shareExport")
+                }
+            }
         }
         .accessibilityElement(children: .combine)
     }
@@ -200,4 +207,3 @@ private struct AttachmentRow: View {
         }
     }
 }
-

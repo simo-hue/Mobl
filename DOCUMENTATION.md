@@ -15,3 +15,7 @@
 - [2026-05-20 00:00 Europe/Rome]: Core Purchase Flows
   - *Details*: Replaced placeholder tabs with Deadlines, Archive, Scan entry, purchase form, and purchase detail screens. Added search, category/status filters, sorting, deadline cards, manual purchase creation/editing, archive/delete actions, and PDF sharing entry points.
   - *Tech Notes*: UI uses SwiftUI with SwiftData `@Query`; deadlines are derived from local model data using `WarrantyCalculator`. Visible text is keyed for localization through the string catalog.
+
+- [2026-05-20 00:00 Europe/Rome]: Native Import, Privacy, and Settings
+  - *Details*: Added VisionKit document scanning, Files import, Photos import, pending attachment handoff into purchase creation, optional Face ID app lock, notification and backup preferences, full backup export, delete-all flow, and privacy/legal/about screens.
+  - *Tech Notes*: Scanner and imports copy files into temporary local URLs before `DocumentStorageService` persists them into Application Support. Notifications remain local only. Face ID uses `LocalAuthentication` with passcode fallback.

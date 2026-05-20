@@ -18,7 +18,7 @@ enum AppTab: String, CaseIterable, Identifiable {
         case .scan:
             ScanView()
         case .settings:
-            PlaceholderScreen(titleKey: "tab.settings", systemImage: "gearshape")
+            SettingsView()
         }
     }
 

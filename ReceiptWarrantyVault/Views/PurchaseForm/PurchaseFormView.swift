@@ -92,6 +92,18 @@ struct PurchaseFormView: View {
                     .lineLimit(3...8)
             }
 
+            if !pendingAttachments.isEmpty {
+                Section("detail.section.attachments") {
+                    Label(
+                        String.localizedStringWithFormat(
+                            NSLocalizedString("form.pendingAttachments.format", comment: "Pending attachment count"),
+                            pendingAttachments.count
+                        ),
+                        systemImage: "paperclip"
+                    )
+                }
+            }
+
             if let errorMessage {
                 Section {
                     Text(errorMessage)
@@ -162,6 +174,15 @@ struct PurchaseFormView: View {
             if purchaseToEdit == nil {
                 modelContext.insert(purchase)
             } else {
+                for warranty in purchase.warranties {
+                    modelContext.delete(warranty)
+                }
+                for returnWindow in purchase.returnWindows {
+                    modelContext.delete(returnWindow)
+                }
+                for rule in purchase.notificationRules {
+                    modelContext.delete(rule)
+                }
                 purchase.warranties.removeAll()
                 purchase.returnWindows.removeAll()
                 purchase.notificationRules.removeAll()
