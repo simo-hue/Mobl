@@ -13,6 +13,8 @@ struct PurchaseDetailView: View {
     @State private var exportDocument: ExportDocument?
     @State private var shareDocument: ExportDocument?
     @State private var errorMessage: String?
+    @State private var isExportingPDF = false
+    @State private var activityMessage: LocalizedStringKey?
     @State private var isConfirmingDelete = false
 
     init(purchase: PurchaseItem) {
@@ -96,8 +98,15 @@ struct PurchaseDetailView: View {
                 Button {
                     exportPDF()
                 } label: {
-                    ActionRowLabel(title: "purchase.action.exportPDF", systemImage: "square.and.arrow.up", tint: .accentColor)
+                    ActionRowLabel(
+                        title: "purchase.action.exportPDF",
+                        systemImage: "square.and.arrow.up",
+                        tint: .accentColor,
+                        isLoading: isExportingPDF
+                    )
                 }
+                .disabled(isExportingPDF)
+                .buttonStyle(.plain)
 
                 if let exportDocument {
                     Button {
@@ -109,6 +118,7 @@ struct PurchaseDetailView: View {
                             tint: .accentColor
                         )
                     }
+                    .buttonStyle(.plain)
                 }
 
                 Button {
@@ -122,12 +132,14 @@ struct PurchaseDetailView: View {
                         tint: .accentColor
                     )
                 }
+                .buttonStyle(.plain)
 
                 Button(role: .destructive) {
                     isConfirmingDelete = true
                 } label: {
                     ActionRowLabel(title: "purchase.action.delete", systemImage: "trash", tint: .red)
                 }
+                .buttonStyle(.plain)
             }
 
             if let errorMessage {
@@ -160,28 +172,48 @@ struct PurchaseDetailView: View {
             }
             Button("common.cancel", role: .cancel) {}
         }
+        .loadingOverlay(activityMessage)
     }
 
     private func exportPDF() {
-        do {
-            let document = ExportDocument(url: try PDFExportService().exportPurchaseSummary(purchase, attachments: attachments))
-            exportDocument = document
-            shareDocument = document
-            errorMessage = nil
-        } catch {
-            errorMessage = error.localizedDescription
+        guard !isExportingPDF else { return }
+        isExportingPDF = true
+        activityMessage = "purchase.action.exportPDF"
+
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                let document = ExportDocument(url: try PDFExportService().exportPurchaseSummary(purchase, attachments: attachments))
+                exportDocument = document
+                errorMessage = nil
+                activityMessage = nil
+                isExportingPDF = false
+                shareDocument = document
+            } catch {
+                errorMessage = error.localizedDescription
+                activityMessage = nil
+                isExportingPDF = false
+            }
         }
     }
 
     private func deletePurchase() {
-        do {
-            NotificationScheduler().cancelNotifications(for: purchase)
-            try DocumentStorageService().deleteAttachments(for: purchase.id)
-            modelContext.delete(purchase)
-            try modelContext.save()
-            dismiss()
-        } catch {
-            errorMessage = error.localizedDescription
+        activityMessage = "purchase.action.delete"
+
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                NotificationScheduler().cancelNotifications(for: purchase)
+                try DocumentStorageService().deleteAttachments(for: purchase.id)
+                modelContext.delete(purchase)
+                try modelContext.save()
+                dismiss()
+            } catch {
+                errorMessage = error.localizedDescription
+                activityMessage = nil
+            }
         }
     }
 }

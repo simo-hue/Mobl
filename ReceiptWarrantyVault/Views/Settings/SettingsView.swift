@@ -18,6 +18,7 @@ struct SettingsView: View {
     @State private var shareDocument: ExportDocument?
     @State private var errorMessage: String?
     @State private var isExportingBackup = false
+    @State private var activityMessage: LocalizedStringKey?
     @State private var isConfirmingDeleteAll = false
 
     var body: some View {
@@ -70,6 +71,7 @@ struct SettingsView: View {
                     )
                 }
                 .disabled(isExportingBackup)
+                .buttonStyle(.plain)
 
                 if let exportDocument {
                     Button {
@@ -81,6 +83,7 @@ struct SettingsView: View {
                             tint: .accentColor
                         )
                     }
+                    .buttonStyle(.plain)
                 }
 
                 Button(role: .destructive) {
@@ -88,6 +91,7 @@ struct SettingsView: View {
                 } label: {
                     ActionRowLabel(title: "settings.deleteAll", systemImage: "trash", tint: .red)
                 }
+                .buttonStyle(.plain)
             }
 
             Section("settings.section.about") {
@@ -117,6 +121,7 @@ struct SettingsView: View {
         .sheet(item: $shareDocument) { document in
             ExportShareSheet(url: document.url)
         }
+        .loadingOverlay(activityMessage)
     }
 
     private var notificationsBinding: Binding<Bool> {
@@ -163,33 +168,47 @@ struct SettingsView: View {
     private func exportBackup() {
         guard !isExportingBackup else { return }
         isExportingBackup = true
-        defer {
-            isExportingBackup = false
-        }
+        activityMessage = "settings.exportData"
 
-        do {
-            let document = ExportDocument(url: try BackupExportService().exportArchive(purchases: purchases, attachments: attachments))
-            exportDocument = document
-            shareDocument = document
-            errorMessage = nil
-        } catch {
-            errorMessage = error.localizedDescription
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                let document = ExportDocument(url: try BackupExportService().exportArchive(purchases: purchases, attachments: attachments))
+                exportDocument = document
+                errorMessage = nil
+                activityMessage = nil
+                isExportingBackup = false
+                shareDocument = document
+            } catch {
+                errorMessage = error.localizedDescription
+                activityMessage = nil
+                isExportingBackup = false
+            }
         }
     }
 
     private func deleteAllData() {
-        do {
-            for purchase in purchases {
-                NotificationScheduler().cancelNotifications(for: purchase)
-                try DocumentStorageService().deleteAttachments(for: purchase.id)
-                modelContext.delete(purchase)
+        activityMessage = "settings.deleteAll"
+
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                for purchase in purchases {
+                    NotificationScheduler().cancelNotifications(for: purchase)
+                    try DocumentStorageService().deleteAttachments(for: purchase.id)
+                    modelContext.delete(purchase)
+                }
+                try modelContext.save()
+                exportDocument = nil
+                shareDocument = nil
+                errorMessage = nil
+                activityMessage = nil
+            } catch {
+                errorMessage = error.localizedDescription
+                activityMessage = nil
             }
-            try modelContext.save()
-            exportDocument = nil
-            shareDocument = nil
-            errorMessage = nil
-        } catch {
-            errorMessage = error.localizedDescription
         }
     }
 }
@@ -210,28 +229,4 @@ struct ExportShareSheet: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
-}
-
-struct ActionRowLabel: View {
-    let title: LocalizedStringKey
-    let systemImage: String
-    let tint: Color
-    var isLoading = false
-
-    var body: some View {
-        HStack(spacing: 12) {
-            Label(title, systemImage: systemImage)
-                .font(.body.weight(.medium))
-            Spacer()
-            if isLoading {
-                ProgressView()
-            } else {
-                Image(systemName: "chevron.right")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.tertiary)
-            }
-        }
-        .foregroundStyle(tint)
-        .contentShape(Rectangle())
-    }
 }

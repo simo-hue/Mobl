@@ -10,6 +10,7 @@ struct ScannerHubView: View {
     @State private var selectedPhotoItem: PhotosPickerItem?
     @State private var pendingDraft: PendingPurchaseDraft?
     @State private var errorMessage: String?
+    @State private var activityMessage: LocalizedStringKey?
 
     var body: some View {
         List {
@@ -76,53 +77,70 @@ struct ScannerHubView: View {
                 await handlePhotoImport(item)
             }
         }
+        .loadingOverlay(activityMessage)
     }
 
     private func handleScannedImages(_ images: [UIImage]) {
-        do {
-            let attachments = try images.enumerated().map { index, image in
-                let data = try image.jpegData(compressionQuality: 0.88).unwrap()
-                let url = try temporaryURL(fileExtension: "jpg")
-                try data.write(to: url, options: [.atomic])
-                return PendingAttachment(
-                    sourceURL: url,
-                    type: .receiptImage,
-                    originalFileName: "scan-\(index + 1).jpg",
-                    mimeType: "image/jpeg"
-                )
-            }
+        activityMessage = "scanner.scanWithCamera"
 
-            isShowingScanner = false
-            presentPurchaseForm(with: attachments)
-        } catch {
-            errorMessage = error.localizedDescription
-            isShowingScanner = false
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                let attachments = try images.enumerated().map { index, image in
+                    let data = try image.jpegData(compressionQuality: 0.88).unwrap()
+                    let url = try temporaryURL(fileExtension: "jpg")
+                    try data.write(to: url, options: [.atomic])
+                    return PendingAttachment(
+                        sourceURL: url,
+                        type: .receiptImage,
+                        originalFileName: "scan-\(index + 1).jpg",
+                        mimeType: "image/jpeg"
+                    )
+                }
+
+                isShowingScanner = false
+                activityMessage = nil
+                presentPurchaseForm(with: attachments)
+            } catch {
+                errorMessage = error.localizedDescription
+                isShowingScanner = false
+                activityMessage = nil
+            }
         }
     }
 
     private func handleFileImport(_ result: Result<[URL], Error>) {
-        do {
-            let urls = try result.get()
-            let attachments = try urls.map { sourceURL in
-                let didAccess = sourceURL.startAccessingSecurityScopedResource()
-                defer {
-                    if didAccess {
-                        sourceURL.stopAccessingSecurityScopedResource()
-                    }
-                }
+        activityMessage = "scanner.importFiles"
 
-                let copiedURL = try makeTemporaryCopy(of: sourceURL)
-                let type = UTType(filenameExtension: copiedURL.pathExtension)
-                return PendingAttachment(
-                    sourceURL: copiedURL,
-                    type: attachmentType(for: type),
-                    originalFileName: sourceURL.lastPathComponent,
-                    mimeType: type?.preferredMIMEType ?? "application/octet-stream"
-                )
+        Task { @MainActor in
+            await Task.yield()
+
+            do {
+                let urls = try result.get()
+                let attachments = try urls.map { sourceURL in
+                    let didAccess = sourceURL.startAccessingSecurityScopedResource()
+                    defer {
+                        if didAccess {
+                            sourceURL.stopAccessingSecurityScopedResource()
+                        }
+                    }
+
+                    let copiedURL = try makeTemporaryCopy(of: sourceURL)
+                    let type = UTType(filenameExtension: copiedURL.pathExtension)
+                    return PendingAttachment(
+                        sourceURL: copiedURL,
+                        type: attachmentType(for: type),
+                        originalFileName: sourceURL.lastPathComponent,
+                        mimeType: type?.preferredMIMEType ?? "application/octet-stream"
+                    )
+                }
+                activityMessage = nil
+                presentPurchaseForm(with: attachments)
+            } catch {
+                errorMessage = error.localizedDescription
+                activityMessage = nil
             }
-            presentPurchaseForm(with: attachments)
-        } catch {
-            errorMessage = error.localizedDescription
         }
     }
 
@@ -132,16 +150,23 @@ struct ScannerHubView: View {
             selectedPhotoItem = nil
         }
 
+        activityMessage = "scanner.importPhotos"
+
         do {
-            guard let data = try await item.loadTransferable(type: Data.self) else { return }
+            guard let data = try await item.loadTransferable(type: Data.self) else {
+                activityMessage = nil
+                return
+            }
             let attachment = try PhotoAttachmentBuilder().makePendingAttachment(
                 from: data,
                 suggestedTypes: item.supportedContentTypes,
                 temporaryURL: temporaryURL(fileExtension:)
             )
+            activityMessage = nil
             presentPurchaseForm(with: [attachment])
         } catch {
             errorMessage = error.localizedDescription
+            activityMessage = nil
         }
     }
 

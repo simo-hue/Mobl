@@ -43,3 +43,7 @@
 - [2026-05-20 15:06 Europe/Rome]: Export Actions and PDF Rendering Fix
   - *Details*: Reworked export-related buttons so data and PDF exports execute immediately and open the native share sheet, with clearly active action rows and reusable sharing for the last generated export. Fixed blank PDF output by rendering on an explicit white page with black text and richer purchase details.
   - *Tech Notes*: Added direct attachment querying for purchase PDF export and settings backup export, made `BackupExportService` accept explicit attachment records, added a UIKit share sheet bridge, and added regression tests for PDF text extraction and backup ZIP attachment inclusion.
+
+- [2026-05-20 15:25 Europe/Rome]: App-Wide Action Feedback
+  - *Details*: Added visible loading feedback for export, delete, save, scan processing, file import, and photo import flows. Updated action row styling so important actions read as active controls instead of muted blue list links.
+  - *Tech Notes*: Added reusable `ActionRowLabel` and `loadingOverlay` SwiftUI components, converted long-running actions to yield before synchronous work so the busy state can render, and disabled repeated taps while exports or saves are in progress.

@@ -25,6 +25,7 @@ struct PurchaseFormView: View {
     @State private var serialNumber = ""
     @State private var notes = ""
     @State private var errorMessage: String?
+    @State private var isSaving = false
 
     init(purchaseToEdit: PurchaseItem? = nil, pendingAttachments: [PendingAttachment] = []) {
         self.purchaseToEdit = purchaseToEdit
@@ -117,16 +118,24 @@ struct PurchaseFormView: View {
                 Button("common.cancel") {
                     dismiss()
                 }
+                .disabled(isSaving)
             }
 
             ToolbarItem(placement: .confirmationAction) {
-                Button("common.save") {
+                Button {
                     save()
+                } label: {
+                    if isSaving {
+                        ProgressView()
+                    } else {
+                        Text("common.save")
+                    }
                 }
-                .disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                .disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || isSaving)
             }
         }
         .onAppear(perform: seedForm)
+        .loadingOverlay(isSaving ? "common.save" : nil)
     }
 
     private func seedForm() {
@@ -156,6 +165,16 @@ struct PurchaseFormView: View {
     }
 
     private func save() {
+        guard !isSaving else { return }
+        isSaving = true
+
+        Task { @MainActor in
+            await Task.yield()
+            performSave()
+        }
+    }
+
+    private func performSave() {
         do {
             let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
             let price = CurrencyService.decimal(from: priceText)
@@ -226,6 +245,7 @@ struct PurchaseFormView: View {
             dismiss()
         } catch {
             errorMessage = error.localizedDescription
+            isSaving = false
         }
     }
 
