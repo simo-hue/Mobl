@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
     "about.body" : {
       "comment" : "About screen body.",
       "localizations" : {
@@ -669,7 +672,7 @@
       }
     },
     "detail.section.attachments" : {
-      "comment" : "Detail attachments section.",
+      "comment" : "Attachments section",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -703,7 +706,7 @@
       }
     },
     "detail.section.timeline" : {
-      "comment" : "Detail timeline section.",
+      "comment" : "Timeline section",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1673,6 +1676,7 @@
     },
     "purchase.action.archive" : {
       "comment" : "Archive purchase action.",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1741,6 +1745,7 @@
     },
     "purchase.action.unarchive" : {
       "comment" : "Unarchive purchase action.",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2465,8 +2470,7 @@
       }
     },
     "status.noDate" : {
-      "comment" : "Deadline status.",
-      "extractionState" : "stale",
+      "comment" : "No date status",
       "localizations" : {
         "en" : {
           "stringUnit" : {
