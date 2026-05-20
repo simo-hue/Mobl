@@ -1,0 +1,5 @@
+"CFBundleDisplayName" = "Scontrini & Garanzie";
+"NSCameraUsageDescription" = "L'accesso alla fotocamera serve per scansionare scontrini, fatture e documenti di garanzia. Le scansioni restano sul dispositivo.";
+"NSPhotoLibraryUsageDescription" = "L'accesso alla libreria foto serve per importare immagini di scontrini e prodotti che scegli tu. I file importati restano sul dispositivo.";
+"NSFaceIDUsageDescription" = "Face ID viene usato per proteggere l'accesso ai tuoi scontrini e documenti di garanzia salvati.";
+

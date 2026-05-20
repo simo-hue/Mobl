@@ -1,0 +1,105 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "app.name" : {
+      "comment" : "Commercial app name.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty Vault" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scontrini & Garanzie" } }
+      }
+    },
+    "common.next" : {
+      "comment" : "Advances onboarding.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avanti" } }
+      }
+    },
+    "onboarding.cta.manual" : {
+      "comment" : "Secondary onboarding action to create an item manually.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add manually" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiungi manualmente" } }
+      }
+    },
+    "onboarding.cta.scan" : {
+      "comment" : "Primary onboarding action to scan a first receipt.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan first receipt" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona il primo scontrino" } }
+      }
+    },
+    "onboarding.deadlines.body" : {
+      "comment" : "Onboarding body for local reminders.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Get local reminders before return windows and warranties expire." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ricevi promemoria locali prima che scadano resi e garanzie." } }
+      }
+    },
+    "onboarding.deadlines.title" : {
+      "comment" : "Onboarding title for reminders.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Never miss a deadline" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non perdere una scadenza" } }
+      }
+    },
+    "onboarding.privacy.body" : {
+      "comment" : "Onboarding body for privacy.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No account. No tracking. Your documents stay on your device." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun account. Nessun tracking. I documenti restano sul dispositivo." } }
+      }
+    },
+    "onboarding.privacy.title" : {
+      "comment" : "Onboarding title for privacy.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Private by design" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Privata per progettazione" } }
+      }
+    },
+    "onboarding.save.body" : {
+      "comment" : "Onboarding body for saving documents.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Keep proof of purchase, invoices, and warranty documents organized." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tieni in ordine prove d'acquisto, fatture e documenti di garanzia." } }
+      }
+    },
+    "onboarding.save.title" : {
+      "comment" : "Onboarding title for saving receipts and warranties.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save receipts and warranties" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Salva scontrini e garanzie" } }
+      }
+    },
+    "tab.archive" : {
+      "comment" : "Archive tab title.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Archive" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Archivio" } }
+      }
+    },
+    "tab.deadlines" : {
+      "comment" : "Deadlines tab title.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Deadlines" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scadenze" } }
+      }
+    },
+    "tab.scan" : {
+      "comment" : "Scan tab title.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona" } }
+      }
+    },
+    "tab.settings" : {
+      "comment" : "Settings tab title.",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impostazioni" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
+
