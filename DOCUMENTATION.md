@@ -19,3 +19,7 @@
 - [2026-05-20 00:00 Europe/Rome]: Native Import, Privacy, and Settings
   - *Details*: Added VisionKit document scanning, Files import, Photos import, pending attachment handoff into purchase creation, optional Face ID app lock, notification and backup preferences, full backup export, delete-all flow, and privacy/legal/about screens.
   - *Tech Notes*: Scanner and imports copy files into temporary local URLs before `DocumentStorageService` persists them into Application Support. Notifications remain local only. Face ID uses `LocalAuthentication` with passcode fallback.
+
+- [2026-05-20 00:00 Europe/Rome]: App Store Preparation
+  - *Details*: Added English and Italian App Store metadata drafts, App Review notes, and a privacy policy draft aligned with the local-only/no-tracking implementation.
+  - *Tech Notes*: The intended App Store privacy declaration for v1 is no tracking and no data collected by the developer, assuming no third-party SDKs or external services are added before submission.
