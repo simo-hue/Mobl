@@ -27,3 +27,10 @@
   - **Support URL**: `https://simo-hue.github.io/Mobl/support.html` (Enter this in the App Store Connect "Support URL" field)
   - **Privacy Policy URL**: `https://simo-hue.github.io/Mobl/privacy.html` (Enter this in the App Store Connect "Privacy Policy URL" field)
   - **Marketing URL** (Optional but recommended): `https://simo-hue.github.io/Mobl/`
+
+## App Store Review Final Manual Checks - 2026-05-20
+
+- In App Store Connect > App Privacy, publish `No, we do not collect data from this app` only if no crash reporting, analytics, support SDK, cloud sync, or external service is added before submission.
+- In App Store Connect review notes, paste the current note: no account/backend/analytics/ads/tracking, documents stored locally, notifications local only, camera used only for VisionKit document scanner.
+- Verify the public Support URL and Privacy Policy URL are live after deployment and show the updated email-based support form before submitting for review.
+- Confirm the pricing/availability setting matches the final business decision; the current app binary has no StoreKit, subscriptions, ads, or in-app purchases.

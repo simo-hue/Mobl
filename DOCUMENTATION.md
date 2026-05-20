@@ -47,3 +47,11 @@
 - [2026-05-20 15:25 Europe/Rome]: App-Wide Action Feedback
   - *Details*: Added visible loading feedback for export, delete, save, scan processing, file import, and photo import flows. Updated action row styling so important actions read as active controls instead of muted blue list links.
   - *Tech Notes*: Added reusable `ActionRowLabel` and `loadingOverlay` SwiftUI components, converted long-running actions to yield before synchronous work so the busy state can render, and disabled repeated taps while exports or saves are in progress.
+
+- [2026-05-20 15:53 Europe/Rome]: App Store Review Readiness Audit Fixes
+  - *Details*: Updated the iOS privacy manifest to declare required reason API usage for local app preferences and file metadata access. Corrected the support website so the contact form opens a real prefilled email instead of showing a fake ticket submission, and aligned Terms copy with the current no-IAP/no-subscription binary.
+  - *Tech Notes*: `PrivacyInfo.xcprivacy` now declares `NSPrivacyAccessedAPICategoryUserDefaults` with reason `CA92.1` and `NSPrivacyAccessedAPICategoryFileTimestamp` with reason `C617.1`; empty tracking domains were removed while keeping `NSPrivacyTracking=false`. The support form now uses `mailto:mattioli.simone.10@gmail.com` in both root and `/docs` website copies.
+
+- [2026-05-20 15:56 Europe/Rome]: Developer Support Email Update
+  - *Details*: Replaced the placeholder email `support@simo.dev` with the developer's real support email `mattioli.simone.10@gmail.com` across all website pages and scripts.
+  - *Tech Notes*: Updated translation dictionary strings, contact form mailto handlers, HTML fallback text, and documentation references in both root and `/docs` directories. No other architectural or functionality changes were made.

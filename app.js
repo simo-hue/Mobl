@@ -99,13 +99,13 @@ const translations = {
     sup_a3: "Yes! You can choose to import existing PDF invoices, camera images, or physical scans from either your Files app or your photo library directly into your digital archive.",
     sup_q4: "Is biometric protection available?",
     sup_a4: "Absolutely. You can enable optional Face ID or Touch ID lock inside the in-app settings panel to require authentication every time you open your receipt archive.",
-    sup_form_title: "Submit a Support Ticket",
-    sup_form_desc: "Having technical difficulties? Have suggestions for future releases? Submit a support request directly to the developer below.",
+    sup_form_title: "Email Support",
+    sup_form_desc: "Having technical difficulties? Have suggestions for future releases? Use the form below to open a prefilled email to the developer.",
     sup_form_name: "Full Name",
     sup_form_email: "Email Address",
     sup_form_msg: "Support Message / Issue Description",
-    sup_form_submit: "Send Request",
-    sup_form_success: "✓ Ticket submitted successfully! We will get back to you shortly.",
+    sup_form_submit: "Open Email",
+    sup_form_success: "Email draft opened. If it does not open automatically, write to mattioli.simone.10@gmail.com.",
     sidebar_contact_title: "Direct Contact",
     sidebar_contact_desc: "You can also write directly via email regarding queries, business requests, or legal matters.",
 
@@ -115,11 +115,11 @@ const translations = {
     terms_sec1_title: "1. Introduction & Terms",
     terms_sec1_desc1: "By downloading, installing, or accessing the Warranty Vault application from the iOS App Store, you agree to comply with and be legally bound by these Terms of Service. If you do not accept these terms, do not install or use the app.",
     terms_sec1_desc2: "We reserve the right to modify these terms at any time. Your continued use of the application following updates constitutes your acceptance of the revised conditions.",
-    terms_sec2_title: "2. App Store License & Paid Upfront Distribution",
+    terms_sec2_title: "2. App Store License & Distribution",
     terms_sec2_desc1: "Warranty Vault is licensed to you under a limited, non-transferable, non-exclusive, revocable license for personal, non-commercial use on Apple products that you own or control, in accordance with the Apple App Store Terms of Service (EULA).",
-    terms_sec2_desc2: "The application is distributed as a paid upfront purchase. There are no compiled ads, recurring subscriptions, or hidden StoreKit paywalls in version 1.0. All native features are accessible upon the initial App Store transaction.",
+    terms_sec2_desc2: "The application is distributed through the App Store. There are no compiled ads, recurring subscriptions, in-app purchases, or hidden StoreKit paywalls in the current version.",
     terms_sec3_title: "3. Data Responsibility & Offline Limits",
-    terms_sec3_desc1: "Warranty Vault is designed as a local-first software utility. All data processing (such as optical character recognition, PDF rendering, file protection, and storage) operates offline directly in your device container.",
+    terms_sec3_desc1: "Warranty Vault is designed as a local-first software utility. Document scanning, PDF rendering, file protection, and storage operate locally in your device container.",
     terms_sec3_desc2: "Critical Backup Obligation: Because the developer has no cloud servers or network databases containing your receipts and files, you have complete and exclusive responsibility to back up your purchase data using either Apple's built-in iCloud system backup utilities or manually exporting ZIP archive bundles from the Settings section within the app.",
     terms_sec3_desc3: "The developer is not liable for any data loss, database corruption, structural failure, or hardware damage resulting in the loss of your documents.",
     terms_sec4_title: "4. Warranty & Return Deadlines",
@@ -229,13 +229,13 @@ const translations = {
     sup_a3: "Sì! Puoi importare fatture PDF, foto esistenti o scansioni direttamente dall'applicazione File o dalla tua libreria fotografica.",
     sup_q4: "È disponibile la protezione biometrica?",
     sup_a4: "Certamente. Puoi abilitare lo sblocco tramite Face ID o Touch ID dalle impostazioni interne dell'app per richiedere l'autenticazione a ogni apertura.",
-    sup_form_title: "Invia una Richiesta di Supporto",
-    sup_form_desc: "Hai riscontrato problemi tecnici? Hai suggerimenti per le prossime versioni? Invia un messaggio direttamente allo sviluppatore tramite il modulo sottostante.",
+    sup_form_title: "Supporto via Email",
+    sup_form_desc: "Hai riscontrato problemi tecnici? Hai suggerimenti per le prossime versioni? Usa il modulo per aprire una bozza email indirizzata allo sviluppatore.",
     sup_form_name: "Nome Completo",
     sup_form_email: "Indirizzo Email",
     sup_form_msg: "Messaggio / Descrizione del Problema",
-    sup_form_submit: "Invia Richiesta",
-    sup_form_success: "✓ Messaggio inviato con successo! Ti risponderemo il prima possibile.",
+    sup_form_submit: "Apri Email",
+    sup_form_success: "Bozza email aperta. Se non si apre automaticamente, scrivi a mattioli.simone.10@gmail.com.",
     sidebar_contact_title: "Contatto Diretto",
     sidebar_contact_desc: "Puoi anche scrivere direttamente via email per richieste commerciali, tecniche o legali.",
 
@@ -245,11 +245,11 @@ const translations = {
     terms_sec1_title: "1. Introduzione e Condizioni",
     terms_sec1_desc1: "Scaricando, installando o accedendo all'applicazione Scontrini & Garanzie dall'App Store di Apple, accetti di rispettare ed essere vincolato dai presenti Termini di Servizio. Se non accetti queste condizioni, non installare o utilizzare l'applicazione.",
     terms_sec1_desc2: "Ci riserviamo il diritto di modificare questi termini in qualsiasi momento. L'uso continuato dell'app costituisce accettazione delle condizioni aggiornate.",
-    terms_sec2_title: "2. Licenza App Store e Distribuzione a Pagamento",
+    terms_sec2_title: "2. Licenza App Store e Distribuzione",
     terms_sec2_desc1: "L'applicazione ti viene concessa in licenza limitata, non trasferibile, non esclusiva e revocabile per uso personale e non commerciale sui dispositivi Apple di tua proprietà, in conformità con i Termini dell'App Store (EULA).",
-    terms_sec2_desc2: "L'applicazione è distribuita con pagamento anticipato all'acquisto. Non ci sono annunci pubblicitari, abbonamenti ricorrenti o paywall nascosti. Tutte le funzionalità sono disponibili fin dall'inizio.",
+    terms_sec2_desc2: "L'applicazione è distribuita tramite App Store. Nella versione attuale non ci sono annunci pubblicitari, abbonamenti ricorrenti, acquisti in-app o paywall StoreKit nascosti.",
     terms_sec3_title: "3. Responsabilità dei Dati e Limiti dell'Offline",
-    terms_sec3_desc1: "Scontrini & Garanzie è un software locale-first. Tutte le elaborazioni (inclusi riconoscimento del testo OCR e archiviazione) avvengono localmente.",
+    terms_sec3_desc1: "Scontrini & Garanzie è un software locale-first. Scansione documenti, rendering PDF, protezione file e archiviazione avvengono localmente nel contenitore dell'app.",
     terms_sec3_desc2: "Obbligo di Backup: Poiché non disponiamo di server cloud o database di rete contenenti le tue ricevute, l'utente è l'unico responsabile del backup dei propri dati, da effettuare tramite iCloud o esportando l'archivio ZIP dell'app.",
     terms_sec3_desc3: "Lo sviluppatore non è responsabile di alcuna perdita di dati, corruzione del database o problemi hardware che comportino la perdita dei documenti.",
     terms_sec4_title: "4. Scadenze di Garanzie e Resi",
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Interactive Support Contact Form Submission Handler Mock
+// Open a prefilled email draft for support requests.
 function handleFormSubmit(event) {
   event.preventDefault();
   
@@ -374,33 +374,22 @@ function handleFormSubmit(event) {
   
   if (!name || !email || !message) return;
   
-  // Disable submission & animate to indicate network request loading state
+  // Disable submission while the mail client opens.
   submitBtn.disabled = true;
   const originalText = submitBtn.innerHTML;
-  
-  // Translate loading text
-  submitBtn.innerHTML = currentLanguage === 'it' ? 'Invio in corso...' : 'Sending request...';
-  
+  submitBtn.innerHTML = currentLanguage === 'it' ? 'Apertura email...' : 'Opening email...';
+
+  const subject = encodeURIComponent('Warranty Vault support request');
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+  window.location.href = `mailto:mattioli.simone.10@gmail.com?subject=${subject}&body=${body}`;
+
+  statusMsg.style.display = 'block';
+  statusMsg.textContent = currentLanguage === 'it'
+    ? 'Bozza email aperta. Se non si apre automaticamente, scrivi a mattioli.simone.10@gmail.com.'
+    : 'Email draft opened. If it does not open automatically, write to mattioli.simone.10@gmail.com.';
+
   setTimeout(() => {
-    // Show premium feedback message
-    statusMsg.style.display = 'block';
-    
-    // Clear form entries
-    document.getElementById('nameInput').value = '';
-    document.getElementById('emailInput').value = '';
-    document.getElementById('messageInput').value = '';
-    
-    // Reset submission state
     submitBtn.disabled = false;
     submitBtn.innerHTML = originalText;
-    
-    // Hide status message after 6 seconds
-    setTimeout(() => {
-      statusMsg.style.opacity = '0';
-      setTimeout(() => {
-        statusMsg.style.display = 'none';
-        statusMsg.style.opacity = '1';
-      }, 300);
-    }, 6000);
   }, 1200);
 }
