@@ -29,7 +29,7 @@
   - *Tech Notes*: Subtitle and promotional text stay within App Store Connect limits. Keyword string is 92 characters, below the 100-character App Store keyword limit.
 
 - [2026-05-20 14:30 Europe/Rome]: Marketing and Compliance Website
-  - *Details*: Created a premium, bilingual, and responsive static website in the root directory (`/`) to serve as the marketing and official compliance hub for the iOS application. This fixes default GitHub Pages loading issues by eliminating the `/docs` subdirectory path.
+  - *Details*: Created a premium, bilingual, and responsive static website deployed to both the root (`/`) and the `/docs` directory. This dual-compatibility design resolves default GitHub Pages configuration mismatches. Added `.nojekyll` files to both folders to bypass Jekyll compilation and prevent SCSS conversion errors.
   - *Tech Notes*: Implemented native HTML5 structures, vanilla CSS with custom variables for dark/glassmorphic aesthetics, and dynamic vanilla JS translation engines supporting on-the-fly English/Italian switches. Built-in Privacy, Support (with FAQs and modern validated contact forms), and Terms of Service agreements to satisfy App Store Connect guidelines.
 
 - [2026-05-20 14:44 Europe/Rome]: Face ID Lock and Document Attachment Fixes

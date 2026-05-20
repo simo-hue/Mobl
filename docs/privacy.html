@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Warranty Vault</title>
+  <meta name="description" content="Privacy Policy for Warranty Vault iOS application. Learn about our local-first storage design and complete offline data policy.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/appicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-group">
+        <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+        <span class="logo-text">Warranty Vault</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="privacy.html" class="nav-link active" data-i18n="nav_privacy">Privacy</a></li>
+          <li><a href="support.html" class="nav-link" data-i18n="nav_support">Support</a></li>
+          <li><a href="terms.html" class="nav-link" data-i18n="nav_terms">Terms</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch">
+          <button class="lang-btn active" id="lang-en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" id="lang-it" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title" data-i18n="priv_page_title">Privacy Policy</h1>
+      <p class="page-subtitle" data-i18n="priv_page_subtitle">Effective date: May 20, 2026</p>
+    </div>
+  </section>
+
+  <!-- Document Content Grid -->
+  <main class="container doc-layout">
+    <article class="doc-content">
+      <!-- Section 1 -->
+      <section class="doc-section">
+        <h2 data-i18n="priv_sec1_title">1. Local-First Architecture</h2>
+        <p data-i18n="priv_sec1_desc1">Warranty Vault is built as a local-first application. This means that all receipts, invoices, warranty documents, product photos, prices, notes, and reminders are stored exclusively on your individual iOS device. They never leave your device unless you explicitly decide to share or export them.</p>
+        <p data-i18n="priv_sec1_desc2">As the developer, I do not receive, collect, store, or have access to any of your documents, purchase data, notes, or personal information.</p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="doc-section">
+        <h2 data-i18n="priv_sec2_title">2. Device Permissions Used</h2>
+        <p data-i18n="priv_sec2_desc1">To perform its functions natively, the app requests standard iOS permissions when necessary:</p>
+        <ul>
+          <li data-i18n="priv_sec2_li1"><strong>Camera Access:</strong> Used solely to capture physical receipts using the built-in document scanner.</li>
+          <li data-i18n="priv_sec2_li2"><strong>Photo Library / Files:</strong> Used only when you manually choose to import existing receipt photos, product images, or PDF invoices.</li>
+          <li data-i18n="priv_sec2_li3"><strong>Face ID / Touch ID:</strong> Optional biometric security used exclusively to restrict access to the app on your physical device.</li>
+          <li data-i18n="priv_sec2_li4"><strong>Notifications:</strong> Used only to trigger local alerts on your device for upcoming warranty or return deadlines. No external servers are involved in scheduling notifications.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="doc-section">
+        <h2 data-i18n="priv_sec3_title">3. Data Sharing &amp; Tracking</h2>
+        <p data-i18n="priv_sec3_desc1">We respect your digital footprint:</p>
+        <ul>
+          <li data-i18n="priv_sec3_li1"><strong>No Tracking:</strong> The application does not track your online activities across websites or other third-party apps.</li>
+          <li data-i18n="priv_sec3_li2"><strong>No SDKs:</strong> There are no advertising SDKs, third-party analytics trackers, or social sign-ins compiled in the application code.</li>
+          <li data-i18n="priv_sec3_li3"><strong>Third-Party Sharing:</strong> Zero data is shared with third parties. All processing is processed completely offline on your silicon.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="doc-section">
+        <h2 data-i18n="priv_sec4_title">4. App Store Declarations</h2>
+        <p data-i18n="priv_sec4_desc1">In accordance with Apple Store review guidelines, the declared specifications for Warranty Vault v1 are:</p>
+        <ul>
+          <li data-i18n="priv_sec4_li1"><strong>Tracking:</strong> No</li>
+          <li data-i18n="priv_sec4_li2"><strong>Data Collected by Developer:</strong> None</li>
+          <li data-i18n="priv_sec4_li3"><strong>Third-party Data Sharing:</strong> None</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="doc-section">
+        <h2 data-i18n="priv_sec5_title">5. Data Retention &amp; Backups</h2>
+        <p data-i18n="priv_sec5_desc1">Since all data is saved in the local app container, you maintain absolute control over retention:</p>
+        <p data-i18n="priv_sec5_desc2">You can delete individual purchases or attachments, purge all database files directly from the app's settings screen, or completely remove the application from your device to erase all structural archives. Backups are created only if you trigger an active ZIP export or depend on standard iCloud device backups.</p>
+      </section>
+    </article>
+
+    <!-- Sidebar Info Panel -->
+    <aside class="doc-sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-title" data-i18n="sidebar_priv_title">Privacy Summary</h3>
+        <p class="sidebar-desc" data-i18n="sidebar_priv_desc">Warranty Vault does not collect, sell, or receive any user documents or personal details. The app operates completely offline-first.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3 class="sidebar-title" data-i18n="sidebar_support_title">Need Clarity?</h3>
+        <p class="sidebar-desc" data-i18n="sidebar_support_desc">If you have any questions about how your local permissions are handled, feel free to contact support.</p>
+        <a href="support.html" class="btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" data-i18n="sidebar_support_btn">Get Support</a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-group">
+          <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+          <span class="logo-text">Warranty Vault</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Keep receipts, invoices, and warranties organized and private on your iPhone.</p>
+      </div>
+      
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_legal">Compliance</span>
+        <ul class="footer-nav-links">
+          <li><a href="privacy.html" class="footer-nav-link" data-i18n="nav_privacy">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-nav-link" data-i18n="nav_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_support">Support</span>
+        <ul class="footer-nav-links">
+          <li><a href="support.html" class="footer-nav-link" data-i18n="nav_support">Contact Support / FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span data-i18n="footer_copyright">© 2026 Simo. All rights reserved.</span>
+      <span data-i18n="footer_legal_notes">Warranty Vault is an independent application. App Store and iOS are trademarks of Apple Inc.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

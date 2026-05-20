@@ -15,12 +15,13 @@
 
 ## GitHub Pages & App Store Connect Setup - 2026-05-20
 
-- **Deploying to GitHub Pages**:
-  1. Push the website files (`index.html`, `privacy.html`, `support.html`, `terms.html`, `style.css`, `app.js`, `assets/`) in the root directory to your GitHub repository on your active branch.
-  2. In your repository on GitHub, navigate to **Settings** > **Pages**.
-  3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-  4. Select your active branch (e.g. `main`) and choose the **`/(root)`** folder as the source (this is the default).
-  5. Click **Save**. GitHub will publish your site automatically at `https://simo-hue.github.io/Mobl/`.
+- **Deploying to GitHub Pages (Dual-Compatibility Enabled)**:
+  1. We have configured the website to exist in **both** the root directory (`/`) and the `/docs` directory. This means your site is compatible with **any** GitHub Pages configuration!
+  2. We added a **`.nojekyll`** bypass file to both locations. This instructs GitHub Pages to skip the Jekyll compilation step entirely, which **resolves the Jekyll build errors** you faced and ensures instant, error-free deployment of our custom assets.
+  3. In your repository on GitHub, navigate to **Settings** > **Pages**.
+  4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+  5. Select your active branch (e.g., `main`) and choose either **`/(root)`** or **`/docs`** (either will work perfectly now!).
+  6. Click **Save**. GitHub will publish your site automatically at `https://simo-hue.github.io/Mobl/`.
   
 - **App Store Connect Metadata URLs**:
   - **Support URL**: `https://simo-hue.github.io/Mobl/support.html` (Enter this in the App Store Connect "Support URL" field)
