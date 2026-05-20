@@ -1,4 +1,4 @@
-"CFBundleDisplayName" = "Warranty Vault";
+"CFBundleDisplayName" = "Warranties Vault";
 "NSCameraUsageDescription" = "Camera access is used to scan receipts, invoices, and warranty documents. Scans stay on your device.";
 "NSPhotoLibraryUsageDescription" = "Photo library access is used to import receipt and product images you choose. Imported files stay on your device.";
 "NSFaceIDUsageDescription" = "Face ID is used to protect access to your saved receipts and warranty documents.";

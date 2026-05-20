@@ -24,8 +24,8 @@
   - *Details*: Added English and Italian App Store metadata drafts, App Review notes, and a privacy policy draft aligned with the local-only/no-tracking implementation.
   - *Tech Notes*: The intended App Store privacy declaration for v1 is no tracking and no data collected by the developer, assuming no third-party SDKs or external services are added before submission.
 
-- [2026-05-20 14:00 Europe/Rome]: Warranty Vault English Branding
-  - *Details*: Added a dedicated English branding file for the Warranty Vault App Store listing and optimized the English subtitle, promotional text, description, keywords, marketing lines, screenshot captions, and review notes.
+- [2026-05-20 14:00 Europe/Rome]: Warranties Vault English Branding
+  - *Details*: Added a dedicated English branding file for the Warranties Vault App Store listing and optimized the English subtitle, promotional text, description, keywords, marketing lines, screenshot captions, and review notes.
   - *Tech Notes*: Subtitle and promotional text stay within App Store Connect limits. Keyword string is 92 characters, below the 100-character App Store keyword limit.
 
 - [2026-05-20 14:30 Europe/Rome]: Marketing and Compliance Website
@@ -55,3 +55,8 @@
 - [2026-05-20 15:56 Europe/Rome]: Developer Support Email Update
   - *Details*: Replaced the placeholder email `support@simo.dev` with the developer's real support email `mattioli.simone.10@gmail.com` across all website pages and scripts.
   - *Tech Notes*: Updated translation dictionary strings, contact form mailto handlers, HTML fallback text, and documentation references in both root and `/docs` directories. No other architectural or functionality changes were made.
+
+- [2026-05-20 16:00 Europe/Rome]: App Rename to Warranties Vault
+  - *Details*: Updated all website pages, native iOS app configurations, and localized metadata resources to rename the application from "Warranty Vault" to "Warranties Vault".
+  - *Tech Notes*: Modified `index.html` (root & `/docs`), `style.css` (`/docs`), app `Info.plist`, `InfoPlist.strings`, translation dictionary in `Localizable.xcstrings`, `BackupExportService.swift` file export names, and App Store branding asset filenames/contents to reflect the final product name.
+

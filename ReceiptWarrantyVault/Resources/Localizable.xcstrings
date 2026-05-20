@@ -27,7 +27,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Warranty Vault"
+            "value" : "Warranties Vault"
           }
         },
         "it" : {
@@ -1306,7 +1306,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Warranty Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice."
+            "value" : "Warranties Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice."
           }
         },
         "it" : {
@@ -1955,7 +1955,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "To change app language, use iOS Settings > Apps > Warranty Vault > Language."
+            "value" : "To change app language, use iOS Settings > Apps > Warranties Vault > Language."
           }
         },
         "it" : {

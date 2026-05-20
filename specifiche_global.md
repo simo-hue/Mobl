@@ -153,13 +153,13 @@ ReceiptWarrantyVault
 
 Per massima scalabilità globale, evitare un nome solo italiano. Possibili nomi:
 
-1. **Warranty Vault**
+1. **Warranties Vault**
 2. **Receipt Vault**
 3. **ProofVault**
 4. **Warranty Safe**
 5. **Receipt & Warranty Vault**
 
-Consiglio: **Warranty Vault** oppure **Receipt Vault**.
+Consiglio: **Warranties Vault** oppure **Receipt Vault**.
 
 ### 3.3 Nome localizzato App Store
 
@@ -167,7 +167,7 @@ Il nome mostrato su App Store e nella home screen può essere localizzato dove o
 
 Esempi:
 
-- English: `Warranty Vault`
+- English: `Warranties Vault`
 - Italian: `Scontrini & Garanzie`
 - Spanish: `Recibos y Garantías`
 - French: `Reçus et Garanties`
@@ -1482,7 +1482,7 @@ Non inserire parole come “Receipt”, “Warranty”, “Garanzia”.
 App name:
 
 ```text
-Warranty Vault
+Warranties Vault
 ```
 
 Subtitle:
@@ -1500,7 +1500,7 @@ Keep receipts, invoices, warranties, and return deadlines organized on your devi
 Description draft:
 
 ```text
-Warranty Vault is a private place for your receipts, invoices, warranty documents, and return deadlines.
+Warranties Vault is a private place for your receipts, invoices, warranty documents, and return deadlines.
 
 Scan or import a receipt, add the purchase date, and set warranty or return reminders in seconds. Your documents stay on your device, with no account, no ads, and no tracking.
 
@@ -1514,7 +1514,7 @@ Features:
 • Works offline
 • Designed for privacy
 
-Warranty rules vary by country, seller, and product. Warranty Vault helps you organize your documents and reminders, but it does not provide legal advice.
+Warranty rules vary by country, seller, and product. Warranties Vault helps you organize your documents and reminders, but it does not provide legal advice.
 ```
 
 Keywords:
@@ -1593,7 +1593,7 @@ Schermata Settings:
 Su iOS, la lingua app può essere gestita dal sistema se l’app è localizzata. Non implementare un sistema custom di lingua salvo necessità. Aggiungere eventualmente un link/istruzione:
 
 ```text
-To change app language, use iOS Settings > Apps > Warranty Vault > Language.
+To change app language, use iOS Settings > Apps > Warranties Vault > Language.
 ```
 
 Localizzare.
@@ -1607,7 +1607,7 @@ Inserire nelle impostazioni e nei metadata:
 English:
 
 ```text
-Warranty Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice.
+Warranties Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice.
 ```
 
 Italian:

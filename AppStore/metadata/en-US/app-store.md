@@ -1,4 +1,4 @@
-# Warranty Vault
+# Warranties Vault
 
 ## Subtitle
 
@@ -10,11 +10,11 @@ Scan receipts, track warranties and returns, and keep purchase documents organiz
 
 ## Description
 
-Warranty Vault keeps receipts, invoices, warranty documents, and return deadlines organized in one private place on your iPhone.
+Warranties Vault keeps receipts, invoices, warranty documents, and return deadlines organized in one private place on your iPhone.
 
-Save proof of purchase before paper receipts fade or get lost. Scan a receipt, import a PDF invoice, add warranty details, and set local reminders for return windows and warranty expiration dates. Warranty Vault is built for people who want a simple purchase archive without accounts, ads, subscriptions, or tracking.
+Save proof of purchase before paper receipts fade or get lost. Scan a receipt, import a PDF invoice, add warranty details, and set local reminders for return windows and warranty expiration dates. Warranties Vault is built for people who want a simple purchase archive without accounts, ads, subscriptions, or tracking.
 
-Why Warranty Vault:
+Why Warranties Vault:
 
 - Scan receipts and warranty documents
 - Import PDF invoices and product images
@@ -43,11 +43,11 @@ Designed for everyday purchases:
 - Automotive items
 - Important purchase documents
 
-Warranty Vault is not an expense tracker, accounting app, or cloud document service. It is a focused, privacy-first vault for the documents and deadlines you may need when returning a product, requesting support, or checking warranty coverage.
+Warranties Vault is not an expense tracker, accounting app, or cloud document service. It is a focused, privacy-first vault for the documents and deadlines you may need when returning a product, requesting support, or checking warranty coverage.
 
 Your documents stay on your device. Camera access is used only when you choose to scan a document. Photo and file access are used only when you choose to import something. Reminders are scheduled locally on your iPhone.
 
-Warranty and return rules may vary by country, seller, product type, and contract. Warranty Vault helps you organize documents and reminders, but it does not provide legal advice.
+Warranty and return rules may vary by country, seller, product type, and contract. Warranties Vault helps you organize documents and reminders, but it does not provide legal advice.
 
 ## Keywords
 

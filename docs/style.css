@@ -321,7 +321,7 @@ header .nav-container {
   filter: blur(20px);
 }
 
-/* Internal Mockup Shell (UI of Warranty Vault) */
+/* Internal Mockup Shell (UI of Warranties Vault) */
 .mockup-ui {
   display: flex;
   flex-direction: column;

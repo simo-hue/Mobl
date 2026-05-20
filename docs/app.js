@@ -11,7 +11,7 @@ const translations = {
     hero_badge: "🔒 100% Private & Local",
     hero_title: "Never Lose a Receipt Again.",
     hero_subtitle: "Scan receipts, track warranties and returns, and keep purchase documents organized privately on your iPhone. No account, no ads, no subscription.",
-    mockup_logo_text: "Warranty Vault",
+    mockup_logo_text: "Warranties Vault",
     mockup_c1_title: "iPhone 15 Pro Max",
     mockup_c1_sub: "Apple Store — $1,199",
     mockup_c1_badge: "18 Months Left",
@@ -44,7 +44,7 @@ const translations = {
     // Index Page - Privacy Callout
     priv_badge: "🔒 Zero Tracking",
     priv_title: "Your Data Stays on Your Device. Period.",
-    priv_desc: "Warranty Vault is designed from the ground up to respect your digital privacy. We don't host databases, collect logs, or track your behavior. Everything you save remains locked securely inside your iOS sandbox.",
+    priv_desc: "Warranties Vault is designed from the ground up to respect your digital privacy. We don't host databases, collect logs, or track your behavior. Everything you save remains locked securely inside your iOS sandbox.",
     priv_m1: "Accounts",
     priv_m2: "Offline-first",
     priv_m3: "Ads / Trackers",
@@ -54,13 +54,13 @@ const translations = {
     footer_title_legal: "Compliance",
     footer_title_support: "Support",
     footer_copyright: "© 2026 Simo. All rights reserved.",
-    footer_legal_notes: "Warranty Vault is an independent application. App Store and iOS are trademarks of Apple Inc.",
+    footer_legal_notes: "Warranties Vault is an independent application. App Store and iOS are trademarks of Apple Inc.",
 
     // Privacy Policy Page
     priv_page_title: "Privacy Policy",
     priv_page_subtitle: "Effective date: May 20, 2026",
     priv_sec1_title: "1. Local-First Architecture",
-    priv_sec1_desc1: "Warranty Vault is built as a local-first application. This means that all receipts, invoices, warranty documents, product photos, prices, notes, and reminders are stored exclusively on your individual iOS device. They never leave your device unless you explicitly decide to share or export them.",
+    priv_sec1_desc1: "Warranties Vault is built as a local-first application. This means that all receipts, invoices, warranty documents, product photos, prices, notes, and reminders are stored exclusively on your individual iOS device. They never leave your device unless you explicitly decide to share or export them.",
     priv_sec1_desc2: "As the developer, I do not receive, collect, store, or have access to any of your documents, purchase data, notes, or personal information.",
     priv_sec2_title: "2. Device Permissions Used",
     priv_sec2_desc1: "To perform its functions natively, the app requests standard iOS permissions when necessary:",
@@ -74,7 +74,7 @@ const translations = {
     priv_sec3_li2: "<strong>No SDKs:</strong> There are no advertising SDKs, third-party analytics trackers, or social sign-ins compiled in the application code.",
     priv_sec3_li3: "<strong>Third-Party Sharing:</strong> Zero data is shared with third parties. All processing is processed completely offline on your silicon.",
     priv_sec4_title: "4. App Store Declarations",
-    priv_sec4_desc1: "In accordance with Apple Store review guidelines, the declared specifications for Warranty Vault v1 are:",
+    priv_sec4_desc1: "In accordance with Apple Store review guidelines, the declared specifications for Warranties Vault v1 are:",
     priv_sec4_li1: "<strong>Tracking:</strong> No",
     priv_sec4_li2: "<strong>Data Collected by Developer:</strong> None",
     priv_sec4_li3: "<strong>Third-party Data Sharing:</strong> None",
@@ -82,7 +82,7 @@ const translations = {
     priv_sec5_desc1: "Since all data is saved in the local app container, you maintain absolute control over retention:",
     priv_sec5_desc2: "You can delete individual purchases or attachments, purge all database files directly from the app's settings screen, or completely remove the application from your device to erase all structural archives. Backups are created only if you trigger an active ZIP export or depend on standard iCloud device backups.",
     sidebar_priv_title: "Privacy Summary",
-    sidebar_priv_desc: "Warranty Vault does not collect, sell, or receive any user documents or personal details. The app operates completely offline-first.",
+    sidebar_priv_desc: "Warranties Vault does not collect, sell, or receive any user documents or personal details. The app operates completely offline-first.",
     sidebar_support_title: "Need Clarity?",
     sidebar_support_desc: "If you have any questions about how your local permissions are handled, feel free to contact support.",
     sidebar_support_btn: "Get Support",
@@ -94,7 +94,7 @@ const translations = {
     sup_q1: "Where is my data stored?",
     sup_a1: "All files, scanned receipts, databases, and configuration settings are stored locally on your device within the app sandbox. There is no external database or server storing your documents.",
     sup_q2: "What happens if I lose or change my iPhone?",
-    sup_a2: "Because Warranty Vault is entirely local and does not sync to custom databases, we recommend using standard iOS/iCloud system backups or manually exporting a compressed ZIP backup from the Settings screen inside the app to save elsewhere.",
+    sup_a2: "Because Warranties Vault is entirely local and does not sync to custom databases, we recommend using standard iOS/iCloud system backups or manually exporting a compressed ZIP backup from the Settings screen inside the app to save elsewhere.",
     sup_q3: "Can I import digital invoices (PDFs)?",
     sup_a3: "Yes! You can choose to import existing PDF invoices, camera images, or physical scans from either your Files app or your photo library directly into your digital archive.",
     sup_q4: "Is biometric protection available?",
@@ -113,18 +113,18 @@ const translations = {
     terms_page_title: "Terms of Service",
     terms_page_subtitle: "Terms of Use & End User License Agreement (EULA)",
     terms_sec1_title: "1. Introduction & Terms",
-    terms_sec1_desc1: "By downloading, installing, or accessing the Warranty Vault application from the iOS App Store, you agree to comply with and be legally bound by these Terms of Service. If you do not accept these terms, do not install or use the app.",
+    terms_sec1_desc1: "By downloading, installing, or accessing the Warranties Vault application from the iOS App Store, you agree to comply with and be legally bound by these Terms of Service. If you do not accept these terms, do not install or use the app.",
     terms_sec1_desc2: "We reserve the right to modify these terms at any time. Your continued use of the application following updates constitutes your acceptance of the revised conditions.",
     terms_sec2_title: "2. App Store License & Distribution",
-    terms_sec2_desc1: "Warranty Vault is licensed to you under a limited, non-transferable, non-exclusive, revocable license for personal, non-commercial use on Apple products that you own or control, in accordance with the Apple App Store Terms of Service (EULA).",
+    terms_sec2_desc1: "Warranties Vault is licensed to you under a limited, non-transferable, non-exclusive, revocable license for personal, non-commercial use on Apple products that you own or control, in accordance with the Apple App Store Terms of Service (EULA).",
     terms_sec2_desc2: "The application is distributed through the App Store. There are no compiled ads, recurring subscriptions, in-app purchases, or hidden StoreKit paywalls in the current version.",
     terms_sec3_title: "3. Data Responsibility & Offline Limits",
-    terms_sec3_desc1: "Warranty Vault is designed as a local-first software utility. Document scanning, PDF rendering, file protection, and storage operate locally in your device container.",
+    terms_sec3_desc1: "Warranties Vault is designed as a local-first software utility. Document scanning, PDF rendering, file protection, and storage operate locally in your device container.",
     terms_sec3_desc2: "Critical Backup Obligation: Because the developer has no cloud servers or network databases containing your receipts and files, you have complete and exclusive responsibility to back up your purchase data using either Apple's built-in iCloud system backup utilities or manually exporting ZIP archive bundles from the Settings section within the app.",
     terms_sec3_desc3: "The developer is not liable for any data loss, database corruption, structural failure, or hardware damage resulting in the loss of your documents.",
     terms_sec4_title: "4. Warranty & Return Deadlines",
     terms_sec4_desc1: "Warranty and return regulations are governed by contracts, retail agreements, store policies, and local state laws. The deadline dates, reminders, and alerts calculated inside the app are meant purely as a structured organization tool.",
-    terms_sec4_desc2: "Warranty Vault does not guarantee successful warranty fulfillment, refunds, or retail store returns, and does not provide legal, financial, or consumer advice. Please verify exact store policies manually.",
+    terms_sec4_desc2: "Warranties Vault does not guarantee successful warranty fulfillment, refunds, or retail store returns, and does not provide legal, financial, or consumer advice. Please verify exact store policies manually.",
     terms_sec5_title: "5. Disclaimer of Warranties",
     terms_sec5_desc1: "The application is provided 'AS IS' and 'AS AVAILABLE' without warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, or non-infringement.",
     sidebar_terms_title: "EULA Policy",
@@ -271,7 +271,7 @@ function setLanguage(lang) {
   currentLanguage = lang;
   
   // Save preferences
-  localStorage.setItem('warranty_vault_lang', lang);
+  localStorage.setItem('warranties_vault_lang', lang);
   
   // Highlight active button
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -317,7 +317,7 @@ function setLanguage(lang) {
 // Interactive FAQs Accordions
 document.addEventListener('DOMContentLoaded', () => {
   // Load saved language preference or default to browser language or 'en'
-  const savedLang = localStorage.getItem('warranty_vault_lang');
+  const savedLang = localStorage.getItem('warranties_vault_lang');
   const browserLang = navigator.language.split('-')[0];
   
   if (savedLang) {
@@ -379,7 +379,7 @@ function handleFormSubmit(event) {
   const originalText = submitBtn.innerHTML;
   submitBtn.innerHTML = currentLanguage === 'it' ? 'Apertura email...' : 'Opening email...';
 
-  const subject = encodeURIComponent('Warranty Vault support request');
+  const subject = encodeURIComponent('Warranties Vault support request');
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
   window.location.href = `mailto:mattioli.simone.10@gmail.com?subject=${subject}&body=${body}`;
 

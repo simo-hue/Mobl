@@ -37,7 +37,7 @@ struct BackupExportService {
             }
         }
 
-        let outputURL = try storage.exportsURL.appending(path: "WarrantyVault-Backup-\(Self.timestamp()).zip")
+        let outputURL = try storage.exportsURL.appending(path: "WarrantiesVault-Backup-\(Self.timestamp()).zip")
         try zipWriter.write(entries: entries, to: outputURL)
         return outputURL
     }
@@ -51,7 +51,7 @@ struct BackupExportService {
 
     private var backupReadme: String {
         """
-        Warranty Vault backup
+        Warranties Vault backup
 
         This archive was created locally on the device after a manual export action.
         It contains metadata.json and any stored files under attachments/.

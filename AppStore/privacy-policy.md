@@ -1,8 +1,8 @@
-# Warranty Vault Privacy Policy
+# Warranties Vault Privacy Policy
 
 Effective date: 2026-05-20
 
-Warranty Vault is designed as a local-first app. The app stores receipts, invoices, warranty documents, product photos, prices, notes, and reminders locally on your device.
+Warranties Vault is designed as a local-first app. The app stores receipts, invoices, warranty documents, product photos, prices, notes, and reminders locally on your device.
 
 The developer does not receive your documents, prices, notes, purchase data, or personal information. The app does not require an account, does not include advertising SDKs, does not include third-party analytics SDKs, and does not track you across apps or websites.
 
