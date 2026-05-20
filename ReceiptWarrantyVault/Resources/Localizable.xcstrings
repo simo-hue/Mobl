@@ -1,159 +1,2645 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "app.name" : { "comment" : "Commercial app name.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty Vault" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scontrini & Garanzie" } } } },
-    "archive.filters" : { "comment" : "Toolbar menu for archive filters.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Filters" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Filtri" } } } },
-    "archive.search" : { "comment" : "Search prompt for purchase archive.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Search purchases" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Cerca acquisti" } } } },
-    "about.body" : { "comment" : "About screen body.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "A private, offline-first vault for receipts, invoices, warranty documents, and return deadlines." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Una cassaforte privata e offline-first per scontrini, fatture, documenti di garanzia e scadenze di reso." } } } },
-    "attachment.type.invoice" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Invoice" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Fattura" } } } },
-    "attachment.type.manual" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Manual" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Manuale" } } } },
-    "attachment.type.other" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Other" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Altro" } } } },
-    "attachment.type.productPhoto" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Product photo" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Foto prodotto" } } } },
-    "attachment.type.receiptImage" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Receipt image" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Immagine scontrino" } } } },
-    "attachment.type.receiptPDF" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Receipt PDF" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "PDF scontrino" } } } },
-    "attachment.type.warrantyDocument" : { "comment" : "Attachment type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty document" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Documento garanzia" } } } },
-    "auth.reason" : { "comment" : "Reason shown in biometric/passcode prompt.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Use Face ID or passcode to protect your saved receipts and warranty documents." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Usa Face ID o il codice per proteggere scontrini e documenti di garanzia salvati." } } } },
-    "category.appliances" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Appliances" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elettrodomestici" } } } },
-    "category.automotive" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Automotive" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Auto" } } } },
-    "category.clothing" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Clothing" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Abbigliamento" } } } },
-    "category.documents" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Documents" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Documenti" } } } },
-    "category.electronics" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Electronics" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elettronica" } } } },
-    "category.furniture" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Furniture" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Arredamento" } } } },
-    "category.home" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Casa" } } } },
-    "category.kitchen" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Kitchen" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Cucina" } } } },
-    "category.other" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Other" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Altro" } } } },
-    "category.sports" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Sports" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Sport" } } } },
-    "category.tools" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Tools" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Strumenti" } } } },
-    "category.toys" : { "comment" : "Purchase category.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Toys" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Giochi" } } } },
-    "common.add" : { "comment" : "Add button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Add" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiungi" } } } },
-    "common.cancel" : { "comment" : "Cancel button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Annulla" } } } },
-    "common.edit" : { "comment" : "Edit button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica" } } } },
-    "common.next" : { "comment" : "Advances onboarding.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Next" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Avanti" } } } },
-    "common.save" : { "comment" : "Save button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Save" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Salva" } } } },
-    "date.daysOverdue.format" : { "comment" : "Number of days after a deadline.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days overdue" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "%lld giorni di ritardo" } } } },
-    "date.daysRemaining.format" : { "comment" : "Number of days until a deadline.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days left" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "%lld giorni rimasti" } } } },
-    "date.dueToday" : { "comment" : "Deadline is today.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Due today" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scade oggi" } } } },
-    "deadline.kind.return" : { "comment" : "Return window deadline label.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return window" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Finestra di reso" } } } },
-    "deadline.kind.warranty" : { "comment" : "Warranty deadline label.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzia" } } } },
-    "delete.purchase.confirm" : { "comment" : "Destructive delete confirmation button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina acquisto" } } } },
-    "delete.purchase.title" : { "comment" : "Delete purchase confirmation title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete this purchase?" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Eliminare questo acquisto?" } } } },
-    "detail.attachments.empty" : { "comment" : "Empty attachments label.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No documents attached yet." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun documento allegato." } } } },
-    "detail.section.actions" : { "comment" : "Detail actions section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Actions" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Azioni" } } } },
-    "detail.section.attachments" : { "comment" : "Detail attachments section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Documents" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Documenti" } } } },
-    "detail.section.metadata" : { "comment" : "Detail metadata section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Details" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Dettagli" } } } },
-    "detail.section.timeline" : { "comment" : "Detail timeline section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Timeline" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Timeline" } } } },
-    "detail.title" : { "comment" : "Purchase detail navigation title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Acquisto" } } } },
-    "empty.receipts.body" : { "comment" : "Empty dashboard body.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan your first receipt and set a warranty reminder in less than a minute." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona il primo scontrino e imposta un promemoria garanzia in meno di un minuto." } } } },
-    "empty.receipts.title" : { "comment" : "Empty dashboard title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No receipts yet" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuno scontrino salvato" } } } },
-    "error.imageEncoding" : { "comment" : "Image encoding error.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "The image could not be saved." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Impossibile salvare l'immagine." } } } },
-    "error.missingFile" : { "comment" : "Missing stored file error.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "The stored document could not be found." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Impossibile trovare il documento salvato." } } } },
-    "error.notificationsDenied" : { "comment" : "Notification permission denied error.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications are disabled for this app." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Le notifiche sono disattivate per questa app." } } } },
-    "export.purchaseSummary" : { "comment" : "PDF title for purchase summary.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Purchase summary" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scheda acquisto" } } } },
-    "field.category" : { "comment" : "Category field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Category" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Categoria" } } } },
-    "field.currency" : { "comment" : "Currency field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Currency" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Valuta" } } } },
-    "field.notes" : { "comment" : "Notes field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Notes" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Note" } } } },
-    "field.price" : { "comment" : "Price field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Price" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Prezzo" } } } },
-    "field.productName" : { "comment" : "Product name field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Product name" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nome prodotto" } } } },
-    "field.purchaseDate" : { "comment" : "Purchase date field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Purchase date" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Data acquisto" } } } },
-    "field.returnEnds" : { "comment" : "Return end field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return ends" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Reso fino al" } } } },
-    "field.returnWindow" : { "comment" : "Return window field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return window" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Finestra di reso" } } } },
-    "field.serialNumber" : { "comment" : "Serial number field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Serial number" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Numero seriale" } } } },
-    "field.store" : { "comment" : "Store field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Store" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Negozio" } } } },
-    "field.warrantyDuration" : { "comment" : "Warranty duration field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty duration" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Durata garanzia" } } } },
-    "field.warrantyEnds" : { "comment" : "Warranty end field.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty ends" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzia fino al" } } } },
-    "filter.all" : { "comment" : "All filter option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "All" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Tutti" } } } },
-    "filter.category" : { "comment" : "Category filter title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Category" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Categoria" } } } },
-    "filter.status" : { "comment" : "Status filter title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Status" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Stato" } } } },
-    "form.days.format" : { "comment" : "Day count in forms.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld days" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "%lld giorni" } } } },
-    "form.deadlines.disclaimer" : { "comment" : "Neutral legal disclaimer under deadline fields.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty and return rules may vary by country, seller, product type, and contract." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Le regole su garanzie e resi possono variare in base a paese, venditore, prodotto e contratto." } } } },
-    "form.months.format" : { "comment" : "Month count in forms.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld months" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "%lld mesi" } } } },
-    "form.pendingAttachments.format" : { "comment" : "Pending attachment count.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld document ready to attach" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "%lld documento pronto da allegare" } } } },
-    "form.section.deadlines" : { "comment" : "Form deadlines section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Deadlines" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scadenze" } } } },
-    "form.section.details" : { "comment" : "Form details section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Details" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Dettagli" } } } },
-    "form.section.price" : { "comment" : "Form price section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Price" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Prezzo" } } } },
-    "form.section.purchase" : { "comment" : "Form purchase section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Acquisto" } } } },
-    "home.activeWarranties" : { "comment" : "Dashboard section for active warranties.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Active warranties" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzie attive" } } } },
-    "home.expired" : { "comment" : "Dashboard section for expired deadlines.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Expired" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scadute" } } } },
-    "home.returnSoon" : { "comment" : "Dashboard section for returns expiring soon.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return deadlines soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Resi in scadenza" } } } },
-    "home.warrantySoon" : { "comment" : "Dashboard section for warranties expiring soon.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranties expiring soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzie in scadenza" } } } },
-    "legal.disclaimer.body" : { "comment" : "Legal disclaimer body.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "L'app aiuta a organizzare documenti e promemoria. Le regole su garanzie e resi possono variare in base a paese, venditore, tipo di prodotto e contratto. L'app non fornisce consulenza legale." } } } },
-    "lock.body" : { "comment" : "Locked screen body.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Authenticate to open your local receipt vault." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Autenticati per aprire il tuo archivio locale." } } } },
-    "lock.title" : { "comment" : "Locked screen title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Vault locked" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Archivio bloccato" } } } },
-    "lock.unlock" : { "comment" : "Unlock button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Sblocca" } } } },
-    "notification.return.body" : { "comment" : "Return notification body with product and days placeholders.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Your return window for %@ ends in %lld days." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Il periodo di reso per %@ scade tra %lld giorni." } } } },
-    "notification.return.title" : { "comment" : "Return notification title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return window ending soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Reso in scadenza" } } } },
-    "notification.warranty.body" : { "comment" : "Warranty notification body with product and days placeholders.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Your warranty for %@ ends in %lld days." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "La garanzia per %@ scade tra %lld giorni." } } } },
-    "notification.warranty.title" : { "comment" : "Warranty notification title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty ending soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzia in scadenza" } } } },
-    "onboarding.cta.manual" : { "comment" : "Secondary onboarding action to create an item manually.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Add manually" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiungi manualmente" } } } },
-    "onboarding.cta.scan" : { "comment" : "Primary onboarding action to scan a first receipt.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan first receipt" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona il primo scontrino" } } } },
-    "onboarding.deadlines.body" : { "comment" : "Onboarding body for local reminders.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Get local reminders before return windows and warranties expire." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Ricevi promemoria locali prima che scadano resi e garanzie." } } } },
-    "onboarding.deadlines.title" : { "comment" : "Onboarding title for reminders.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Never miss a deadline" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Non perdere una scadenza" } } } },
-    "onboarding.privacy.body" : { "comment" : "Onboarding body for privacy.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No account. No tracking. Your documents stay on your device." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun account. Nessun tracking. I documenti restano sul dispositivo." } } } },
-    "onboarding.privacy.title" : { "comment" : "Onboarding title for privacy.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Private by design" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Privata per progettazione" } } } },
-    "onboarding.save.body" : { "comment" : "Onboarding body for saving documents.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Keep proof of purchase, invoices, and warranty documents organized." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Tieni in ordine prove d'acquisto, fatture e documenti di garanzia." } } } },
-    "onboarding.save.title" : { "comment" : "Onboarding title for saving receipts and warranties.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Save receipts and warranties" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Salva scontrini e garanzie" } } } },
-    "privacy.localOnly" : { "comment" : "Privacy reassurance row.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No account. No tracking. Files stay on this device." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun account. Nessun tracking. I file restano su questo dispositivo." } } } },
-    "privacy.localDocuments" : { "comment" : "Privacy screen item.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Documents are stored locally in the app sandbox." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "I documenti sono salvati localmente nella sandbox dell'app." } } } },
-    "privacy.manualExport" : { "comment" : "Privacy screen item.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Exports happen only when you choose to share or save a file." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Gli export avvengono solo quando scegli di condividere o salvare un file." } } } },
-    "privacy.noAccount" : { "comment" : "Privacy screen item.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No account is required." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Non serve alcun account." } } } },
-    "privacy.noTracking" : { "comment" : "Privacy screen item.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No ads, analytics, or tracking SDKs are included." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Non ci sono SDK per pubblicita, analytics o tracking." } } } },
-    "privacy.policy.body" : { "comment" : "In-app privacy policy summary.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "The app saves receipts, prices, notes, and documents locally on your device. The developer does not receive your documents or personal data. Deleting items in the app or deleting the app removes local data from this device." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "L'app salva scontrini, prezzi, note e documenti localmente sul dispositivo. Lo sviluppatore non riceve documenti o dati personali. Eliminando gli elementi nell'app o eliminando l'app rimuovi i dati locali da questo dispositivo." } } } },
-    "purchase.action.archive" : { "comment" : "Archive purchase action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Archive" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Archivia" } } } },
-    "purchase.action.delete" : { "comment" : "Delete purchase action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina" } } } },
-    "purchase.action.exportPDF" : { "comment" : "Export PDF action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Export PDF" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Esporta PDF" } } } },
-    "purchase.action.shareExport" : { "comment" : "Share exported file action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Share export" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Condividi export" } } } },
-    "purchase.action.unarchive" : { "comment" : "Unarchive purchase action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Unarchive" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristina" } } } },
-    "purchase.add.title" : { "comment" : "Add purchase screen title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Add purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiungi acquisto" } } } },
-    "purchase.edit.title" : { "comment" : "Edit purchase screen title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica acquisto" } } } },
-    "scan.addManual" : { "comment" : "Manual add action on scan tab.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Add manually" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiungi manualmente" } } } },
-    "scan.openScanner" : { "comment" : "Open scanner action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan document" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona documento" } } } },
-    "scanner.ready.body" : { "comment" : "Scanner placeholder body before full scanner integration.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Use the document scanner or import a local file, then save it with purchase details." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Usa lo scanner documenti o importa un file locale, poi salvalo con i dettagli dell'acquisto." } } } },
-    "scanner.ready.title" : { "comment" : "Scanner hub title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready to scan" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Pronto per la scansione" } } } },
-    "scanner.importFiles" : { "comment" : "Import from Files action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Import from Files" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Importa da File" } } } },
-    "scanner.importPhotos" : { "comment" : "Import from Photos action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Import from Photos" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Importa da Foto" } } } },
-    "scanner.scanWithCamera" : { "comment" : "Open VisionKit scanner action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan with camera" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona con fotocamera" } } } },
-    "settings.about" : { "comment" : "About settings row.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Informazioni" } } } },
-    "settings.appLanguage" : { "comment" : "App language settings row.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "App language" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Lingua app" } } } },
-    "settings.appLanguage.body" : { "comment" : "System app language instructions.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "To change app language, use iOS Settings > Apps > Warranty Vault > Language." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Per cambiare lingua, usa Impostazioni iOS > App > Scontrini & Garanzie > Lingua." } } } },
-    "settings.defaultReturnWindow" : { "comment" : "Default return window setting.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Default return window" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Finestra reso predefinita" } } } },
-    "settings.deleteAll" : { "comment" : "Delete all data action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete all data" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina tutti i dati" } } } },
-    "settings.deleteAll.confirm" : { "comment" : "Delete all confirmation button.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete everything" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina tutto" } } } },
-    "settings.deleteAll.title" : { "comment" : "Delete all confirmation title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete all saved purchases and documents?" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Eliminare tutti gli acquisti e documenti salvati?" } } } },
-    "settings.deviceBackup" : { "comment" : "Include documents in device backup setting.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Include documents in device backup" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Includi documenti nel backup dispositivo" } } } },
-    "settings.exportData" : { "comment" : "Export data action.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Export data" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Esporta dati" } } } },
-    "settings.faceID" : { "comment" : "Face ID lock setting.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Face ID / Touch ID lock" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocco Face ID / Touch ID" } } } },
-    "settings.faceID.failed" : { "comment" : "Face ID enabling failure.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Authentication was not completed." } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Autenticazione non completata." } } } },
-    "settings.legal" : { "comment" : "Legal disclaimer settings row.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Legal disclaimer" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Disclaimer legale" } } } },
-    "settings.notifications" : { "comment" : "Notifications setting.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Local reminders" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Promemoria locali" } } } },
-    "settings.privacy" : { "comment" : "Privacy settings row.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Privacy" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Privacy" } } } },
-    "settings.privacyPolicy" : { "comment" : "Privacy policy section title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Privacy policy" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Privacy policy" } } } },
-    "settings.return.none" : { "comment" : "No return window option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "None" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuna" } } } },
-    "settings.section.about" : { "comment" : "About settings section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Informazioni" } } } },
-    "settings.section.data" : { "comment" : "Data settings section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Data" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Dati" } } } },
-    "settings.section.defaults" : { "comment" : "Defaults settings section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Defaults" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Predefiniti" } } } },
-    "settings.section.privacy" : { "comment" : "Privacy settings section.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Privacy & reminders" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Privacy e promemoria" } } } },
-    "settings.version" : { "comment" : "Version label.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Version" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Versione" } } } },
-    "sort.alphabetical" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Alphabetical" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Alfabetico" } } } },
-    "sort.highestPrice" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Highest price" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Prezzo piu alto" } } } },
-    "sort.newest" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Newest purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Acquisto piu recente" } } } },
-    "sort.oldest" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Oldest purchase" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Acquisto meno recente" } } } },
-    "sort.returnExpiringSoon" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Return expiring soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Reso in scadenza" } } } },
-    "sort.title" : { "comment" : "Sort picker title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Sort" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Ordina" } } } },
-    "sort.warrantyExpiringSoon" : { "comment" : "Archive sort option.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Warranty expiring soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Garanzia in scadenza" } } } },
-    "status.active" : { "comment" : "Deadline status.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Active" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Attiva" } } } },
-    "status.archived" : { "comment" : "Deadline status.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Archived" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Archiviata" } } } },
-    "status.expired" : { "comment" : "Deadline status.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Expired" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scaduta" } } } },
-    "status.expiringSoon" : { "comment" : "Deadline status.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Expiring soon" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "In scadenza" } } } },
-    "status.noDate" : { "comment" : "Deadline status.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "No warranty date" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuna data garanzia" } } } },
-    "tab.archive" : { "comment" : "Archive tab title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Archive" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Archivio" } } } },
-    "tab.deadlines" : { "comment" : "Deadlines tab title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Deadlines" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scadenze" } } } },
-    "tab.scan" : { "comment" : "Scan tab title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Scan" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Scansiona" } } } },
-    "tab.settings" : { "comment" : "Settings tab title.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Impostazioni" } } } },
-    "warranty.type.commercial" : { "comment" : "Warranty type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Commercial" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Commerciale" } } } },
-    "warranty.type.custom" : { "comment" : "Warranty type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Custom" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Personalizzata" } } } },
-    "warranty.type.extended" : { "comment" : "Warranty type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Extended" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Estesa" } } } },
-    "warranty.type.insurance" : { "comment" : "Warranty type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Insurance" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Assicurazione" } } } },
-    "warranty.type.legal" : { "comment" : "Warranty type.", "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Legal" } }, "it" : { "stringUnit" : { "state" : "translated", "value" : "Legale" } } } }
+    "about.body" : {
+      "comment" : "About screen body.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A private, offline-first vault for receipts, invoices, warranty documents, and return deadlines."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una cassaforte privata e offline-first per scontrini, fatture, documenti di garanzia e scadenze di reso."
+          }
+        }
+      }
+    },
+    "app.name" : {
+      "comment" : "Commercial app name.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty Vault"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scontrini & Garanzie"
+          }
+        }
+      }
+    },
+    "archive.filters" : {
+      "comment" : "Toolbar menu for archive filters.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filters"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtri"
+          }
+        }
+      }
+    },
+    "archive.search" : {
+      "comment" : "Search prompt for purchase archive.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search purchases"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca acquisti"
+          }
+        }
+      }
+    },
+    "attachment.type.invoice" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invoice"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fattura"
+          }
+        }
+      }
+    },
+    "attachment.type.manual" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuale"
+          }
+        }
+      }
+    },
+    "attachment.type.other" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altro"
+          }
+        }
+      }
+    },
+    "attachment.type.productPhoto" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product photo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto prodotto"
+          }
+        }
+      }
+    },
+    "attachment.type.receiptImage" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receipt image"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Immagine scontrino"
+          }
+        }
+      }
+    },
+    "attachment.type.receiptPDF" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receipt PDF"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF scontrino"
+          }
+        }
+      }
+    },
+    "attachment.type.warrantyDocument" : {
+      "comment" : "Attachment type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty document"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documento garanzia"
+          }
+        }
+      }
+    },
+    "auth.reason" : {
+      "comment" : "Reason shown in the Face ID or passcode prompt",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Face ID or passcode to protect your saved receipts and warranty documents."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa Face ID o il codice per proteggere scontrini e documenti di garanzia salvati."
+          }
+        }
+      }
+    },
+    "category.appliances" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appliances"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elettrodomestici"
+          }
+        }
+      }
+    },
+    "category.automotive" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automotive"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto"
+          }
+        }
+      }
+    },
+    "category.clothing" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clothing"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbigliamento"
+          }
+        }
+      }
+    },
+    "category.documents" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documents"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documenti"
+          }
+        }
+      }
+    },
+    "category.electronics" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Electronics"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elettronica"
+          }
+        }
+      }
+    },
+    "category.furniture" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Furniture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arredamento"
+          }
+        }
+      }
+    },
+    "category.home" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
+          }
+        }
+      }
+    },
+    "category.kitchen" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitchen"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cucina"
+          }
+        }
+      }
+    },
+    "category.other" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altro"
+          }
+        }
+      }
+    },
+    "category.sports" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sports"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sport"
+          }
+        }
+      }
+    },
+    "category.tools" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tools"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strumenti"
+          }
+        }
+      }
+    },
+    "category.toys" : {
+      "comment" : "Purchase category.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toys"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giochi"
+          }
+        }
+      }
+    },
+    "common.add" : {
+      "comment" : "Add button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi"
+          }
+        }
+      }
+    },
+    "common.cancel" : {
+      "comment" : "Cancel button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        }
+      }
+    },
+    "common.edit" : {
+      "comment" : "Edit button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica"
+          }
+        }
+      }
+    },
+    "common.next" : {
+      "comment" : "Advances onboarding.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
+          }
+        }
+      }
+    },
+    "common.save" : {
+      "comment" : "Save button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
+        }
+      }
+    },
+    "date.daysOverdue.format" : {
+      "comment" : "Number of days after a deadline",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld days overdue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giorni di ritardo"
+          }
+        }
+      }
+    },
+    "date.daysRemaining.format" : {
+      "comment" : "Number of days until a deadline",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld days left"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giorni rimasti"
+          }
+        }
+      }
+    },
+    "date.dueToday" : {
+      "comment" : "Deadline is today",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Due today"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scade oggi"
+          }
+        }
+      }
+    },
+    "deadline.kind.return" : {
+      "comment" : "Return window deadline label.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return window"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finestra di reso"
+          }
+        }
+      }
+    },
+    "deadline.kind.warranty" : {
+      "comment" : "Warranty deadline label.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzia"
+          }
+        }
+      }
+    },
+    "delete.purchase.confirm" : {
+      "comment" : "Destructive delete confirmation button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina acquisto"
+          }
+        }
+      }
+    },
+    "delete.purchase.title" : {
+      "comment" : "Delete purchase confirmation title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete this purchase?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminare questo acquisto?"
+          }
+        }
+      }
+    },
+    "detail.attachments.empty" : {
+      "comment" : "Empty attachments label.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No documents attached yet."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun documento allegato."
+          }
+        }
+      }
+    },
+    "detail.section.actions" : {
+      "comment" : "Detail actions section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Azioni"
+          }
+        }
+      }
+    },
+    "detail.section.attachments" : {
+      "comment" : "Detail attachments section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documents"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documenti"
+          }
+        }
+      }
+    },
+    "detail.section.metadata" : {
+      "comment" : "Detail metadata section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettagli"
+          }
+        }
+      }
+    },
+    "detail.section.timeline" : {
+      "comment" : "Detail timeline section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timeline"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timeline"
+          }
+        }
+      }
+    },
+    "detail.title" : {
+      "comment" : "Purchase detail navigation title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acquisto"
+          }
+        }
+      }
+    },
+    "empty.receipts.body" : {
+      "comment" : "Empty dashboard body.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan your first receipt and set a warranty reminder in less than a minute."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona il primo scontrino e imposta un promemoria garanzia in meno di un minuto."
+          }
+        }
+      }
+    },
+    "empty.receipts.title" : {
+      "comment" : "Empty dashboard title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No receipts yet"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuno scontrino salvato"
+          }
+        }
+      }
+    },
+    "error.imageEncoding" : {
+      "comment" : "Image encoding failure",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The image could not be saved."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile salvare l'immagine."
+          }
+        }
+      }
+    },
+    "error.missingFile" : {
+      "comment" : "Stored document cannot be found",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The stored document could not be found."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile trovare il documento salvato."
+          }
+        }
+      }
+    },
+    "error.notificationsDenied" : {
+      "comment" : "Notification permission denied",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications are disabled for this app."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le notifiche sono disattivate per questa app."
+          }
+        }
+      }
+    },
+    "export.purchaseSummary" : {
+      "comment" : "PDF title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase summary"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheda acquisto"
+          }
+        }
+      }
+    },
+    "field.category" : {
+      "comment" : "Category field.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+          }
+        }
+      }
+    },
+    "field.currency" : {
+      "comment" : "Currency field.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Currency"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valuta"
+          }
+        }
+      }
+    },
+    "field.notes" : {
+      "comment" : "Notes field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note"
+          }
+        }
+      }
+    },
+    "field.price" : {
+      "comment" : "Price field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prezzo"
+          }
+        }
+      }
+    },
+    "field.productName" : {
+      "comment" : "Product name field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product name"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome prodotto"
+          }
+        }
+      }
+    },
+    "field.purchaseDate" : {
+      "comment" : "Purchase date field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase date"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data acquisto"
+          }
+        }
+      }
+    },
+    "field.returnEnds" : {
+      "comment" : "Return end field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return ends"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reso fino al"
+          }
+        }
+      }
+    },
+    "field.returnWindow" : {
+      "comment" : "Return window field.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return window"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finestra di reso"
+          }
+        }
+      }
+    },
+    "field.serialNumber" : {
+      "comment" : "Serial number field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serial number"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero seriale"
+          }
+        }
+      }
+    },
+    "field.store" : {
+      "comment" : "Store field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negozio"
+          }
+        }
+      }
+    },
+    "field.warrantyDuration" : {
+      "comment" : "Warranty duration field.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty duration"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durata garanzia"
+          }
+        }
+      }
+    },
+    "field.warrantyEnds" : {
+      "comment" : "Warranty end field",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty ends"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzia fino al"
+          }
+        }
+      }
+    },
+    "filter.all" : {
+      "comment" : "All filter option.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutti"
+          }
+        }
+      }
+    },
+    "filter.category" : {
+      "comment" : "Category filter title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+          }
+        }
+      }
+    },
+    "filter.status" : {
+      "comment" : "Status filter title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato"
+          }
+        }
+      }
+    },
+    "form.days.format" : {
+      "comment" : "Day count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld days"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giorni"
+          }
+        }
+      }
+    },
+    "form.deadlines.disclaimer" : {
+      "comment" : "Neutral legal disclaimer under deadline fields.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty and return rules may vary by country, seller, product type, and contract."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le regole su garanzie e resi possono variare in base a paese, venditore, prodotto e contratto."
+          }
+        }
+      }
+    },
+    "form.months.format" : {
+      "comment" : "Month count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld months"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld mesi"
+          }
+        }
+      }
+    },
+    "form.pendingAttachments.format" : {
+      "comment" : "Pending attachment count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld document ready to attach"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld documento pronto da allegare"
+          }
+        }
+      }
+    },
+    "form.section.deadlines" : {
+      "comment" : "Form deadlines section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadlines"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenze"
+          }
+        }
+      }
+    },
+    "form.section.details" : {
+      "comment" : "Form details section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettagli"
+          }
+        }
+      }
+    },
+    "form.section.price" : {
+      "comment" : "Form price section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prezzo"
+          }
+        }
+      }
+    },
+    "form.section.purchase" : {
+      "comment" : "Form purchase section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acquisto"
+          }
+        }
+      }
+    },
+    "home.activeWarranties" : {
+      "comment" : "Dashboard section for active warranties.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active warranties"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzie attive"
+          }
+        }
+      }
+    },
+    "home.expired" : {
+      "comment" : "Dashboard section for expired deadlines.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expired"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadute"
+          }
+        }
+      }
+    },
+    "home.returnSoon" : {
+      "comment" : "Dashboard section for returns expiring soon.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return deadlines soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resi in scadenza"
+          }
+        }
+      }
+    },
+    "home.warrantySoon" : {
+      "comment" : "Dashboard section for warranties expiring soon.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranties expiring soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzie in scadenza"
+          }
+        }
+      }
+    },
+    "legal.disclaimer.body" : {
+      "comment" : "Legal disclaimer body.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty Vault helps you organize documents and reminders. Warranty and return rules may vary by country, seller, product type, and contract. The app does not provide legal advice."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'app aiuta a organizzare documenti e promemoria. Le regole su garanzie e resi possono variare in base a paese, venditore, tipo di prodotto e contratto. L'app non fornisce consulenza legale."
+          }
+        }
+      }
+    },
+    "lock.body" : {
+      "comment" : "Locked screen body.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authenticate to open your local receipt vault."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticati per aprire il tuo archivio locale."
+          }
+        }
+      }
+    },
+    "lock.title" : {
+      "comment" : "Locked screen title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vault locked"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archivio bloccato"
+          }
+        }
+      }
+    },
+    "lock.unlock" : {
+      "comment" : "Unlock button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca"
+          }
+        }
+      }
+    },
+    "notification.return.body" : {
+      "comment" : "Return notification body",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your return window for %@ ends in %lld days."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il periodo di reso per %@ scade tra %lld giorni."
+          }
+        }
+      }
+    },
+    "notification.return.title" : {
+      "comment" : "Return notification title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return window ending soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reso in scadenza"
+          }
+        }
+      }
+    },
+    "notification.warranty.body" : {
+      "comment" : "Warranty notification body",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your warranty for %@ ends in %lld days."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La garanzia per %@ scade tra %lld giorni."
+          }
+        }
+      }
+    },
+    "notification.warranty.title" : {
+      "comment" : "Warranty notification title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty ending soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzia in scadenza"
+          }
+        }
+      }
+    },
+    "onboarding.cta.manual" : {
+      "comment" : "Secondary onboarding action to create an item manually.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add manually"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi manualmente"
+          }
+        }
+      }
+    },
+    "onboarding.cta.scan" : {
+      "comment" : "Primary onboarding action to scan a first receipt.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan first receipt"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona il primo scontrino"
+          }
+        }
+      }
+    },
+    "onboarding.deadlines.body" : {
+      "comment" : "Onboarding body for local reminders.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get local reminders before return windows and warranties expire."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi promemoria locali prima che scadano resi e garanzie."
+          }
+        }
+      }
+    },
+    "onboarding.deadlines.title" : {
+      "comment" : "Onboarding title for reminders.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Never miss a deadline"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non perdere una scadenza"
+          }
+        }
+      }
+    },
+    "onboarding.privacy.body" : {
+      "comment" : "Onboarding body for privacy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No account. No tracking. Your documents stay on your device."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun account. Nessun tracking. I documenti restano sul dispositivo."
+          }
+        }
+      }
+    },
+    "onboarding.privacy.title" : {
+      "comment" : "Onboarding title for privacy.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private by design"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privata per progettazione"
+          }
+        }
+      }
+    },
+    "onboarding.save.body" : {
+      "comment" : "Onboarding body for saving documents.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep proof of purchase, invoices, and warranty documents organized."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni in ordine prove d'acquisto, fatture e documenti di garanzia."
+          }
+        }
+      }
+    },
+    "onboarding.save.title" : {
+      "comment" : "Onboarding title for saving receipts and warranties.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save receipts and warranties"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva scontrini e garanzie"
+          }
+        }
+      }
+    },
+    "privacy.localDocuments" : {
+      "comment" : "Privacy screen item.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documents are stored locally in the app sandbox."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I documenti sono salvati localmente nella sandbox dell'app."
+          }
+        }
+      }
+    },
+    "privacy.localOnly" : {
+      "comment" : "Privacy reassurance row.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No account. No tracking. Files stay on this device."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun account. Nessun tracking. I file restano su questo dispositivo."
+          }
+        }
+      }
+    },
+    "privacy.manualExport" : {
+      "comment" : "Privacy screen item.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exports happen only when you choose to share or save a file."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli export avvengono solo quando scegli di condividere o salvare un file."
+          }
+        }
+      }
+    },
+    "privacy.noAccount" : {
+      "comment" : "Privacy screen item.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No account is required."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non serve alcun account."
+          }
+        }
+      }
+    },
+    "privacy.noTracking" : {
+      "comment" : "Privacy screen item.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No ads, analytics, or tracking SDKs are included."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ci sono SDK per pubblicita, analytics o tracking."
+          }
+        }
+      }
+    },
+    "privacy.policy.body" : {
+      "comment" : "In-app privacy policy summary.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The app saves receipts, prices, notes, and documents locally on your device. The developer does not receive your documents or personal data. Deleting items in the app or deleting the app removes local data from this device."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'app salva scontrini, prezzi, note e documenti localmente sul dispositivo. Lo sviluppatore non riceve documenti o dati personali. Eliminando gli elementi nell'app o eliminando l'app rimuovi i dati locali da questo dispositivo."
+          }
+        }
+      }
+    },
+    "purchase.action.archive" : {
+      "comment" : "Archive purchase action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archive"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archivia"
+          }
+        }
+      }
+    },
+    "purchase.action.delete" : {
+      "comment" : "Delete purchase action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
+          }
+        }
+      }
+    },
+    "purchase.action.exportPDF" : {
+      "comment" : "Export PDF action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export PDF"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esporta PDF"
+          }
+        }
+      }
+    },
+    "purchase.action.shareExport" : {
+      "comment" : "Share exported file action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share export"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi export"
+          }
+        }
+      }
+    },
+    "purchase.action.unarchive" : {
+      "comment" : "Unarchive purchase action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unarchive"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina"
+          }
+        }
+      }
+    },
+    "purchase.add.title" : {
+      "comment" : "Add purchase screen title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi acquisto"
+          }
+        }
+      }
+    },
+    "purchase.edit.title" : {
+      "comment" : "Edit purchase screen title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica acquisto"
+          }
+        }
+      }
+    },
+    "scan.addManual" : {
+      "comment" : "Manual add action on scan tab.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add manually"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi manualmente"
+          }
+        }
+      }
+    },
+    "scan.openScanner" : {
+      "comment" : "Open scanner action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan document"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona documento"
+          }
+        }
+      }
+    },
+    "scanner.importFiles" : {
+      "comment" : "Import from Files action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import from Files"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importa da File"
+          }
+        }
+      }
+    },
+    "scanner.importPhotos" : {
+      "comment" : "Import from Photos action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import from Photos"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importa da Foto"
+          }
+        }
+      }
+    },
+    "scanner.ready.body" : {
+      "comment" : "Scanner placeholder body before full scanner integration.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the document scanner or import a local file, then save it with purchase details."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa lo scanner documenti o importa un file locale, poi salvalo con i dettagli dell'acquisto."
+          }
+        }
+      }
+    },
+    "scanner.ready.title" : {
+      "comment" : "Scanner hub title.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ready to scan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto per la scansione"
+          }
+        }
+      }
+    },
+    "scanner.scanWithCamera" : {
+      "comment" : "Open VisionKit scanner action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan with camera"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona con fotocamera"
+          }
+        }
+      }
+    },
+    "settings.about" : {
+      "comment" : "About settings row.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni"
+          }
+        }
+      }
+    },
+    "settings.appLanguage" : {
+      "comment" : "App language settings row.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App language"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingua app"
+          }
+        }
+      }
+    },
+    "settings.appLanguage.body" : {
+      "comment" : "System app language instructions.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To change app language, use iOS Settings > Apps > Warranty Vault > Language."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per cambiare lingua, usa Impostazioni iOS > App > Scontrini & Garanzie > Lingua."
+          }
+        }
+      }
+    },
+    "settings.defaultReturnWindow" : {
+      "comment" : "Default return window setting.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default return window"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finestra reso predefinita"
+          }
+        }
+      }
+    },
+    "settings.deleteAll" : {
+      "comment" : "Delete all data action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete all data"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutti i dati"
+          }
+        }
+      }
+    },
+    "settings.deleteAll.confirm" : {
+      "comment" : "Delete all confirmation button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete everything"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutto"
+          }
+        }
+      }
+    },
+    "settings.deleteAll.title" : {
+      "comment" : "Delete all confirmation title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete all saved purchases and documents?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminare tutti gli acquisti e documenti salvati?"
+          }
+        }
+      }
+    },
+    "settings.deviceBackup" : {
+      "comment" : "Include documents in device backup setting.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Include documents in device backup"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Includi documenti nel backup dispositivo"
+          }
+        }
+      }
+    },
+    "settings.exportData" : {
+      "comment" : "Export data action.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export data"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esporta dati"
+          }
+        }
+      }
+    },
+    "settings.faceID" : {
+      "comment" : "Face ID lock setting.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID / Touch ID lock"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocco Face ID / Touch ID"
+          }
+        }
+      }
+    },
+    "settings.faceID.failed" : {
+      "comment" : "Face ID activation failed",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authentication was not completed."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticazione non completata."
+          }
+        }
+      }
+    },
+    "settings.legal" : {
+      "comment" : "Legal disclaimer settings row.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legal disclaimer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disclaimer legale"
+          }
+        }
+      }
+    },
+    "settings.notifications" : {
+      "comment" : "Notifications setting.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Local reminders"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria locali"
+          }
+        }
+      }
+    },
+    "settings.privacy" : {
+      "comment" : "Privacy settings row.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy"
+          }
+        }
+      }
+    },
+    "settings.privacyPolicy" : {
+      "comment" : "Privacy policy section title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy policy"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy policy"
+          }
+        }
+      }
+    },
+    "settings.return.none" : {
+      "comment" : "No return window option.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna"
+          }
+        }
+      }
+    },
+    "settings.section.about" : {
+      "comment" : "About settings section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni"
+          }
+        }
+      }
+    },
+    "settings.section.data" : {
+      "comment" : "Data settings section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati"
+          }
+        }
+      }
+    },
+    "settings.section.defaults" : {
+      "comment" : "Defaults settings section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Defaults"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predefiniti"
+          }
+        }
+      }
+    },
+    "settings.section.privacy" : {
+      "comment" : "Privacy settings section.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy & reminders"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy e promemoria"
+          }
+        }
+      }
+    },
+    "settings.version" : {
+      "comment" : "Version label.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione"
+          }
+        }
+      }
+    },
+    "sort.alphabetical" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alphabetical"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alfabetico"
+          }
+        }
+      }
+    },
+    "sort.highestPrice" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Highest price"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prezzo piu alto"
+          }
+        }
+      }
+    },
+    "sort.newest" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Newest purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acquisto piu recente"
+          }
+        }
+      }
+    },
+    "sort.oldest" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oldest purchase"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acquisto meno recente"
+          }
+        }
+      }
+    },
+    "sort.returnExpiringSoon" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return expiring soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reso in scadenza"
+          }
+        }
+      }
+    },
+    "sort.title" : {
+      "comment" : "Sort picker title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordina"
+          }
+        }
+      }
+    },
+    "sort.warrantyExpiringSoon" : {
+      "comment" : "Archive sort option.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warranty expiring soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garanzia in scadenza"
+          }
+        }
+      }
+    },
+    "status.active" : {
+      "comment" : "Deadline status.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva"
+          }
+        }
+      }
+    },
+    "status.archived" : {
+      "comment" : "Deadline status.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archived"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archiviata"
+          }
+        }
+      }
+    },
+    "status.expired" : {
+      "comment" : "Deadline status.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expired"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scaduta"
+          }
+        }
+      }
+    },
+    "status.expiringSoon" : {
+      "comment" : "Deadline status.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expiring soon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In scadenza"
+          }
+        }
+      }
+    },
+    "status.noDate" : {
+      "comment" : "Deadline status.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No warranty date"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna data garanzia"
+          }
+        }
+      }
+    },
+    "tab.archive" : {
+      "comment" : "Archive tab title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archive"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archivio"
+          }
+        }
+      }
+    },
+    "tab.deadlines" : {
+      "comment" : "Deadlines tab title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadlines"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenze"
+          }
+        }
+      }
+    },
+    "tab.scan" : {
+      "comment" : "Scan tab title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona"
+          }
+        }
+      }
+    },
+    "tab.settings" : {
+      "comment" : "Settings tab title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        }
+      }
+    },
+    "warranty.type.commercial" : {
+      "comment" : "Warranty type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commercial"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commerciale"
+          }
+        }
+      }
+    },
+    "warranty.type.custom" : {
+      "comment" : "Warranty type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Custom"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalizzata"
+          }
+        }
+      }
+    },
+    "warranty.type.extended" : {
+      "comment" : "Warranty type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estesa"
+          }
+        }
+      }
+    },
+    "warranty.type.insurance" : {
+      "comment" : "Warranty type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insurance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assicurazione"
+          }
+        }
+      }
+    },
+    "warranty.type.legal" : {
+      "comment" : "Warranty type.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legal"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legale"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty Vault — Receipt & Warranty Tracker for iOS</title>
+  <meta name="description" content="Scan receipts, track warranties & returns, and keep purchase documents organized privately on your iPhone. No account, no ads, no subscriptions.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/appicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-group">
+        <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+        <span class="logo-text">Warranty Vault</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Privacy</a></li>
+          <li><a href="support.html" class="nav-link" data-i18n="nav_support">Support</a></li>
+          <li><a href="terms.html" class="nav-link" data-i18n="nav_terms">Terms</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch">
+          <button class="lang-btn active" id="lang-en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" id="lang-it" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge-privacy" data-i18n="hero_badge">🔒 100% Private &amp; Local</span>
+        <h1 class="hero-title" data-i18n="hero_title">Never Lose a Receipt Again.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Scan receipts, track warranties, and organize product documents privately in one secure vault. No accounts, no subscriptions, no tracking.</p>
+        
+        <div class="hero-ctas">
+          <a href="#" class="btn-appstore">
+            <img src="assets/appstore.svg" alt="Download on the App Store">
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-mockup-wrapper">
+        <div class="glow-backdrop"></div>
+        <div class="phone-mockup-container">
+          <div class="mockup-ui">
+            <div class="mockup-header">
+              <div class="mockup-logo-area">
+                <div class="mockup-logo"></div>
+                <span class="mockup-logo-text" data-i18n="mockup_logo_text">Warranty Vault</span>
+              </div>
+              <div class="mockup-status-dot"></div>
+            </div>
+            
+            <div class="mockup-list">
+              <div class="mockup-card">
+                <div class="mockup-card-left">
+                  <span class="mockup-card-title" data-i18n="mockup_c1_title">iPhone 15 Pro Max</span>
+                  <span class="mockup-card-sub" data-i18n="mockup_c1_sub">Apple Store — $1,199</span>
+                </div>
+                <span class="mockup-card-badge badge-cyan" data-i18n="mockup_c1_badge">18 Months Left</span>
+              </div>
+              
+              <div class="mockup-card">
+                <div class="mockup-card-left">
+                  <span class="mockup-card-title" data-i18n="mockup_c2_title">Office Desk Chair</span>
+                  <span class="mockup-card-sub" data-i18n="mockup_c2_sub">IKEA — $249</span>
+                </div>
+                <span class="mockup-card-badge badge-yellow" data-i18n="mockup_c2_badge">Expires in 6 Days</span>
+              </div>
+
+              <div class="mockup-card">
+                <div class="mockup-card-left">
+                  <span class="mockup-card-title" data-i18n="mockup_c3_title">Coffee Machine</span>
+                  <span class="mockup-card-sub" data-i18n="mockup_c3_sub">Amazon — $599</span>
+                </div>
+                <span class="mockup-card-badge badge-cyan" data-i18n="mockup_c3_badge">3 Years Left</span>
+              </div>
+
+              <div class="mockup-card">
+                <div class="mockup-card-left">
+                  <span class="mockup-card-title" data-i18n="mockup_c4_title">Noise Canceling Headphones</span>
+                  <span class="mockup-card-sub" data-i18n="mockup_c4_sub">Sony — $349</span>
+                </div>
+                <span class="mockup-card-badge badge-cyan" data-i18n="mockup_c4_badge">9 Months Left</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="features_label">Capabilities</span>
+        <h2 class="section-title" data-i18n="features_title">Designed for Your Purchase Archives</h2>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f1_title">Scan Receipts &amp; Invoices</h3>
+          <p class="feature-card-desc" data-i18n="f1_desc">Use the native iOS document scanner to capture receipts before ink fades, or import PDFs directly from your Files application.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f2_title">Track Warranty Deadlines</h3>
+          <p class="feature-card-desc" data-i18n="f2_desc">Input warranty duration and purchase dates. The app calculates exact expiration dates and highlights critical timelines.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f3_title">Smart Local Reminders</h3>
+          <p class="feature-card-desc" data-i18n="f3_desc">Receive automatic notifications on your device before a return window closes or a manufacturer warranty expires.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f4_title">Face ID / Touch ID Security</h3>
+          <p class="feature-card-desc" data-i18n="f4_desc">Secure your purchase data. Enable optional biometric authentication to keep invoices and receipts protected from prying eyes.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f5_title">Native PDF &amp; Zip Backup</h3>
+          <p class="feature-card-desc" data-i18n="f5_desc">Export individual receipts as high-quality PDFs or output a compressed ZIP backup containing your entire structural data archive.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="f6_title">Offline Independence</h3>
+          <p class="feature-card-desc" data-i18n="f6_desc">No cloud services required. All processing, document scanning, and text recognition occurs strictly on your device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Callout -->
+  <section class="privacy-assurance-section">
+    <div class="container">
+      <div class="privacy-box">
+        <div class="privacy-left">
+          <span class="badge-privacy" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2); color: #10b981;" data-i18n="priv_badge">🔒 Zero Tracking</span>
+          <h2 class="privacy-title" data-i18n="priv_title">Your Data Stays on Your Device. Period.</h2>
+          <p class="privacy-desc" data-i18n="priv_desc">Warranty Vault is designed from the ground up to respect your digital privacy. We don't host databases, collect logs, or track your behavior. Everything you save remains locked securely inside your iOS sandbox.</p>
+        </div>
+        <div class="privacy-metrics">
+          <div class="metric-card">
+            <div class="metric-val">0</div>
+            <div class="metric-lbl" data-i18n="priv_m1">Accounts</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">100%</div>
+            <div class="metric-lbl" data-i18n="priv_m2">Offline-first</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">0</div>
+            <div class="metric-lbl" data-i18n="priv_m3">Ads / trackers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-group">
+          <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+          <span class="logo-text">Warranty Vault</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Keep receipts, invoices, and warranties organized and private on your iPhone.</p>
+      </div>
+      
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_legal">Compliance</span>
+        <ul class="footer-nav-links">
+          <li><a href="privacy.html" class="footer-nav-link" data-i18n="nav_privacy">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-nav-link" data-i18n="nav_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_support">Support</span>
+        <ul class="footer-nav-links">
+          <li><a href="support.html" class="footer-nav-link" data-i18n="nav_support">Contact Support / FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span data-i18n="footer_copyright">© 2026 Simo. All rights reserved.</span>
+      <span data-i18n="footer_legal_notes">Warranty Vault is an independent application. App Store and iOS are trademarks of Apple Inc.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

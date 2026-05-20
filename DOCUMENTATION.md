@@ -27,3 +27,7 @@
 - [2026-05-20 14:00 Europe/Rome]: Warranty Vault English Branding
   - *Details*: Added a dedicated English branding file for the Warranty Vault App Store listing and optimized the English subtitle, promotional text, description, keywords, marketing lines, screenshot captions, and review notes.
   - *Tech Notes*: Subtitle and promotional text stay within App Store Connect limits. Keyword string is 92 characters, below the 100-character App Store keyword limit.
+
+- [2026-05-20 14:30 Europe/Rome]: Marketing and Compliance Website
+  - *Details*: Created a premium, bilingual, and responsive static website in the root directory (`/`) to serve as the marketing and official compliance hub for the iOS application. This fixes default GitHub Pages loading issues by eliminating the `/docs` subdirectory path.
+  - *Tech Notes*: Implemented native HTML5 structures, vanilla CSS with custom variables for dark/glassmorphic aesthetics, and dynamic vanilla JS translation engines supporting on-the-fly English/Italian switches. Built-in Privacy, Support (with FAQs and modern validated contact forms), and Terms of Service agreements to satisfy App Store Connect guidelines.

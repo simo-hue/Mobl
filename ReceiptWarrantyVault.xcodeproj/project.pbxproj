@@ -92,7 +92,7 @@
 		8CF9AEF0F18B3DF5DCF69F28 /* AppStorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStorageKeys.swift; path = Services/AppStorageKeys.swift; sourceTree = "<group>"; };
 		91F56BF78917DC2ECEC1C7FA /* PurchaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseRow.swift; path = Views/Components/PurchaseRow.swift; sourceTree = "<group>"; };
 		98B218D653476F1AF471A778 /* WarrantyCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarrantyCalculator.swift; path = Services/WarrantyCalculator.swift; sourceTree = "<group>"; };
-		A2E68A7B74204B9477001402 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		A2E68A7B74204B9477001402 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
 		A4E493D40D00FA3936CF4892 /* PurchaseFormView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseFormView.swift; path = Views/PurchaseForm/PurchaseFormView.swift; sourceTree = "<group>"; };
 		B10026688BCBFFB84D1E37DF /* LockedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockedView.swift; path = Views/Components/LockedView.swift; sourceTree = "<group>"; };
 		B1C78BCD20FB836D504F9BFE /* ZipArchiveWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchiveWriter.swift; path = Services/ZipArchiveWriter.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		E97018B4E56A92E833A53906 /* DateFormatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatService.swift; path = Services/DateFormatService.swift; sourceTree = "<group>"; };
 		EE8902F25EC9791248C52420 /* DocumentScannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentScannerView.swift; path = Views/Scanner/DocumentScannerView.swift; sourceTree = "<group>"; };
 		F2DFD5FA6C28FEECB7ED7302 /* ScannerHubView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScannerHubView.swift; path = Views/Scanner/ScannerHubView.swift; sourceTree = "<group>"; };
-		FA26AA0D37A34F4FD49116CA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		FA26AA0D37A34F4FD49116CA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,6 @@
 				BF5EF7530D17CFDB3B3F86CA /* InfoPlist.strings */,
 				622072820A7EB5DF3653C8E1 /* InfoPlist.strings */,
 			);
-			name = ReceiptWarrantyVault;
 			path = ReceiptWarrantyVault;
 			sourceTree = "<group>";
 		};
@@ -203,7 +202,6 @@
 				BD0BA802E5A566C188D876C9 /* WarrantyCalculatorTests.swift */,
 				677A9AE6EFA50D3FB65398FA /* ZipArchiveWriterTests.swift */,
 			);
-			name = ReceiptWarrantyVaultTests;
 			path = ReceiptWarrantyVaultTests;
 			sourceTree = "<group>";
 		};
@@ -268,9 +266,18 @@
 		E2F3B626C2D244ECCABEE434 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					77AE545065F6D29DA17D36B3 = {
+						DevelopmentTeam = 8528AN28A3;
+						ProvisioningStyle = Automatic;
+					};
+					8F77266997DF72C8D609DEB7 = {
+						DevelopmentTeam = 8528AN28A3;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 601B4B29C6575961D1B53C8E /* Build configuration list for PBXProject "ReceiptWarrantyVault" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -282,8 +289,6 @@
 				Base,
 			);
 			mainGroup = 1E93C9C4E760FDEB7E3FDBDD;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = E432B7D05CA3EFAC39183E77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,6 +391,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8528AN28A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -406,6 +412,7 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8528AN28A3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ReceiptWarrantyVault/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -475,9 +482,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -554,6 +560,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8528AN28A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -575,6 +582,7 @@
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8528AN28A3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ReceiptWarrantyVault/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

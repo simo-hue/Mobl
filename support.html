@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &amp; FAQ — Warranty Vault</title>
+  <meta name="description" content="Get help with Warranty Vault for iOS. Read through frequently asked questions or contact us directly with support queries.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/appicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-group">
+        <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+        <span class="logo-text">Warranty Vault</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Privacy</a></li>
+          <li><a href="support.html" class="nav-link active" data-i18n="nav_support">Support</a></li>
+          <li><a href="terms.html" class="nav-link" data-i18n="nav_terms">Terms</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch">
+          <button class="lang-btn active" id="lang-en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" id="lang-it" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title" data-i18n="sup_page_title">Support &amp; Help Desk</h1>
+      <p class="page-subtitle" data-i18n="sup_page_subtitle">Frequently asked questions and direct technical support</p>
+    </div>
+  </section>
+
+  <!-- Document Layout Grid -->
+  <main class="container doc-layout">
+    <div class="doc-content">
+      <!-- FAQs Section -->
+      <section class="doc-section">
+        <h2 data-i18n="sup_faq_title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="sup_q1">Where is my data stored?</button>
+            <div class="faq-answer">
+              <p data-i18n="sup_a1">All files, scanned receipts, databases, and configuration settings are stored locally on your device within the app sandbox. There is no external database or server storing your documents.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="sup_q2">What happens if I lose or change my iPhone?</button>
+            <div class="faq-answer">
+              <p data-i18n="sup_a2">Because Warranty Vault is entirely local and does not sync to custom databases, we recommend using standard iOS/iCloud system backups or manually exporting a compressed ZIP backup from the Settings screen inside the app to save elsewhere.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="sup_q3">Can I import digital invoices (PDFs)?</button>
+            <div class="faq-answer">
+              <p data-i18n="sup_a3">Yes! You can choose to import existing PDF invoices, camera images, or physical scans from either your Files app or your photo library directly into your digital archive.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="sup_q4">Is biometric protection available?</button>
+            <div class="faq-answer">
+              <p data-i18n="sup_a4">Absolutely. You can enable optional Face ID or Touch ID lock inside the in-app settings panel to require authentication every time you open your receipt archive.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="doc-section" style="margin-top: 3rem;">
+        <h2 data-i18n="sup_form_title">Submit a Support Ticket</h2>
+        <p data-i18n="sup_form_desc">Having technical difficulties? Have suggestions for future releases? Submit a support request directly to the developer below.</p>
+        
+        <form class="support-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="nameInput" class="form-label" data-i18n="sup_form_name">Full Name</label>
+            <input type="text" id="nameInput" class="form-input" required placeholder="e.g. Simo">
+          </div>
+          
+          <div class="form-group">
+            <label for="emailInput" class="form-label" data-i18n="sup_form_email">Email Address</label>
+            <input type="email" id="emailInput" class="form-input" required placeholder="e.g. simo@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput" class="form-label" data-i18n="sup_form_msg">Support Message / Issue Description</label>
+            <textarea id="messageInput" class="form-textarea" required placeholder="Describe your request in detail..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn" data-i18n="sup_form_submit">Send Request</button>
+          
+          <!-- Success Status -->
+          <div class="form-status-msg success" id="statusMessage" data-i18n="sup_form_success">
+            ✓ Ticket submitted successfully! We will get back to you shortly.
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Sidebar Info Panel -->
+    <aside class="doc-sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-title" data-i18n="sidebar_contact_title">Direct Contact</h3>
+        <p class="sidebar-desc" data-i18n="sidebar_contact_desc">You can also write directly via email regarding queries, business requests, or legal matters.</p>
+        <p style="font-family: var(--font-tech); font-weight: 600; font-size: 0.9rem; color: var(--accent-secondary);">support@simo.dev</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3 class="sidebar-title" data-i18n="sidebar_priv_title">Privacy Assurance</h3>
+        <p class="sidebar-desc" data-i18n="sidebar_priv_desc">Warranty Vault does not collect, sell, or receive any user documents or personal details. The app operates completely offline-first.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-group">
+          <img src="assets/appicon.png" alt="Warranty Vault Logo" class="logo-icon">
+          <span class="logo-text">Warranty Vault</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Keep receipts, invoices, and warranties organized and private on your iPhone.</p>
+      </div>
+      
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_legal">Compliance</span>
+        <ul class="footer-nav-links">
+          <li><a href="privacy.html" class="footer-nav-link" data-i18n="nav_privacy">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-nav-link" data-i18n="nav_terms">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-nav-title" data-i18n="footer_title_support">Support</span>
+        <ul class="footer-nav-links">
+          <li><a href="support.html" class="footer-nav-link" data-i18n="nav_support">Contact Support / FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span data-i18n="footer_copyright">© 2026 Simo. All rights reserved.</span>
+      <span data-i18n="footer_legal_notes">Warranty Vault is an independent application. App Store and iOS are trademarks of Apple Inc.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
